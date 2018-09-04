@@ -762,3 +762,29 @@ canvas {
     font-size: 0.60rem;
     padding: 0 0.2rem 0 0.2rem;
 }
+/* 底部导航 */
+.custom .fui-icon-group.noborder.col-5.pageid_13{
+  position: fixed;
+  bottom: 0px;
+  background-color: #F7F7FA;
+  border-top: 1px solid #CECED1;
+}
+.custom .fui-icon-group.noborder.col-5.pageid_13 .fui-icon-col.external .icon image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: -50rpx;
+}
+.custom .fui-icon-group.noborder.col-5.pageid_13 .fui-icon-col .text{
+  font-size: 20rpx !important;
+  margin-bottom:40rpx;
+}
+.custom .fui-icon-group.noborder.col-5.pageid_13 .fui-icon-col.external{
+  margin: 0rpx;
+}
+.custom .suspended-service{
+  position: fixed;
+  bottom: 200rpx;
+}
+.custom .fui-goods-group.block .getmore{
+  padding-bottom: 600rpx;
+}
