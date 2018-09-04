@@ -1,0 +1,168 @@
+@import "../../../__wuBaseWxss__/9.wxss";
+
+@import "../../index/openauth.wxss";
+
+.cartlist {
+    margin-top: -2rpx;
+}
+
+.price {
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    color: #999;
+    font-size: 26rpx;
+}
+
+.left {
+    left: -100rpx;
+}
+
+checkbox {
+    padding-right: 20rpx;
+}
+
+.empty {
+    padding: 260rpx 150rpx;
+}
+
+.empty .btn {
+    margin: 0;
+    border-radius: 100rpx;
+    height: 76rpx;
+    line-height: 76rpx;
+    width: 280rpx;
+    font-size: 30rpx;
+    padding: 0;
+}
+
+.light {
+    height: 240rpx;
+    width: 240rpx;
+}
+
+.text-cancel {
+    padding: 10rpx;
+    margin-bottom: 30rpx;
+    margin-top: 25rpx;
+    font-size: 30rpx;
+}
+
+.fui-list-inner .car_subtitle {
+    position: relative;
+    font-size: 26rpx;
+    color: #444;
+}
+
+.fui-list-angle {
+    margin-right: 0;
+}
+
+.fui-list {
+    align-items: flex-start;
+}
+
+.fui-list radio {
+    align-self: center;
+    margin-right: 20rpx;
+}
+
+.fui-list-inner {
+    min-height: 170rpx;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fui-list-inner .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.fui-list-inner .bigprice {
+    display: flex;
+    align-items: center;
+}
+
+.fui-list-inner .price .productprice {
+    padding-left: 10rpx;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 24rpx;
+}
+
+.fui-list-inner .subtitle.cart-option {
+    color: #999;
+}
+
+.btns .btn {
+    border-radius: 0;
+    height: 98rpx;
+    line-height: 98rpx;
+    color: #fff;
+    margin: 0;
+    margin-left: .05rem;
+    text-align: center;
+    width: 160rpx;
+}
+
+.fui-footer {
+    height: 98rpx;
+}
+
+.fui-footer .tool {
+    padding-right: 0;
+    height: 98rpx;
+}
+
+.fui-footer .tool label {
+    display: flex;
+    align-items: center;
+}
+
+.fui-footer .tool .text {
+    text-align: right;
+}
+
+.fui-cell-group .fui-cell.edit {
+    align-items: flex-end;
+    background: #f8f8f8;
+    flex-direction: column;
+    font-size: 28rpx;
+}
+
+.page .fui-cell-group:nth-of-type(2) {
+    margin-top: 0;
+}
+
+/*百里*/
+.guesslike-title{
+  text-align:center;
+  background:#fff;
+  height:80rpx;
+  line-height:80rpx;
+  margin-top:20rpx;
+}
+.fui-goods-item .detail .price .text
+{
+  position:relative;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  font-size:32rpx;
+  margin-top:-20rpx;
+}
+.fui-goods-item .detail .price .baili-detail-Commission{
+  font-size: 0.6rem;
+}

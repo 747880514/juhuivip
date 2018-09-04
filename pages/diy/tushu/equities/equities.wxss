@@ -1,0 +1,380 @@
+.zongdeyemian_tushu {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.titlebuyemian_tushu {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.titshangbuyemian_tushu {
+  width: 100%;
+  height: 480rpx;
+  background-image: url("https://www.juhuivip.com/attachment/images/2/2018/08/aOs6e5q7Losmxipk41QQqXEEMLoLo1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.topxiangdekuang_tushu {
+  float: left;
+  width: 23%;
+}
+
+.touxiangdetu_tushu {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 6rpx solid #d6a969;
+  margin: 15%;
+  margin-top: 40rpx;
+}
+
+.shangbianzhongjian_tushu {
+  float: left;
+  color: #fff;
+  width: 55%;
+}
+
+.mingzhi_tushu {
+  margin-top: 40rpx;
+  font-size: 35rpx;
+}
+
+.yaoqingma_tushu {
+  overflow: hidden;
+  width: 100%;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.yaoqing_tushu {
+  float: left;
+}
+
+.fuzhiyao_tushu {
+  float: left;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-left: 30rpx;
+  background: #474848;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  font-size: 20rpx;
+}
+
+.suandianguanli_tushu {
+  float: left;
+  color: #fff;
+  width: 22%;
+  padding-top: 90rpx;
+  font-size: 24rpx;
+}
+
+.wodedaoshi_tushu {
+  overflow: hidden;
+  width: 100%;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.wodedaoshibiti_tushu {
+  float: left;
+}
+
+.lianxiwodedaoshi_tushu {
+  float: left;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-left: 30rpx;
+  background: #474848;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  font-size: 20rpx;
+}
+
+.dingweikuang_tushu {
+  width: 100%;
+  height: 300rpx;
+  position: absolute;
+  top: 180rpx;
+  background-image: url("https://www.juhuivip.com/attachment/images/2/2018/08/mIMsa080ewa5686sa88488A5zM2E80.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.leijishouyi_tushu {
+  margin-top: 40rpx;
+  font-size: 25rpx;
+  color: #b28851;
+}
+
+.erduzong_tushu {
+  margin-top: 10rpx;
+  font-size: 60rpx;
+  color: #5d3124;
+  font-family: "黑体";
+}
+
+.dingweixia_tushu {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 35rpx;
+  padding-bottom: 15rpx;
+}
+
+.jinri_tushu {
+  float: left;
+  width: 32%;
+}
+
+.benzhou_tushu {
+  float: left;
+  width: 33%;
+}
+
+.benyue_tushu {
+  float: left;
+  width: 31%;
+}
+
+.jinrishu_tushu {
+  font-size: 25rpx;
+  color: #5d3124;
+  text-align: center;
+}
+
+.jinriti_tushu {
+  font-size: 25rpx;
+  color: #b28851;
+  text-align: center;
+}
+
+.benzhoushu_tushu {
+  font-size: 25rpx;
+  color: #5d3124;
+  text-align: center;
+}
+
+.benzhouti_tushu {
+  font-size: 25rpx;
+  color: #b28851;
+  text-align: center;
+}
+
+.benyueshu_tushu {
+  font-size: 25rpx;
+  color: #5d3124;
+  text-align: center;
+}
+
+.benyueti_tushu {
+  font-size: 25rpx;
+  color: #b28851;
+  text-align: center;
+}
+
+.shugang_tushu {
+  margin-top: 10rpx;
+  height: 40rpx;
+  width: 1%;
+  float: left;
+  border-right: 1px solid #e9c794;
+}
+
+.wodeqianbaokuang_tushu {
+  width: 94%;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+.wodeqianbao_tushu {
+  text-indent: 30rpx;
+  border-bottom: 1px solid #f3f3f3;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.jinekuangjia_tushu {
+  overflow: hidden;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.ketixian_tushu {
+  float: left;
+  width: 25%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.yitixian_tushu {
+  float: left;
+  width: 25%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.yejidingdan_tushu {
+  float: left;
+  width: 25%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wodesuandui_tushu {
+  float: left;
+  width: 25%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.shuzijine_tushu {
+  font-size: 22rpx;
+}
+
+.qianbaomingchen_tushu {
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+
+.daling_tushu {
+  font-size: 35rpx;
+}
+
+.yaoqingkuang_tushu {
+  width: 94%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.yaoqingsuanfen_tushu {
+  float: left;
+  background-image: url(https://www.juhuivip.com/attachment/images/2/2018/08/UhU72OOb27a32A2z7iiu23CppikyY2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 47%;
+  height: 65px;
+  margin: 2%;
+}
+
+.yaoqingsuantou_tushu {
+  float: left;
+  background-image: url(https://www.juhuivip.com/attachment/images/2/2018/08/U7DCB379bb3D6i6Fn0aCjC7DFvsld3.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 47%;
+  height: 65px;
+  margin: 2% 2% 2% 0;
+}
+
+.zhuanshu_tushu {
+  font-size: 28rpx;
+  color: #75511c;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.yaoqingdejiang_tushu {
+  font-size: 22rpx;
+  color: #c89c5c;
+  margin-left: 20rpx;
+}
+
+.caidanlan_tushu {
+  width: 94%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+  overflow: hidden;
+  padding-bottom: 150rpx;
+}
+
+.tubiaocai_tushu {
+  width: 25%;
+  text-align: center;
+  padding: 25rpx 0;
+  float: left;
+  background: #fff;
+}
+
+.tubiaotu_tushu {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.caidanbiaoti_tushu {
+  font-size: 22rpx;
+  color: #666;
+}
+
+.guanggaotu_tushu {
+  width: 100%;
+  height: 150rpx;
+}
+
+.anniu::after {
+  border: none;
+}
+
+.anniu {
+  padding-top: 16rpx;
+}
+
+.anniuzhi {
+  margin-top: -14rpx;
+}
+
+.dengji_tushu {
+  position: relative;
+  top: -52rpx;
+  left: 31rpx;
+  width: 100rpx;
+  height: 25.5rpx;
+}
+
+.dengjizi_tushu {
+  position: relative;
+  top: -56rpx;
+  left: -36rpx;
+  /* left:-54rpx; */
+  font-size: 18rpx;
+  color: #fff;
+}
+
+/* 底部导航 */
+
+.page_hd {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  background: #F7F7FA;
+  z-index: 10000;
+  overflow: hidden;
+  padding: 38rpx 0rpx;
+  border-top: 1rpx solid #CECED1;
+}
+.daohang_tushu{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.daohang_tushu image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.daohang_tushu view{
+  font-size: 20rpx;
+  color: #9d9d9d;
+}
+.daohang_tushu .huiyuanred_tushu{
+  color: #FF5555;
+}

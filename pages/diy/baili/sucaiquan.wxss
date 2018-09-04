@@ -1,0 +1,197 @@
+.topimg image{
+  width: 100%;
+  height:155rpx;
+}
+.box .lists{
+  background: #fff;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+}
+.box .lists .info{
+  padding:  0 30rpx;
+}
+.box .lists .info .title{
+  font-size: 30rpx;
+  line-height: 1.5;
+  padding-top:40rpx;
+  padding-bottom: 20rpx;
+}
+.box .lists .info .images .image {
+  display: inline-block;
+}
+.box .lists .info .images .image image{
+  width:225rpx;
+  height: 225rpx;
+  margin: 3rpx;
+}
+.box .lists .info .goods{
+  background: #F5F5F5;
+  height:120rpx;
+  padding: 25rpx;
+}
+.box .lists .info .goods .thumb{
+  display: inline-block;
+}
+.box .lists .info .goods .thumb image{
+  width: 120rpx;
+  height: 120rpx;
+  vertical-align: bottom;
+}
+.box .lists .info .goods .goodsinfo{
+  display: inline-block;
+  margin-left:20rpx;
+  font-size:30rpx;
+  vertical-align:top;
+  width:500rpx;
+}
+.box .lists .info .goods .goodsinfo .goodsname{
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2; 
+}
+.box .lists .info .goods .goodsinfo .price{
+  display: inline-block;
+}
+.box .lists .info .goods .goodsinfo .make{
+  display: inline-block;
+  margin-left:30rpx;
+}
+.box .lists .action{
+  margin-top:40rpx;
+  font-size:30rpx;
+  color:#666;
+  text-align: center;
+  border-top: 1px #ddd solid;
+}
+.box .lists .action .save{
+  display: inline-block;
+  width: 49%;
+  padding:25rpx 0;
+  border-right: 1px #ddd solid;
+}
+.box .lists .action .share{
+  display: inline-block;
+  width: 50%;
+  padding:25rpx 0;
+}
+.baili-fui-cell {
+    padding: 0 0.4rem;
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+    float: right;
+    height:32rpx;
+}
+.baili-fui-cell .baili-flex {
+        border-radius: 3px;
+        display: flex;
+        font-size: 0.65rem;
+        color: #666;
+    }
+.baili-fui-cell .baili-detail-Commission {
+        border: 1px solid #ff240a;
+        height: 1rem;
+        width: auto;
+        line-height: 1rem;
+        text-align: center;
+    }
+.baili-fui-cell .baili-detail-Commission .baili-text {
+    background: #ff204a;
+    padding: 0.05rem 0.2rem 0 0.2rem;
+    font-size: 0.60rem;
+    border-radius: 3px;
+    color: #fff;
+    background: #ff204a;
+    margin: -1px;
+    min-width: 1rem;
+    vertical-align: middle;
+}
+.baili-fui-cell .baili-detail-Commission .baili-num {
+    color: #ff204a;
+    font-size: 0.60rem;
+    padding: 0 0.2rem 0 0.2rem;
+}
+
+
+.fui-share {
+    width: 100%;
+    height: 400rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1001;
+}
+
+.fui-share.fui-iphonex-share {
+    bottom: 68rpx;
+}
+
+.fui-iphonex-button {
+    background: #fafafa;
+}
+
+.share-choose {
+    height: 180rpx;
+    padding: 74rpx 120rpx 60rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-choose image {
+    width: 156rpx;
+    height: 148rpx;
+}
+
+.share-wechat,.share-poster {
+    width: 160rpx;
+    text-align: center;
+}
+
+.text-explain {
+    font-size: 26rpx;
+    color: #666;
+}
+
+.close-btn {
+    width: 100%;
+    height: 86rpx;
+    background: #fafafa;
+    text-align: center;
+    font-size: 26rpx;
+    line-height: 86rpx;
+    color: #999;
+}
+
+.close-btn:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1;
+    height: 1px;
+    border-top: 1px solid #ebebeb;
+    color: #D9D9D9;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+.jiazai{
+  width: 100%;
+  height: 70rpx;
+  text-align: center;
+  font-size: 30rpx;
+  }
+.buttonbus{
+  border: 1px solid #fff; 
+  background:none;
+  padding-left: 0;
+  line-height: 1;
+  margin: 0;
+}
+.buttonbus::after{
+  border: none;
+}

@@ -1,0 +1,563 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wx79384099bcaf8dfa",
+	"projectname": "%E8%8A%B1%E8%92%9C",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "素材圈",
+					"pathName": "pages/diy/baili/sucaiquan",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分签到",
+					"pathName": "/pages/creditshop/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的资料",
+					"pathName": "pages/member/info/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "下载图片",
+					"pathName": "pages/goods/poster/poster",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "蒜粉圈子",
+					"pathName": "pages/custom/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员中心",
+					"pathName": "pages/member/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "链享店",
+					"pathName": "pages/diy/tushu/lianxi/lianxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "链享店",
+					"pathName": "pages/diy/tushu/lianxi/lianxi",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "独家",
+					"pathName": "pages/diy/tushu/exclusive/exclusive",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "成长权益",
+					"pathName": "pages/diy/tushu/equities/equities",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "砍价中",
+					"pathName": "pages/bargain/act/act",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "砍价详情",
+					"pathName": "pages/bargain/bargain/bargain",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "砍价直接购买详情",
+					"pathName": "pages/bargain/detail/detail",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "全部砍价",
+					"pathName": "pages/bargain/index/index",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "购买砍价商品购物车",
+					"pathName": "pages/bargain/purchase/purchase",
+					"query": ""
+				},
+				{
+					"id": 15,
+					"name": "空白页面1",
+					"pathName": "pages/bargain/rule/rule",
+					"query": ""
+				},
+				{
+					"id": 16,
+					"name": "制作海报生成二维码，邀请朋友",
+					"pathName": "pages/commission/poster/index",
+					"query": ""
+				},
+				{
+					"id": 17,
+					"name": "我的蒜队",
+					"pathName": "pages/commission/down/index",
+					"query": ""
+				},
+				{
+					"id": 18,
+					"name": "收益明细",
+					"pathName": "pages/commission/log/index",
+					"query": ""
+				},
+				{
+					"id": 19,
+					"name": "业绩订单",
+					"pathName": "pages/commission/order/index",
+					"query": ""
+				},
+				{
+					"id": 20,
+					"name": "邀请好友，保存图片，生成二微码",
+					"pathName": "pages/commission/poster/index",
+					"query": ""
+				},
+				{
+					"id": 21,
+					"name": "二维码",
+					"pathName": "pages/commission/qrcode/index",
+					"query": ""
+				},
+				{
+					"id": 22,
+					"name": "分销中心",
+					"pathName": "pages/commission/register/index",
+					"query": ""
+				},
+				{
+					"id": 23,
+					"name": "全返记录",
+					"pathName": "pages/commission/return/index",
+					"query": ""
+				},
+				{
+					"id": 24,
+					"name": "收益",
+					"pathName": "pages/commission/withdraw/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "全部商户",
+					"pathName": "pages/diy/tushu/service/service",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商家详情页面",
+					"pathName": "pages/diy/tushu/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "sad",
+					"pathName": "pages/diy/tushu/exclusive/exclusive",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/diy/tushu/ceshi/ceshi",
+					"query": ""
+				},
+				{
+					"id": 29,
+					"name": "确认订单",
+					"pathName": "pages/creditshop/create/index",
+					"query": ""
+				},
+				{
+					"id": 30,
+					"name": "我的积分",
+					"pathName": "pages/creditshop/creditlog/index",
+					"query": ""
+				},
+				{
+					"id": 31,
+					"name": "商品详情积分的",
+					"pathName": "pages/creditshop/detail/index",
+					"query": ""
+				},
+				{
+					"id": 32,
+					"name": "物流信息",
+					"pathName": "pages/creditshop/express/index",
+					"query": ""
+				},
+				{
+					"id": 33,
+					"name": "商品列表",
+					"pathName": "pages/creditshop/lists/index",
+					"query": ""
+				},
+				{
+					"id": 34,
+					"name": "兑换记录",
+					"pathName": "pages/creditshop/log/index",
+					"query": ""
+				},
+				{
+					"id": 35,
+					"name": "订单详情",
+					"pathName": "pages/creditshop/log/detail/index",
+					"query": ""
+				},
+				{
+					"id": 36,
+					"name": "二维码兑换",
+					"pathName": "pages/creditshop/verify/index",
+					"query": ""
+				},
+				{
+					"id": 37,
+					"name": "积分商城首页",
+					"pathName": "pages/creditshop/index",
+					"query": ""
+				},
+				{
+					"id": 38,
+					"name": "副页面",
+					"pathName": "pages/custom/index",
+					"query": ""
+				},
+				{
+					"id": 39,
+					"name": "商品列表",
+					"pathName": "pages/goods/index/index",
+					"query": ""
+				},
+				{
+					"id": 40,
+					"name": "商品详情",
+					"pathName": "pages/goods/detail/index",
+					"query": ""
+				},
+				{
+					"id": 41,
+					"name": "相关套餐",
+					"pathName": "pages/goods/package/index",
+					"query": ""
+				},
+				{
+					"id": 42,
+					"name": "套餐",
+					"pathName": "pages/goods/package/detail/index",
+					"query": ""
+				},
+				{
+					"id": 43,
+					"name": "配送区域",
+					"pathName": "pages/goods/region/index",
+					"query": ""
+				},
+				{
+					"id": 44,
+					"name": "订单详情",
+					"pathName": "pages/integral/order/detail/index",
+					"query": ""
+				},
+				{
+					"id": 45,
+					"name": "配送范围地图",
+					"pathName": "pages/map/index",
+					"query": ""
+				},
+				{
+					"id": 46,
+					"name": "收货地址",
+					"pathName": "pages/member/address/index",
+					"query": ""
+				},
+				{
+					"id": 47,
+					"name": "添加收货地址",
+					"pathName": "pages/member/address/post",
+					"query": ""
+				},
+				{
+					"id": 48,
+					"name": "选择收货地址",
+					"pathName": "pages/member/address/select",
+					"query": ""
+				},
+				{
+					"id": 49,
+					"name": "更换绑定手机号",
+					"pathName": "pages/member/bind/index",
+					"query": ""
+				},
+				{
+					"id": 50,
+					"name": "购物车",
+					"pathName": "pages/member/cart/index",
+					"query": ""
+				},
+				{
+					"id": 51,
+					"name": "我的关注",
+					"pathName": "pages/member/favorite/index",
+					"query": ""
+				},
+				{
+					"id": 52,
+					"name": "我的足记",
+					"pathName": "pages/member/history/index",
+					"query": ""
+				},
+				{
+					"id": 53,
+					"name": "会员资料",
+					"pathName": "pages/member/info/index",
+					"query": ""
+				},
+				{
+					"id": 54,
+					"name": "充值记录",
+					"pathName": "pages/member/log/index",
+					"query": ""
+				},
+				{
+					"id": 55,
+					"name": "账户充值",
+					"pathName": "pages/member/recharge/index",
+					"query": ""
+				},
+				{
+					"id": 56,
+					"name": "提现金额",
+					"pathName": "pages/member/withdraw/index",
+					"query": ""
+				},
+				{
+					"id": 57,
+					"name": "重新授权",
+					"pathName": "pages/message/auth/index",
+					"query": ""
+				},
+				{
+					"id": 58,
+					"name": "评价",
+					"pathName": "pages/order/comment/index",
+					"query": ""
+				},
+				{
+					"id": 59,
+					"name": "确认订单",
+					"pathName": "pages/order/create/index",
+					"query": ""
+				},
+				{
+					"id": 60,
+					"name": "每期详情",
+					"pathName": "pages/order/cycle/index",
+					"query": ""
+				},
+				{
+					"id": 61,
+					"name": "添加收货地址",
+					"pathName": "pages/order/cycle/address",
+					"query": ""
+				},
+				{
+					"id": 62,
+					"name": "全部订单信息",
+					"pathName": "pages/order/cycle/order",
+					"query": ""
+				},
+				{
+					"id": 63,
+					"name": "订单详情",
+					"pathName": "pages/order/detail/index",
+					"query": ""
+				},
+				{
+					"id": 64,
+					"name": "物流信息",
+					"pathName": "pages/order/express/index",
+					"query": ""
+				},
+				{
+					"id": 65,
+					"name": "填写快递单号",
+					"pathName": "pages/order/express/number",
+					"query": ""
+				},
+				{
+					"id": 66,
+					"name": "收银台",
+					"pathName": "pages/order/pay/index",
+					"query": ""
+				},
+				{
+					"id": 67,
+					"name": "我的优惠卷",
+					"pathName": "pages/order/pay/coupons/coupons",
+					"query": ""
+				},
+				{
+					"id": 68,
+					"name": "待领取优惠卷",
+					"pathName": "pages/order/pay/share/share",
+					"query": ""
+				},
+				{
+					"id": 69,
+					"name": "bag页面，，，，，，500元代金卷100元就能用",
+					"pathName": "pages/order/pay/sharecoupon/index",
+					"query": ""
+				},
+				{
+					"id": 70,
+					"name": "申请退款",
+					"pathName": "pages/order/refund/index",
+					"query": ""
+				},
+				{
+					"id": 71,
+					"name": "选择门店",
+					"pathName": "pages/order/store/index",
+					"query": ""
+				},
+				{
+					"id": 72,
+					"name": "地点地图",
+					"pathName": "pages/order/store/map",
+					"query": ""
+				},
+				{
+					"id": 73,
+					"name": "选择优惠卷",
+					"pathName": "pages/public/coupon/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "快速购买",
+					"pathName": "pages/quickbuy/quickbuy/takeout_model/index",
+					"query": ""
+				},
+				{
+					"id": 75,
+					"name": "优惠卷",
+					"pathName": "pages/sale/coupon/index/index",
+					"query": ""
+				},
+				{
+					"id": 76,
+					"name": "优惠卷详情",
+					"pathName": "pages/sale/coupon/detail/index",
+					"query": ""
+				},
+				{
+					"id": 77,
+					"name": "我的优惠卷",
+					"pathName": "pages/sale/coupon/my/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的优惠卷详情",
+					"pathName": "pages/sale/coupon/my/detail/index",
+					"query": ""
+				},
+				{
+					"id": 79,
+					"name": "获得优惠卷",
+					"pathName": "pages/sale/coupon/my/showcoupons2/index",
+					"query": ""
+				},
+				{
+					"id": 80,
+					"name": "全部分类",
+					"pathName": "pages/shop/caregory/index",
+					"query": ""
+				},
+				{
+					"id": 81,
+					"name": "系统公告详情",
+					"pathName": "pages/shop/notice/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "系统公告",
+					"pathName": "pages/shop/notice/index/index",
+					"query": ""
+				},
+				{
+					"id": 83,
+					"name": "卡劵包",
+					"pathName": "pages/verifygoods/index",
+					"query": ""
+				},
+				{
+					"id": 84,
+					"name": "核销二维码",
+					"pathName": "pages/verifygoods/detail/index",
+					"query": ""
+				},
+				{
+					"id": 85,
+					"name": "加载中...，，，，无法打开花蒜",
+					"pathName": "pages/web/index",
+					"query": ""
+				},
+				{
+					"id": 86,
+					"name": "秒杀首页",
+					"pathName": "seckill/pages/index/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

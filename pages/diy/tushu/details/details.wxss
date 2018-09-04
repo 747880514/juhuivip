@@ -1,0 +1,235 @@
+/* pages/diy/tushu/details/details.wxss */
+.shangdianxiangqingye_tushu{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.topbandershu_tushu{
+  width: 100%;
+  position: relative;
+}
+.topbandertu_tushu{
+  width:100%;
+  height: 360rpx;
+}
+.xuanfutuzuk_tushu{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50rpx;
+  width: 96rpx;
+  height: 25rpxrem;
+  border: 2rpx solid #606060;
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+}
+.xuanfutupian_tushu{
+  width: 30%;
+  margin-left: 15rpx;
+  margin-top: -6rpx;
+  height: 23rpx;
+}
+.xuanfutushu_tushu{
+  font-size: 23rpx;
+  color: #fff;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.3rem;
+}
+.shangdianxinxi_tushu{
+  width: 100%;
+}
+.shangdianminngzhik_tushu{
+  width: 94%;
+  margin: 0 auto;
+  border-bottom: 1px solid #E9E9E9;
+  padding-left: 0.5rem;
+  padding-bottom: 2.4rem;
+}
+.titleshangdianming_tushu{
+  font-size: 35rpx;
+  height: 48rpx;
+  font-weight: bold;
+  color: #474747;
+  line-height: 96rpx;
+}
+.pingjiak_tushu{
+  width: 100%;
+}
+.xingxingkuang_tushu{
+  width: 100%;
+}
+.xingxing{
+  float: left;
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 12rpx;
+  margin-top: 35rpx;
+}
+.pingjiafen_tushu{
+  float: left;
+  font-size: 25rpx;
+  margin-left: 25rpx;
+  color: #FA9531;
+  padding-top: 32rpx;
+}
+.dizhilianxi_tushu{
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20rpx;
+  border-bottom: 18rpx solid #eee;
+}
+.dizhitubiao_tushu{
+  float: left;
+  width: 15%;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.dizhitupian_tushu{
+  width: 28%;
+  height: 30rpx;
+  margin-left: 26rpx;
+  margin-top: 22rpx;
+}
+.dizhidifang_tushu{
+  float: left;
+  width: 64%;
+  font-size: 25rpx;
+  margin-top: 45rpx;
+  text-align: center;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space:nowrap;
+  display:block;
+}
+.dianhuatupiank_tushu{
+  float: left;
+  width: 20%;
+  border-left: 1px solid #EEEEEE;
+  margin-top: 20rpx;
+}
+.dianhuatupian_tushu{
+  height: 64rpx;
+  width: 54rpx;
+  margin-left: 25rpx;
+}
+.shangpinliebiaok_tushu{
+ width: 100%; 
+}
+.shangpinfuwuk_tushu{
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.shangpinfuwutuk_tushu{
+  width: 100%;
+}
+.shangpinfuwutupian_tushu{
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+.shangpinfuwuzhi_tushu{
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+.shangpinlbk_tushu{
+  overflow: hidden;
+  width: 95%;
+  margin: 0 auto;
+  border-top: 5rpx solid #eee;
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+}
+.shangpintuk_tushu{
+  width: 20%;
+}
+.shangpintu_tushu{
+  width: 100%;
+  float: left;
+  margin-left: 0.3rem;
+  margin-right: 0.7rem;
+  object-fit: cover;
+  height: 65px;
+}
+.shangpinxinxik_tushu{
+  width: 74%;
+  float: left;
+}
+.shangpinxiangqingk_tushu{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 6rpx;
+}
+.shangpinxiangqing_tushu{
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 360rpx;
+  display: block;
+  float: left;
+}
+.shangpinyishou_tushu{
+  color: #A3A3A3;
+  float: right;
+  font-size: 20rpx;
+  margin-top: 15rpx;
+  margin-right: 15rpx;
+}
+.maijiak_tuhsu{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.xianjia_tushu{
+  color: #FF204A;
+  font-size: 30rpx;
+  font-weight: bold;
+  float: left;
+}
+.dayang_tushu{
+  font-size: 25rpx;
+}
+.menshijian_tushu{
+  color: #9F9F9F;
+  font-size: 25rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+.zhuank_tushu{
+  border: 1px solid #FF204A;
+  font-size: 20rpx;
+  border-radius: 6rpx;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+.zhuanzhi_tushu{
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: #FF204A;
+
+
+}
+.zhuangqian_tushu{
+  color: #FF204A;
+  padding-right: 0.3rem;
+  font-weight: bold;
+  padding-left: 10rpx;
+}
+.youhuijuan_tushu{
+  color: #fff;
+  font-weight: bold;
+  background-color: #FEBBB7;
+  border-radius: 2px;
+  padding: 5rpx 10rpx;
+  padding-top: 7rpx;
+  font-size: 23rpx;
+ 
+}

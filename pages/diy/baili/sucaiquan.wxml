@@ -1,0 +1,67 @@
+<view class='topimg'>
+  <image src="https://www.juhuivip.com/attachment/images/2/2018/07/h58lNVDNK4MNkvJ484049C0nn8MAdv.png"></image>
+</view>
+<loading wx:if="{{!show}}">加载中...</loading>
+
+<view class="fui-share {{isIpx?'fui-iphonex-share':''}}" wx:if="{{show&&closeBtn}}">
+    <view class="share-choose">
+        <button openType="share" class='buttonbus'>
+            <view class="share-wechat">
+                <image src="https://static.btaeo.cn/static/images/share/wechat.png"></image>
+                <view class="text-explain">分享给朋友</view>
+            </view>
+        </button>
+        <view bindtap="sharePoster" class="share-poster">
+            <image src="https://static.btaeo.cn/static/images/share/post.png"></image>
+            <view class="text-explain">生成商品图片</view>
+        </view>
+    </view>
+    <view bindtap="closeBtn" class="close-btn">关闭</view>
+</view>
+
+<view class='box' wx:if="{{show}}">
+  <view class='lists' wx:for="{{material_lists}}" wx:key="{{index}}">
+    <view class="info">
+      <view class='title'>
+        <view class='content'>
+          {{item.title}}
+        </view>
+      </view>
+      <view class='images'>
+        <view class='image' wx:for="{{item.goods_marketing_img}}"  wx:for-item="img" wx:key="imgkey">
+          <image src="{{img}}" data-src="{{img}}" data-list="{{item.goods_marketing_img}}" bindtap="imgYu"></image>
+        </view>
+      </view>
+      <view class='goods' bindtap="url" data-url="/pages/goods/detail/index?id={{item.id}}">
+        <view class='thumb'>
+          <image src="{{item.thumb}}"></image>
+        </view>
+        <view class="goodsinfo">
+          <view class='goodsname'>
+            {{item.goods_marketing_text}}
+          </view>
+          <view>
+            <view class='price'>￥{{item.minprice}}</view>
+            <view class='make'>
+              <view class="baili-fui-cell">
+                <view class="baili-detail-Commission baili-flex" wx:if="{{item.commission1}}">
+                  <view class="baili-text"> 赚 </view>
+                  <view class="baili-num">￥{{item.commission1}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='action'>
+      <view class='save' bindtap='downimg' data-imgs="{{item.goods_marketing_img}}" data-copy='{{item.goods_marketing_text}}'>
+        复制文案
+      </view>
+      <view bindtap="showshade" class='share showshade' data-id='{{item.id}}' data-title='{{item.title}}'>
+        分享
+      </view>
+    </view>
+  </view>
+  <view class='jiazai' hidden='' >{{}}</view>
+</view>

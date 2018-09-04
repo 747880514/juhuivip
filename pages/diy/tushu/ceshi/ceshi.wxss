@@ -1,0 +1,5 @@
+/* pages/diy/tushu/ceshi/ceshi.wxss */
+.asads{
+  width: 100%;
+  height: 200px;
+}

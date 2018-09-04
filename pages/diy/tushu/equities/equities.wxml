@@ -1,0 +1,156 @@
+<!-- tushu -->
+<view class='zongdeyemian_tushu'>
+  <view class="titlebuyemian_tushu">
+    <view class='titshangbuyemian_tushu'>
+      <view class='topxiangdekuang_tushu'>
+        <image src="{{avatar}}" class='touxiangdetu_tushu'></image>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/a0mNvIKVkVYmb98hyeh8Th8v6807Kk.png' class='dengji_tushu'></image>
+        <text class='dengjizi_tushu'>{{ ee['levelname'] != '0' ? ee['levelname'] : '蒜粉'}}</text>
+        
+      </view>
+      <view class='shangbianzhongjian_tushu'>
+        <view class='mingzhi_tushu'>{{nickname}}</view>
+        <view class='yaoqingma_tushu'>
+          <view class='yaoqing_tushu'>邀请码：<span>{{invitation_code}}</span></view>
+          <view class='fuzhiyao_tushu'  bindtap="copyTBL">复制</view>
+        </view>
+        <view class='wodedaoshi_tushu'>
+          <view class='wodedaoshibiti_tushu'>我的导师：<span>{{agent_nickname != null ? agent_nickname : '总店'}}</span></view>
+          <view class='lianxiwodedaoshi_tushu' bindtap="copyWeixin">联系TA</view>
+        </view>
+      </view>
+      <navigator url='##'>
+        <view class='suandianguanli_tushu'>蒜店管理></view>
+      </navigator>
+      
+    </view>
+    <view class='dingweikuang_tushu'>
+      <view class='leijishouyi_tushu'>累计总收益额（元）</view>
+      <view class='erduzong_tushu' bindtap='zongshouyi'>{{mm['commission_total'] > 0 ? mm['commission_total'] : '0.00'}}</view>
+      <view class='dingweixia_tushu'>
+        <view class='jinri_tushu'  bindtap='jinrishouyi'>
+          <view class='jinrishu_tushu'>{{ rr['today_price'] > 0 ? rr['today_price'] : '0.00' }}</view>
+          <view class='jinriti_tushu'>今日收益</view>
+        </view>
+        <view class='shugang_tushu'></view>
+        <view class='benzhou_tushu' bindtap='benzhoushouyi'>
+          <view class='benzhoushu_tushu'>{{ rr['week_price'] > 0 ? rr['week_price'] : '0.00' }}</view>
+          <view class='benzhouti_tushu'>本周收益</view>
+        </view>
+        <view class='shugang_tushu'></view>
+        <view class='benyue_tushu' bindtap='benyueshouyi'>
+          <view class='benyueshu_tushu'>{{ rr['month_price'] > 0 ? rr['month_price'] : '0.00' }}</view>
+          <view class='benyueti_tushu'>本月收益</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='wodeqianbaokuang_tushu'>
+    <view class='wodeqianbao_tushu'>我的钱包</view>
+    <view class='jinekuangjia_tushu'>
+      <view class='ketixian_tushu' bindtap='zongshouyi'>
+        <view class='shuzijine_tushu'><span class="daling_tushu">{{mm['commission_ok'] > 0 ? mm['commission_ok'] : '0.00' }}</span>元</view>
+        <view class='qianbaomingchen_tushu'>可提现</view>
+      </view>
+      <view class='yitixian_tushu' bindtap='zongshouyi'>
+        <view class='shuzijine_tushu'><span class="daling_tushu">{{dd['commission_wait'] > 0 ? dd['commission_wait'] : '0.00'}}</span>元</view>
+        <view class='qianbaomingchen_tushu'>待入账</view>
+      </view>
+      <view class='yejidingdan_tushu' bindtap='yejidingdan'>
+        <view class='shuzijine_tushu'><span class="daling_tushu">{{mm['ordercount0'] > 0 ? mm['ordercount0'] : '0.00'}}</span>单</view>
+        <view class='qianbaomingchen_tushu'>业绩订单</view>
+      </view>
+      <view class='wodesuandui_tushu' bindtap='wodesuandui'>
+        <view class='shuzijine_tushu'><span class="daling_tushu">{{mm['downcount'] > 0 ? mm['downcount'] : '0.00'}}</span>人</view>
+        <view class='qianbaomingchen_tushu'>我的蒜队</view>
+      </view>
+    </view>
+  </view>
+  <view class='yaoqingkuang_tushu'>
+    <navigator url='/pages/custom/index?pageid=16'>
+      <view class='yaoqingsuanfen_tushu'>
+        <view class='zhuanshu_tushu'>专属蒜粉</view>
+        <view class='yaoqingdejiang_tushu'>邀请得奖励</view>
+      </view>
+    </navigator>
+    <navigator url='/pages/custom/index?pageid=13'>
+      <view class='yaoqingsuantou_tushu'>
+        <view class='zhuanshu_tushu'>邀请蒜头</view>
+        <view class='yaoqingdejiang_tushu'>邀请得奖励</view>
+      </view>
+    </navigator>
+  </view>
+<!-- 底部悬浮 -->
+  <view class="page_hd">
+    <view bindtap='shouyetushu' class='daohang_tushu'>
+      <image src='/static/images/tabbar/icon-1.png'></image>
+      <view>首页</view>
+    </view>
+    <view bindtap='quanbutushu' class='daohang_tushu'>
+      <image src='/static/images/tabbar/icon-2.png'></image>
+      <view>全部分类</view>
+    </view>
+    <view bindtap='huiyuanviptushu' class='daohang_tushu'>
+      <image src='/static/images/tabbar/icon-3.33-active.png'></image>
+      <view class='huiyuanred_tushu'>VIP会员</view>
+    </view>
+    <view bindtap='gouwuchetushu' class='daohang_tushu'>
+      <image src='/static/images/tabbar/icon-4.png'></image>
+      <view>购物车</view>
+    </view>
+    <view bindtap='huiyuanzhongxintushu' class='daohang_tushu'>
+      <image src='/static/images/tabbar/icon-5.png'></image>
+      <view>会员中心</view>
+    </view>
+  </view>
+
+
+  <navigator url='/pages/custom/index?pageid=52'>
+    <image src='https://www.juhuivip.com/attachment/images/2/2018/09/wo85xJ33t81BbvyzlYRt3aJOlad3XS.png' class='guanggaotu_tushu'></image>
+  </navigator>
+  <view class='caidanlan_tushu'>
+    <navigator class='tubiaocai_tushu' url="pages/custom/index">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/X55ouyNuZnBuV5a6NGNg6aOAUaOgn5.png'></image>
+      <view class='caidanbiaoti_tushu'>营销团队</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="/pages/diy/baili/sucaiquan">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/f8GbM8M9ZLZbP05PlePUO58GssSuiJ.png'></image>
+      <view class='caidanbiaoti_tushu'>素材圈</view>
+    </navigator>
+   
+    <navigator class='tubiaocai_tushu' url="/pages/commission/qrcode/index">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/X5S1AOl1A72OA7aLH328S1L6s7A5l6.png'></image>
+      <view class='caidanbiaoti_tushu'>我的二维码</view>
+    </navigator>
+    
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/Q6QHHrKmBWp3wK6qb6wz6WHmvMP6Nn.png'></image>
+      <view class='caidanbiaoti_tushu'>待办任务</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ISJjzgy47tRGY3D943n423d94s4F7x.png'></image>
+      <view class='caidanbiaoti_tushu'>粉丝福利</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ydVO0DerB070GNv771b1Le1Ln7deOm.png'></image>
+      <view class='caidanbiaoti_tushu'>会员商品</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/U2pIPMq9BLxaTaaP833b89HTbpTrX5.png'></image>
+      <view class='caidanbiaoti_tushu'>爆款推单</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/Dtr58se3tG35EX3E81Dx33sS8x1xUb.png'></image>
+      <view class='caidanbiaoti_tushu'>花蒜物料</view>
+    </navigator>
+    <navigator class='tubiaocai_tushu' url="##">
+      <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/tQHXA6eMhQI6jEYyI5Q65In5ZZrs5v.png'></image>
+      <view class='caidanbiaoti_tushu'>奖励活动</view>
+    </navigator>
+    
+    <button class='tubiaocai_tushu anniu' openType="contact" sessionFrom="weapp" showMessageCard="true">
+        <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/a1f8Cy2XX1fAxE9zeE9Ad2x1ledW4x.png'></image>
+        <view class='caidanbiaoti_tushu anniuzhi'>客服</view>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,100 @@
+<view class='quanbushnaghukuang_tushu'>
+  <view class='topdetu_tushu'>
+    <image class='tupiantop_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/VmXyXxpVh0NyhxXGBXMYQtXVix00FT.png'></image>
+  </view>
+  <view class='tubiaocaidankuang_tushu'>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/g4Sn243eusN2bZjSNuFqSSXUBsE852.png'></image>
+      </view>
+      <view class='biaoti_tushu'>美食</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/d1z1Vlev1lIwsM2D86lZ2061Sm0PpZ.png'></image>
+      </view>
+      <view class='biaoti_tushu'>美发</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/EfduT3TckW06BxZUo0XDcUn3lNBPcn.png'></image>
+      </view>
+      <view class='biaoti_tushu'>休闲娱乐</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/BuZWQ3rq630QdL363Ul62W16kQX6Xk.png'></image>
+      </view>
+      <view class='biaoti_tushu'>生活服务</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/a40ca2n8OTGGg22xx444O2281apcPt.png'></image>
+      </view>
+      <view class='biaoti_tushu'>便利店</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/pvjt277Ha5Th2txTzxmV7vvwyt1V5m.png'></image>
+      </view>
+      <view class='biaoti_tushu'>运动健身</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/LpIDZBmMHdg9PiZFD5M5gmXduS126Z.png'></image>
+      </view>
+      <view class='biaoti_tushu'>母婴亲子</view>
+    </navigator>
+    <navigator url="" class='lianjiexuanxiang_tushu'>
+      <view class='tubiaobiaode_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/FthlC8H6P88PYsy45plPZL59pLT49P.png'></image>
+      </view>
+      <view class='biaoti_tushu'>汽车服务</view>
+    </navigator>
+  </view>
+  <view class='reirong_tushu'>
+    <view class='neirongtit_tushu'>
+      <view class='neirongtittuk_tushu'>
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/08/M9k5y9mNCE9NwEE5Naw91Cdp5yEm9K.png'></image>
+      </view>
+      <view class='neirongzhi_tushu'>附近商家</view>
+    </view>
+
+    <view class='shangjialiebiao_tushu' wx:for="{{list}}" wx:for-item="liss">
+
+
+      <navigator url='/pages/diy/tushu/details/details?id={{liss.id}}'>
+
+      <view wx:if="{{liss.logo != ''}}" class='tupianshangjia_tushu'>
+
+        <image src='{{liss.logo}}'></image>
+
+      </view>
+
+      <view wx:elif="{{liss.logo == ''}}" class='tupianshangjia_tushu'>
+
+        <image src='https://www.juhuivip.com/attachment/images/2/2018/07/ML6dUuIF75kF8kkL8ZL8XDQ2dvKD2k.png'></image>
+
+      </view>
+
+      <view class='titleshangdiantop_tushu'>{{liss.merchname}}</view>
+      <view class='xingxingtukuang_tushu'>
+        <view class='xingxing_tuhsu'>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png' class='xingxingtu_tushu'></image>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png' class='xingxingtu_tushu'></image>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png' class='xingxingtu_tushu'></image>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png' class='xingxingtu_tushu'></image>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png' class='xingxingtu_tushu'></image>
+        </view>
+        <view class='wufen_tushu'>5分</view>
+        <view class='yueshou_tushu'>月售 {{liss.sales}}</view>
+        <view class='juli_tushu'>{{liss.distance}}km</view>
+      </view>
+      <view class='zhoutoujuan_tushu'>
+        <view class='kazhuangzhetou_tushu'>折扣优惠</view>
+      </view>
+      </navigator>
+    </view>
+    
+  </view>
+</view>

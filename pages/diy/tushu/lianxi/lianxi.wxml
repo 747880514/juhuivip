@@ -1,0 +1,27 @@
+<view>
+  <view class="swiper-container-tushu">
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="800" circular="true" current="0" bindchange="swiperChange" class="swiper">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}" class="img" bindtap="swipclick" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='dianpu-quan-tushu'>
+    <view class='dian-tushu' wx:for="{{list}}" wx:for-item="liss">
+      <view><image src='{{liss.logo}}' class='img_dianpu_tushu'></image></view>
+      <view class='dian_right_tushu'>
+        <view class='right_one_tushu'>{{liss.merchname}}</view>
+        <view class='right_two_tushu'>
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/fL1uJYDJAUzm109ASu1e0wo4006WsX.png' class='touxian_tushu'></image>
+          {{liss.realname}}
+          <!-- <image src='https://www.juhuivip.com/attachment/images/2/2018/08/M8Q85b11AFI8zJ188Qsbm5q1F5TMNz.png' class='weizhi_tushu'></image> -->
+          <image src='https://www.juhuivip.com/attachment/images/2/2018/08/VZ7VG6G2N4KPNKnkZ20ckG226KKKpn.png' class='dianhua_tushu'  bindtap="calling"></image>
+          
+        </view>
+        <view class='right_three_tushu'>{{liss.address}}</view>
+      </view> 
+    </view>
+  </view>
+</view>

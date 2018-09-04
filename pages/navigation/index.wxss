@@ -1,0 +1,23 @@
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+  background: #ffffff;
+}
+.scroll-view-item_H{
+  height: 100rpx;
+  line-height: 100rpx;
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+}
+::-webkit-scrollbar {
+  width: 0; 
+  height: 0;
+  display: none;
+}
+.element::-webkit-scrollbar {
+  display:none
+}
+.active{
+  color: #ff204a;
+}

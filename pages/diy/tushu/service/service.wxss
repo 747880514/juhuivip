@@ -1,0 +1,123 @@
+.quanbushnaghukuang_tushu{
+  width: 100%;
+  background-color: #fff;
+}
+.topdetu_tushu{
+  width: 100%;
+}
+.tupiantop_tushu{
+  width: 100%;
+  height: 240rpx;
+}
+.tubiaocaidankuang_tushu{
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30rpx;
+  padding-top: 20rpx;
+}
+.lianjiexuanxiang_tushu{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.biaoti_tushu{
+  width: 100%;
+  text-align: center;
+  font-size: 25rpx;
+  margin-top: -15rpx;
+}
+.reirong_tushu{
+  width: 100%;
+  border-top: 20rpx solid #f5f5f5;
+}
+.neirongtit_tushu{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 18rpx;
+  padding-bottom: 18rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+}
+.neirongtit_tushu .neirongtittuk_tushu{
+  width: 13%;
+  float: left;
+}
+.neirongtit_tushu .neirongtittuk_tushu image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 50rpx;
+}
+.neirongzhi_tushu{
+  font-size: 30rpx;
+  color: #666;
+}
+.shangjialiebiao_tushu{
+  width: 95%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+  overflow: hidden;
+  border-bottom: 2rpx solid #f5f5f5;
+  margin-top: 20rpx;
+}
+.tupianshangjia_tushu{
+  width: 18%;
+  float: left;
+  height: 100rpx;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 2%;
+}
+.tupianshangjia_tushu image{
+  object-fit: cover;
+}
+.titleshangdiantop_tushu{
+  color: #333;
+  font-size: 30rpx;
+}
+.xingxingtukuang_tushu{
+  float: left;
+  overflow: hidden;
+  width: 80%;
+}
+.xingxingtukuang_tushu .xingxing_tuhsu{
+  float: left;
+  width: 30%;
+}
+.xingxingtukuang_tushu .xingxing_tuhsu image{
+  width: 22rpx;
+  height: 22rpx;
+  margin: 5rpx;
+}
+.wufen_tushu{
+  float: left;
+  color: #FA9531;
+  font-size: 24rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+.yueshou_tushu{
+  float: left;
+  font-size: 25rpx;
+  color: #999;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin-left: 5%;
+}
+.juli_tushu{
+  font-size: 25rpx;
+  color: #999;
+  float: right;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin-right: 4%;
+}
+.zhoutoujuan_tushu{
+  float: left;
+}
+.kazhuangzhetou_tushu{
+  background-color: #FACD89;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 4rpx 15rpx;
+  border-radius: 6rpx;
+  margin-top: -10rpx;
+}

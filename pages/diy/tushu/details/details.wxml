@@ -1,0 +1,75 @@
+<view class='shangdianxiangqingye_tushu'>
+  <!-- 商品bander图 -->
+  <view class='topbandershu_tushu'>
+    <image class='topbandertu_tushu' src='{{shop.banner}}'></image>
+    <view class='xuanfutuzuk_tushu'>
+      <image class='xuanfutupian_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/T96OQCuM92h9Z60o9H090Co0ooV6o0.png'></image>
+      <view class='xuanfutushu_tushu'>123</view>
+    </view>
+  </view>
+  <!-- 商店信息 -->
+  <view class='shangdianxinxi_tushu'>
+    <view class='shangdianminngzhik_tushu'>
+      <view class='titleshangdianming_tushu'>{{shop.merchname}}</view>
+      <view class='pingjiak_tushu'>
+        <view class='xingxingkuang_tushu'>
+          <image class='xingxing' src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png'></image>
+          <image class='xingxing' src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png'></image>
+          <image class='xingxing' src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png'></image>
+          <image class='xingxing' src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png'></image>
+          <image class='xingxing' src='https://www.juhuivip.com/attachment/images/2/2018/08/s7ntBGa7hAS1un61Hg7AUt7AabFAu7.png'></image>
+        </view>
+        <view class='pingjiafen_tushu'>5分</view>
+      </view>
+    </view>
+    <view class='dizhilianxi_tushu'>
+      <view class='dizhitubiao_tushu'>
+        <image class='dizhitupian_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/eGbZ8nZFGp8mZG3FMBfT8Zb4MFf4xg.png'></image>
+      </view>
+      <view class='dizhidifang_tushu'>{{shop.address}}</view>
+      <view class='dianhuatupiank_tushu'>
+        <image class='dianhuatupian_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ahfn8787vhEHjvgLnwDYVlv1z1FnPj.png' bindtap='correspondence'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 商品列表信息 -->
+  <view class='shangpinliebiaok_tushu'>
+    <view class='shangpinfuwuk_tushu'>
+      <view class='shangpinfuwutuk_tushu'>
+        <image class='shangpinfuwutupian_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/dtMsQ7Wz77tjkJGWBpUpJqJqSj557q.png'></image>
+      </view>
+      <view class='shangpinfuwuzhi_tushu'>商品/服务</view>
+    </view>
+
+
+
+    <view class='shangpinlbk_tushu' wx:for="{{linst}}" wx:for-item="lins">
+      <navigator url='/pages/goods/detail/index?id={{lins.id}}'>
+        <view class='shangpintuk_tushu'>
+          <image class='shangpintu_tushu' src='{{lins.thumb}}'></image>
+        </view>
+        <view class='shangpinxinxik_tushu'>
+          <view class='shangpinxiangqingk_tushu'>
+            <view class='shangpinxiangqing_tushu'>{{lins.title}}</view>
+            <view class='shangpinyishou_tushu'>已售{{lins.sales}}</view>
+          </view>
+          <view class='maijiak_tuhsu'>
+            <view class='xianjia_tushu'>
+              <span class="dayang_tushu">￥</span>{{lins.marketprice}}</view>
+            <view class='menshijian_tushu'>门市价:￥{{lins.productprice}}</view>
+            <view class='zhuank_tushu' style='display:{{lins.commission1_rate > 0 ? "block" : "none"}}'>
+              <span class='zhuanzhi_tushu'>赚</span>
+              <span class='zhuangqian_tushu'>{{lins.commission1_rate}}</span>
+            </view>
+          </view>
+          <view class='youhuijuank_tushu'>
+            <span class='youhuijuan_tushu'>5.00元优惠劵</span>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+
+
+  </view>
+</view>

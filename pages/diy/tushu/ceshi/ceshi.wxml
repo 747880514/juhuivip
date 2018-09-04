@@ -1,0 +1,5 @@
+<view>
+  <button type="primary" bindtouchstart="mytouchstart" bindtouchmove="mytouchmove" class='asads'>点我吧</button>
+</view>
+
+<view class="right">向右</view>
