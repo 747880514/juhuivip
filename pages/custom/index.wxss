@@ -762,7 +762,7 @@ canvas {
     font-size: 0.60rem;
     padding: 0 0.2rem 0 0.2rem;
 }
-/* 底部导航 */
+/* 底部导航tushu */
 .custom .fui-icon-group.noborder.col-5.pageid_13{
   position: fixed;
   bottom: 0px;
@@ -785,6 +785,7 @@ canvas {
   position: fixed;
   bottom: 200rpx;
 }
-.custom .fui-goods-group.block .getmore{
-  padding-bottom: 600rpx;
+
+.custom .fui-goods-group.block{
+  padding-bottom: 200rpx;
 }
