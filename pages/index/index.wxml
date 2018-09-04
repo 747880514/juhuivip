@@ -13,7 +13,7 @@
         <navigator class="item {{pageid=='9'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=9">居家日用</navigator>
       </view>
       <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='7'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=7">美食饮料</navigator>
+        <navigator class="item {{pageid=='7'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=7">食品酒水</navigator>
       </view>
       <view class="scroll-view-item_H">
         <navigator class="item {{pageid=='8'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=8">美妆个护</navigator>
@@ -22,10 +22,10 @@
         <navigator class="item {{pageid=='12'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=12">数码家电</navigator>
       </view>
       <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='11'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=11">箱包服饰</navigator>
+        <navigator class="item {{pageid=='11'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=11">服饰鞋包</navigator>
       </view>
       <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='10'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=10">母婴玩具</navigator>
+        <navigator class="item {{pageid=='10'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=10">母婴保健</navigator>
       </view>
   </scroll-view>
 
