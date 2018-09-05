@@ -785,7 +785,3 @@ canvas {
   position: fixed;
   bottom: 200rpx;
 }
-
-.custom .fui-goods-group.block{
-  padding-bottom: 200rpx;
-}
