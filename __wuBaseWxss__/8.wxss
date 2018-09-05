@@ -400,6 +400,7 @@ image.radius {
 
 .fui-picture image {
     width: 100%;
+    margin: 0 10px;
 }
 
 .fui-pictures {
@@ -697,8 +698,10 @@ image.radius {
     border-bottom: 0;
     background: none;
     /* padding: 5px 3px; */
-    padding: 0 5rpx 5rpx 5rpx;
+    /* padding: 0 5rpx 5rpx 5rpx; */
     display: block;
+    padding: 0px;
+    border: 1px solid #f3f3f3;
 }
 
 .fui-goods-group.block .fui-goods-item .detail {
@@ -741,6 +744,7 @@ image.radius {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1px;
 }
 
 .fui-goods-group .fui-goods-item .detail {
@@ -1013,12 +1017,15 @@ image.radius {
     /* padding-bottom: 100%; */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* tushu */
+    /* background-size: cover; */
+    background-size: 90%;
     position: relative;
 }
 
 .fui-goods-group .fui-goods-item .image {
-    background-size: cover;
+    /* tuhsu */
+    /* background-size: cover; */
     /* height: 231rpx;  */
      width: 231rpx;
 }

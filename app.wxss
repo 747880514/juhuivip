@@ -1389,7 +1389,7 @@
 }
 
 .fui-goods-group.block {
-    padding: 0 10rpx;
+    /* padding: 0 10rpx; */
 }
 
 .fui-goods-group.block .fui-goods-item {
@@ -1397,8 +1397,10 @@
     float: left;
     border-bottom: 0;
     background: none;
-    padding: 10rpx;
+    /* padding: 10rpx; */
     display: block;
+    padding: 0px;
+    border: 1px solid #f3f3f3;
 }
 
 .fui-goods-group.three .fui-goods-item {
@@ -1413,7 +1415,9 @@
     padding-bottom: 100%;  
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* tushu */
+    /* background-size: cover; */
+    background-size: 90%;
     background-color: #fff;
     
 }
@@ -1441,7 +1445,7 @@
 
 .fui-goods-group.block {
     /* padding: 10rpx; */
-    padding: 0 10px 10px 10px;
+    /* padding: 0 10px 10px 10px; */
 }
 
 .fui-goods-group.block .fui-goods-item .image {

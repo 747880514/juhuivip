@@ -1,6 +1,6 @@
 <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%" scroll-left="{{pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'?300:0}}" wx:if="{{pageid=='14'||pageid=='9'||pageid=='7'||pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'}}">
     <view class="scroll-view-item_H">
-      <navigator class="item" url="/pages/index/index">精选</navigator>
+      <navigator class="item" bindtap='index_tuhsutiao'>精选</navigator>
     </view>
     <view class="scroll-view-item_H">
       <navigator class="item {{pageid=='14'?'active':''}}" url="/pages/custom/index?pageid=14" click>优选水果</navigator>
@@ -24,6 +24,7 @@
       <navigator class="item {{pageid=='10'?'active':''}}" url="/pages/custom/index?pageid=10">母婴保健</navigator>
     </view>
 </scroll-view>
+<view class='fuzhukongbai_tushu'>.</view>
 <!-- 以上导航 -->
 
 <view class="custom" style="min-height:100%;background:{{diypages.page.background}}">

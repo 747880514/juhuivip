@@ -502,4 +502,10 @@ Page((e = {
           diypages: e
         }));
     });
-  }), e));
+  }), t(e, "index_tuhsutiao", function () {
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
+  }),
+  
+   e));

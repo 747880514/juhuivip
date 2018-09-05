@@ -659,7 +659,9 @@
     /* background: linear-gradient(to right,#f0b938 0%,#f09938 100%); */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff0b938, endColorstr=#fff09938,gradientType='1');
 }
-
+.fui-goods-group.block{
+  padding: 0px;
+}
 .fui-goods-group.block .goods-Commission {
     height: 44rpx;
     line-height: 44rpx;
@@ -667,6 +669,9 @@
 }
 
 /*百里*/
+.fui-icon-group.noborder.col-4.pageid_{
+  margin-top: 20rpx;
+}
 .fui-icon-group{
   width: 95%;
   margin: 0 10px;
@@ -678,11 +683,20 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.fui-goods-group,.index-adcs-sqiper.index-banner-sqiper{
+/* tuhsu */
+.index-adcs-sqiper.index-banner-sqiper{
   margin: 0 10px;
+  /* background-color: #fff; */
+}
+/* tuhsu */
+.fui-goods-group{
+  background-color: #fff;
 }
 .fui-goods-group.block.one{
   margin: 0;
+}
+.fui-goods-group.block.one .fui-goods-item .image{
+  background-size: cover;
 }
 .index-adcs-sqiper.index-banner-sqiper .advimg{
   border-radius: 10px;

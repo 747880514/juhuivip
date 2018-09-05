@@ -785,3 +785,6 @@ canvas {
   position: fixed;
   bottom: 200rpx;
 }
+.fuzhukongbai_tushu{
+  height: 100rpx;
+}

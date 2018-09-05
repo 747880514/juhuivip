@@ -2,6 +2,10 @@
   width: 100%;
   white-space: nowrap;
   background: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
 }
 .scroll-view-item_H{
   height: 100rpx;
