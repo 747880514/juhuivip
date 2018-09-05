@@ -400,7 +400,8 @@ image.radius {
 
 .fui-picture image {
     width: 100%;
-    margin: 0 10px;
+    /* tushu */
+    /* margin: 0 10px; */
 }
 
 .fui-pictures {
