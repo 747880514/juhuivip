@@ -6,6 +6,7 @@ var t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? func
 
 Page({
     data: {
+        
         icons: e.requirejs("icons"),
         list: {},
         goodslist: {},
@@ -44,6 +45,7 @@ Page({
     },
     onLoad: function(t) {
         var i = this, s = [];
+        
         if (t.goods) {
             var r = JSON.parse(t.goods);
             t.goods = r, this.setData({
@@ -54,7 +56,9 @@ Page({
             options: t
         }), i.setData({
             bargainid: t.bargainid
-        }), e.url(t), console.log(i.data.options), a.get("order/create", i.data.options, function(t) {
+        }), e.url(t), console.log(i.data.options), 
+        a.get("order/create", i.data.options, function(t) {
+            i.goodsIds(t.goods);
             //是否绑定手机号
             if(!t.member.mobile)
             {
@@ -468,5 +472,43 @@ Page({
     },
     selectDay: function(t) {
         d.selectDay(t, this), d.setSchedule(this);
+    },
+  goodsIds: function (goods){
+    var that = this;
+    var goodsIds= new Array();
+    var k = 0;
+    for(var i=0;i<goods.length;i++){
+      for (var j = 0; j < goods[i].goods.length;j++)
+      {
+        goodsIds[k] = goods[i].goods[j].id;
+        k++;
+      }
     }
+    // console.log(goodsIds);
+    a.post("order/baili/checkIdNumber", {goodsIds : goodsIds}, function (t) {
+      if (t.status == 0) {
+        wx.showModal({
+          title: '提示',
+          content: t.msg,
+          success: function (res) {
+            if (res.confirm) {
+              wx.navigateTo({
+                url: '/pages/member/info/index'
+              })
+            } else if (res.cancel) {
+              
+            }
+          }
+        })
+      }
+      else {
+        console.log(goodsIds);
+      }
+      that.setData({
+        status:t.status
+      });
+
+    });   
+   
+  }
 });

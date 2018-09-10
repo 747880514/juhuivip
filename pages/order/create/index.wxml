@@ -363,7 +363,19 @@
             </view>
         </view>
     </view>
-    <view class="fui-footer {{iphonexnavbar}}">
+    <view class="fui-footer {{iphonexnavbar}}" wx:if ="{{status == 0}}" style="display:none">
+        <view class="tool nopadding">
+            <view class="text">
+                <view class="title text-right">需付：
+          <text class="text-danger">{{list.realprice}}元</text>
+                </view>
+            </view>
+            <view class="btns">
+                <text bindtap="submit" class="btn btn-danger {{submit&&'disabled'}}">立即支付</text>
+            </view>
+        </view>
+    </view>
+    <view class="fui-footer {{iphonexnavbar}}" wx:else ="{{status > 0}}" style="display:block">
         <view class="tool nopadding">
             <view class="text">
                 <view class="title text-right">需付：
