@@ -20,7 +20,6 @@
         "pages/commission/withdraw/index",
         "pages/commission/order/index",
         "pages/commission/register/index",
-        "dividend/pages/index/index",
         "pages/shop/notice/index/index",
         "pages/shop/notice/detail/detail",
         "pages/shop/caregory/index",
@@ -30,7 +29,6 @@
         "pages/goods/package/index",
         "pages/goods/package/detail/index",
         "pages/goods/poster/poster",
-        "pages/groups/index/index",
         "pages/order/index",
         "pages/order/detail/index",
         "pages/order/express/index",
@@ -78,18 +76,6 @@
         "pages/order/cycle/address",
         "pages/order/cycle/order",
         "pages/order/express/number",
-        "seckill/pages/index/index",
-        "pages/quickbuy/quickbuy/shop_index/shop_index",
-        "pages/quickbuy/quickbuy/takeout_model/index",
-        "pages/groups/mygroups/index",
-        "pages/groups/order/index",
-        "pages/groups/category/index",
-        "pages/bargain/index/index",
-        "pages/bargain/detail/detail",
-        "pages/bargain/rule/rule",
-        "pages/bargain/act/act",
-        "pages/bargain/bargain/bargain",
-        "pages/bargain/purchase/purchase",
         "pages/diy/baili/sucaiquan",
         "pages/diy/tushu/lianxi/lianxi",
         "pages/diy/tushu/map/map",
@@ -98,8 +84,6 @@
         "pages/diy/tushu/service/service",
         "pages/diy/tushu/details/details",
         "pages/diy/tushu/ceshi/ceshi"
-
-
     ],
     "window": {
         "backgroundColor": "#fafafa",
@@ -146,5 +130,64 @@
             }
         ]
     },
-    "debug": false
+    "debug": false,
+    "subPackages": [
+      {
+        "root": "pages/bargain/",
+        "pages": [
+          "index/index",
+          "detail/detail",
+          "rule/rule",
+          "act/act",
+          "bargain/bargain",
+          "purchase/purchase"
+        ]
+      },
+      {
+        "root": "pages/quickbuy/",
+        "pages": [
+          "quickbuy/shop_index/shop_index",
+          "quickbuy/takeout_model/index"
+        ]
+      },
+      {
+        "root": "seckill/pages/",
+        "pages": [
+          "index/index"
+        ]
+      },
+      {
+        "root": "pages/groups/",
+        "pages": [
+          "index/index",
+          "category/index",
+          "mygroups/index",
+          "goods/index",
+          "order/index",
+          "confirm/index",
+          "rules/index",
+          "groups_detail/index",
+          "join/index",
+          "jointeam/index",
+          "order_detail/index",
+          "pay/index",
+          "refund/index",
+          "express/index",
+          "express/number"
+        ]
+      },
+      {
+        "root": "dividend/pages/",
+        "pages": [
+          "index/index",
+          "down/index",
+          "withdraw/index",
+          "order/index",
+          "log/index",
+          "log/detail/index",
+          "apply/index",
+          "register/index"
+        ]
+      }
+    ]
 }
