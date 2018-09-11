@@ -5,6 +5,11 @@
         "pages/creditshop/detail/index",
         "pages/creditshop/comment/index",
         "pages/creditshop/express/index",
+        "pages/changce/article/list",
+        "pages/changce/merch/apply",
+        "pages/changce/merch/index",
+        "pages/changce/merch/detail",
+        "pages/changce/merch/intro",
         "pages/commission/poster/index",
         "pages/commission/qrcode/index",
         "pages/commission/index",
@@ -88,6 +93,8 @@
         "pages/diy/tushu/service/service",
         "pages/diy/tushu/details/details",
         "pages/diy/tushu/ceshi/ceshi"
+
+
     ],
     "window": {
         "backgroundColor": "#fafafa",

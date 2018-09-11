@@ -16,7 +16,9 @@
         
 
 
+      <web-view src="/pages/index/index">
       
+      </web-view>
 
 
 

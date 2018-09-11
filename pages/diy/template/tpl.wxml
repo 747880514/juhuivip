@@ -34,3 +34,4 @@
 <include src="/pages/diy/template/tpl_detail_comment.wxml" wx:if="{{diyitem.id=='detail_comment'}}"></include>
 <include src="/pages/diy/template/tpl_detail_navbar.wxml" wx:if="{{diyitem.id=='detail_navbar'}}"></include>
 <include src="/pages/diy/template/tpl_detail_seckill.wxml" wx:if="{{diyitem.id=='detail_seckill'}}"></include>
+<include src="/pages/diy/template/tpl_seckillgroup.wxml" wx:if="{{diyitem.id=='seckillgroup'}}"></include>
