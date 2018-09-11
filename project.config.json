@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.1.1",
 	"appid": "wx79384099bcaf8dfa",
-	"projectname": "%E8%8A%B1%E8%92%9C",
+	"projectname": "%E8%8A%B1%E8%92%9C-a",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -35,6 +35,11 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
+        {
+          "id": -1,
+          "name": "营销团队",
+          "pathName": "dividend/pages/index/index"
+        },
 				{
 					"id": -1,
 					"name": "素材圈",

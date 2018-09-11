@@ -5,6 +5,11 @@
         "pages/creditshop/detail/index",
         "pages/creditshop/comment/index",
         "pages/creditshop/express/index",
+        "pages/changce/article/list",
+        "pages/changce/merch/apply",
+        "pages/changce/merch/index",
+        "pages/changce/merch/detail",
+        "pages/changce/merch/intro",
         "pages/commission/poster/index",
         "pages/commission/qrcode/index",
         "pages/commission/index",
@@ -15,6 +20,7 @@
         "pages/commission/withdraw/index",
         "pages/commission/order/index",
         "pages/commission/register/index",
+        "dividend/pages/index/index",
         "pages/shop/notice/index/index",
         "pages/shop/notice/detail/detail",
         "pages/shop/caregory/index",
@@ -24,6 +30,7 @@
         "pages/goods/package/index",
         "pages/goods/package/detail/index",
         "pages/goods/poster/poster",
+        "pages/groups/index/index",
         "pages/order/index",
         "pages/order/detail/index",
         "pages/order/express/index",
@@ -88,6 +95,8 @@
         "pages/diy/tushu/service/service",
         "pages/diy/tushu/details/details",
         "pages/diy/tushu/ceshi/ceshi"
+
+
     ],
     "window": {
         "backgroundColor": "#fafafa",
