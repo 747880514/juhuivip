@@ -84,8 +84,6 @@
         "pages/diy/tushu/service/service",
         "pages/diy/tushu/details/details",
         "pages/diy/tushu/ceshi/ceshi"
-
-
     ],
     "window": {
         "backgroundColor": "#fafafa",
