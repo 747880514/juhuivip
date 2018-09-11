@@ -109,7 +109,7 @@
     <image src='https://www.juhuivip.com/attachment/images/2/2018/09/wo85xJ33t81BbvyzlYRt3aJOlad3XS.png' class='guanggaotu_tushu'></image>
   </navigator>
   <view class='caidanlan_tushu'>
-    <navigator class='tubiaocai_tushu' url="pages/custom/index">
+    <navigator class='tubiaocai_tushu' url="/dividend/pages/index/index">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/X55ouyNuZnBuV5a6NGNg6aOAUaOgn5.png'></image>
       <view class='caidanbiaoti_tushu'>营销团队</view>
     </navigator>
