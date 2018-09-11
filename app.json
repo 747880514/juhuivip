@@ -92,7 +92,7 @@
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTextStyle": "black",
-        "navigationStyle": "custome"
+        "navigationStyle":"custom"
     },
     "tabBar": {
         "color": "#999999",
