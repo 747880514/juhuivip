@@ -16,17 +16,6 @@
         
 
 
-<<<<<<< HEAD
-      <!-- <web-view src="">
-      
-      </web-view> -->
-=======
-      <web-view src="/pages/index/index">
-      
-      </web-view>
->>>>>>> 472e14f7a4816ffc728e66a983b2b0f1c0c36d7e
-
-
 
       </scroll-view>
     </swiper-item>
