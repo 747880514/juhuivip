@@ -57,7 +57,8 @@ Page((e = {
         options: [],
         diyform: {},
         specsTitle: "",
-        seckillGoods: ''
+        seckillGoods: '',
+        bannerBgcolor: '#ffffff'
     }, t(a, "total", 1), t(a, "active", ""), t(a, "slider", ""), t(a, "tempname", ""), 
     t(a, "buyType", ""), t(a, "areas", []), t(a, "closeBtn", !1), t(a, "soundpic", !0), 
     t(a, "modelShow", !1), t(a, "limits", !0), t(a, "result", {}), t(a, "showcoupon", !1), 
@@ -156,6 +157,8 @@ Page((e = {
                 });
             }
         });
+
+        a.bailichangeimg();
     },
     onHide: function() {
         this.setData({
@@ -317,6 +320,29 @@ Page((e = {
           }),
           t.getSeckillGoods(e.timeid);
       });
+    },
+    //获取轮播下标
+    bailichangeimg: function (e) {
+      var c = [
+          "#ff204a50",
+          "#faf57450",
+          "#74f6fa50",
+          "#af1ec450",
+      ];
+      if (e)
+      {
+        this.setData({
+          bannerBgcolor: c[e.detail.current]
+        })
+      }
+      else
+      {
+        console.log(c[0])
+        this.setData({
+          bannerBgcolor: c[0]
+        })
+      }
+      
     }
 }, t(e, "unpaidcolse", function(t) {
     var a = "";

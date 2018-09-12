@@ -994,3 +994,10 @@
     font-weight: bold;
     border-radius: 16rpx;
 }
+
+
+
+/*百里*/
+.bailiGetBgColor{
+  display: none;
+}
