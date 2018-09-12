@@ -2,7 +2,7 @@
 <view class="{{isIPX == true ? 'index_fuzhukongbai_H_tushu' : 'index_fuzhukongbai_tushu' }}" style='background-color:{{bannerBgcolor}}'></view>
 
 <view class="category-search" style='width:100%; background-color:{{bannerBgcolor}};'>
-  <view class="weui-flex" style='width:550rpx;'>
+  <view class="weui-flex" style='width:480rpx;'>
     <view class="weui-flex__item category-search-form">
       <!-- <view class="flex-head-search" id="searchBar" style="background:{{diyitem.style.background}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx"> -->
       <view class="flex-head-search" id="searchBar" style="padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx">
