@@ -1,11 +1,23 @@
 .scroll-view_H{
+  padding-top: 100rpx;
   width: 100%;
   white-space: nowrap;
   background: #ffffff;
   position: fixed;
-  top: 0px;
+  top: 0rpx;
   left: 0px;
   z-index: 120;
+}
+/* iphone x */
+.scroll-view_HH{
+  width: 100%;
+  white-space: nowrap;
+  background: #ffffff;
+  position: fixed;
+  top: 0rpx;
+  left: 0px;
+  z-index: 120;
+  padding-top: 140rpx;
 }
 .scroll-view-item_H{
   height: 100rpx;

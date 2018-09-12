@@ -785,6 +785,11 @@ canvas {
   position: fixed;
   bottom: 200rpx;
 }
+/* tushu */
 .fuzhukongbai_tushu{
-  height: 100rpx;
+  height: 168rpx;
+}
+/* ipx */
+.fuzhukongbaix_tushu{
+  height: 236rpx;
 }

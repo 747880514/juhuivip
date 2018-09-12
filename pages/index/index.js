@@ -155,8 +155,28 @@ Page((e = {
                     swiperheight: e
                 });
             }
-        });
+          }), wx.getSystemInfo({
+            success: function (res) {
+              console.log(res.model)//手机机型
+              console.log(res.model == "iPhone X")
+              if (res.model == "iPhone X") {
+                a.setData({
+                  isIPX : true
+                });
+              }else{
+                a.setData({
+                  isIPX : false
+                });  
+              }
+            }
+          })
+        
+        
+
     },
+    
+
+
     onHide: function() {
         this.setData({
             adveradmin: !1,
