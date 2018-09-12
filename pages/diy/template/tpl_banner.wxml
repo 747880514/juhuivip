@@ -2,7 +2,8 @@
     <swiper autoplay="{{autoplay}}" circular="true" class="index-adcs-sqiper index-banner-sqiper {{diyitem.style.dotstyle}} left" duration="{{duration}}" indicatorColor="{{diyitem.style.background}}" indicatorDots="true" interval="{{interval}}" style="{{result[diyitemid]?'height:'+result[diyitemid]+'px':'height:'+swiperheight+'px'}}; z-index:10;" current='current' bindchange="bailichangeimg">
         <swiper-item wx:for="{{diyitem.data}}" wx:key="{{index}}" wx:for-index="childid" wx:for-item="childitem">
             <view bindtap="navigate" class="index-advs-navigator" data-appid="{{childitem.appid}}" data-appurl="{{childitem.appurl}}" data-phone="{{childitem.phone}}" data-url="{{childitem.linkurl}}">
-                <image bindload="imagesHeight" class="advimg" data-type="{{diyitemid}}" mode="widthFix" src="{{childitem.imgurl}}"></image>
+                <image bindload="imagesHeight" class="advimg" data-type="{{diyitemid}}" mode="widthFix" src="{{childitem.imgurl}}" 
+                data-bgc="{{childitem.bgColor}}"></image>
             </view>
         </swiper-item>
     </swiper>

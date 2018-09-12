@@ -747,7 +747,7 @@
 }
 /* 空白屠苏 */
 .index_fuzhukongbai_tushu{
-  height: 80rpx;
+  height: 120rpx;
 }
 /* 空白 tushu_ipx */
 .index_fuzhukongbai_H_tushu{

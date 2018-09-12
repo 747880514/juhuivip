@@ -172,6 +172,7 @@ Page((e = {
               }
             }
         }),
+        a.bailigetbannerbgcolor(),
         a.bailichangeimg()
     },
     
@@ -338,13 +339,23 @@ Page((e = {
           t.getSeckillGoods(e.timeid);
       });
     },
+    bailigetbannerbgcolor: function()
+    {
+      var bailigetbannerbgcolordata = [];
+      var bailigetbannerbgcolori = 0;
+      for (var index in diyitem.data) {
+        bailigetbannerbgcolordata[bailigetbannerbgcolori] = index;
+      }
+
+      console.log(bailigetbannerbgcolordata)
+    },
     //获取轮播下标
     bailichangeimg: function (e) {
       var c = [
-          "#ff204a50",
-          "#faf57450",
-          "#74f6fa50",
-          "#af1ec450",
+          "#ff204a",
+          "#faf574",
+          "#74f6fa",
+          "#af1ec4",
       ];
       if (e)
       {
