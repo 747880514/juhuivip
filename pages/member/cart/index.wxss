@@ -132,9 +132,9 @@ checkbox {
 }
 
 .fui-cell-group .fui-cell.edit {
-    align-items: flex-end;
+    /* align-items: flex-end; */
     background: #f8f8f8;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-size: 28rpx;
 }
 

@@ -1,11 +1,11 @@
 <!-- tushu -->
 <view class="{{isIPX == true ? 'index_fuzhukongbai_H_tushu' : 'index_fuzhukongbai_tushu' }}" style='background-color:{{bannerBgcolor}}'></view>
 
-<view class="category-search" style=''>
-  <view class="weui-flex">
+<view class="category-search" style='width:100%; background-color:{{bannerBgcolor}};'>
+  <view class="weui-flex" style='width:550rpx;'>
     <view class="weui-flex__item category-search-form">
       <!-- <view class="flex-head-search" id="searchBar" style="background:{{diyitem.style.background}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx"> -->
-      <view class="flex-head-search" id="searchBar" style="background-color:{{bannerBgcolor}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx">
+      <view class="flex-head-search" id="searchBar" style="padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx">
         <navigator class="weui-search-bar__form {{diyitem.style.searchstyle}}" hoverClass="none" style="background:{{diyitem.style.inputbackground}};color:{{diyitem.style.color}}" url="/pages/goods/index/index?fromsearch=1">
           <view class="weui-search-bar__box category-search-box">
             <view class="flex-icon-search">
