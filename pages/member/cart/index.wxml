@@ -4,6 +4,7 @@
 </view>
 <view class="page footer-navbar" wx:if="{{show}}">
     <view bindtap="edit" class="fui-cell-group  cartlist" wx:if="{{!empty}}">
+    <view style='width:100%;height:68px; background:#F8F8F8;'></view>
         <navigator class="fui-cell edit" data-action="edit" wx:if="{{!edit}}">编辑</navigator>
         <navigator class="fui-cell edit" data-action="complete" wx:if="{{edit}}">完成</navigator>
     </view>

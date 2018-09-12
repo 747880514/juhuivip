@@ -1,5 +1,5 @@
 <view  wx:if="{{pageid=='14'||pageid=='9'||pageid=='7'||pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'}}">
-  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%" scroll-left="{{pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'?300:0}}">
+  <scroll-view class="{{isIPX == true ? 'scroll-view_HH' : 'scroll-view_H' }}" scroll-x="true" style="width: 100%" scroll-left="{{pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'?300:0}}">
       <view class="scroll-view-item_H">
         <navigator class="item" bindtap='index_tuhsutiao'>精选</navigator>
       </view>
