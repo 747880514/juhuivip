@@ -1,11 +1,12 @@
-<view class="index-banner" wx:if="{{diyitem.data.length>1}}">
-    <swiper autoplay="{{autoplay}}" circular="true" class="index-adcs-sqiper index-banner-sqiper {{diyitem.style.dotstyle}} left" duration="{{duration}}" indicatorColor="{{diyitem.style.background}}" indicatorDots="true" interval="{{interval}}" style="{{result[diyitemid]?'height:'+result[diyitemid]+'px':'height:'+swiperheight+'px'}}" current='current' bindchange="bailichangeimg">
+<view class="index-banner" wx:if="{{diyitem.data.length>1}}" style="background-color:{{ !pageid ? bannerBgcolor : 'red'}};  position: relative;">
+    <swiper autoplay="{{autoplay}}" circular="true" class="index-adcs-sqiper index-banner-sqiper {{diyitem.style.dotstyle}} left" duration="{{duration}}" indicatorColor="{{diyitem.style.background}}" indicatorDots="true" interval="{{interval}}" style="{{result[diyitemid]?'height:'+result[diyitemid]+'px':'height:'+swiperheight+'px'}}; z-index:10;" current='current' bindchange="bailichangeimg">
         <swiper-item wx:for="{{diyitem.data}}" wx:key="{{index}}" wx:for-index="childid" wx:for-item="childitem">
             <view bindtap="navigate" class="index-advs-navigator" data-appid="{{childitem.appid}}" data-appurl="{{childitem.appurl}}" data-phone="{{childitem.phone}}" data-url="{{childitem.linkurl}}">
                 <image bindload="imagesHeight" class="advimg" data-type="{{diyitemid}}" mode="widthFix" src="{{childitem.imgurl}}"></image>
             </view>
         </swiper-item>
     </swiper>
+    <view class='bannerbeijingtu' style="{{ !pageid ? 'background:url(http://img.juhuivip.com/images/2/2018/09/TIi7751511813FEiN23Zi6H871N9i1.png);width:100%; height:200rpx;background-size:100%;position: absolute;top: 120rpx;left: 0;' : 'display:none;'}};"></view>
 </view>
 <block wx:else>
     <view class="index-adcs-sqiper index-banner-sqiper" wx:for="{{diyitem.data}}" wx:key="{{index}}" wx:for-index="childid" wx:for-item="childitem">

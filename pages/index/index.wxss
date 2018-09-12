@@ -765,6 +765,9 @@
   text-align: center;
   padding: 0 10px;
 }
+.scroll-view-item_H .item{
+  color: #fff;
+}
 ::-webkit-scrollbar {
   width: 0; 
   height: 0;
