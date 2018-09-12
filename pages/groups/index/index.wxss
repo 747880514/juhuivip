@@ -109,6 +109,10 @@
     color: #999;
 }
 
-.backHome {
-    width:;
+/* .backHome {
+    width:10rpx;
+} */
+.tusu_huizhucheng{
+  width: 42rpx;
+  height: 42rpx;
 }

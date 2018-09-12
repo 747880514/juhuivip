@@ -1,4 +1,4 @@
-<view class="index-banner" wx:if="{{item.bannerswipe==1&&item.data.length>0}}">
+<view class="index-banner" wx:if="{{item.bannerswipe==1&&item.data.length>0}}" style="background-color:{{bannerBgcolor}}">
     <swiper autoplay="{{autoplay}}" circular="{{circular}}" class="index-adcs-sqiper index-banner-sqiper" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}" style="{{bannerheight?'height:'+bannerheight+'px':'height:'+swiperheight+'px'}}">
         <swiper-item wx:for="{{item.data}}" wx:for-index="idx">
             <navigator class="index-advs-navigator" openType="navigate" url="{{item.link}}">

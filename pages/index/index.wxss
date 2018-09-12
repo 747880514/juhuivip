@@ -97,6 +97,7 @@
     display: -webkit-flex;
     display: flex;
     box-sizing: border-box;
+
 }
 
 .flex-icon-search {
@@ -686,7 +687,7 @@
 /* tuhsu */
 .index-adcs-sqiper.index-banner-sqiper{
   margin: 0 10px;
-  /* background-color: #fff; */
+  /* background-color: #ccc; */
 }
 /* tuhsu */
 .fui-goods-group{
@@ -744,13 +745,18 @@
 .baili-goods-three{
   display: none;
 }
-
-
+/* 空白屠苏 */
+.index_fuzhukongbai_tushu{
+  height: 80rpx;
+}
+/* 空白 tushu_ipx */
+.index_fuzhukongbai_H_tushu{
+  height: 150rpx;
+}
 /*百里-首页-横向滚动*/
 .scroll-view_H{
   width: 100%;
   white-space: nowrap;
-  background: #ffffff;
 }
 .scroll-view-item_H{
   height: 100rpx;
@@ -771,10 +777,15 @@
 .fui-goods-group.block.one .fui-goods-item .image{
 	height: 340rpx !important;
 }
+/* 搜索框 */
+.flex-head-search .weui-search-bar__form{
+  border-radius: 40rpx;
+  border: none;
+}
+
+
 
 /* 秒杀屠苏 */
-
-
 .seckill-group {
     margin-top: 20rpx;
     background-color: #fff;

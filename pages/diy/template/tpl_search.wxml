@@ -1,18 +1,49 @@
-<view class="category-search">
-    <view class="weui-flex">
-        <view class="weui-flex__item category-search-form">
-            <view class="flex-head-search" id="searchBar" style="background:{{diyitem.style.background}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx">
-                <navigator class="weui-search-bar__form {{diyitem.style.searchstyle}}" hoverClass="none" style="background:{{diyitem.style.inputbackground}};color:{{diyitem.style.color}}" url="/pages/goods/index/index?fromsearch=1">
-                    <view class="weui-search-bar__box category-search-box">
-                        <view class="flex-icon-search">
-                            <text class="icox icox-search"></text>
-                        </view>
-                        <view class="weui-search-bar__input flex-input" style="text-align:{{diyitem.style.textalign}}">
-                              {{diyitem.params.placeholder}}
-                            </view>
-                    </view>
-                </navigator>
+<!-- tushu -->
+<view class="{{isIPX == true ? 'index_fuzhukongbai_H_tushu' : 'index_fuzhukongbai_tushu' }}" style='background-color:{{bannerBgcolor}}'></view>
+
+<view class="category-search" style=''>
+  <view class="weui-flex">
+    <view class="weui-flex__item category-search-form">
+      <!-- <view class="flex-head-search" id="searchBar" style="background:{{diyitem.style.background}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx"> -->
+      <view class="flex-head-search" id="searchBar" style="background-color:{{bannerBgcolor}};padding:{{diyitem.style.paddingtop}}rpx {{diyitem.style.paddingleft}}rpx">
+        <navigator class="weui-search-bar__form {{diyitem.style.searchstyle}}" hoverClass="none" style="background:{{diyitem.style.inputbackground}};color:{{diyitem.style.color}}" url="/pages/goods/index/index?fromsearch=1">
+          <view class="weui-search-bar__box category-search-box">
+            <view class="flex-icon-search">
+              <text class="icox icox-search"></text>
             </view>
-        </view>
+            <view class="weui-search-bar__input flex-input" style="text-align:{{diyitem.style.textalign}}">
+              {{diyitem.params.placeholder}}
+            </view>
+          </view>
+        </navigator>
+      </view>
     </view>
+  </view>
 </view>
+<!-- tushu 新版 顶部 -->
+<scroll-view class="scroll-view_H" scroll-x style="width: 100%; background-color:{{bannerBgcolor}}">
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid > 0?'':'active'}}" style="color: #ff204a" url="/pages/index/index">精选</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='14'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=14">优选水果</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='9'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=9">居家日用</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='7'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=7">食品酒水</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='8'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=8">美妆个护</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='12'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=12">数码家电</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='11'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=11">服饰鞋包</navigator>
+  </view>
+  <view class="scroll-view-item_H">
+    <navigator class="item {{pageid=='10'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=10">母婴保健</navigator>
+  </view>
+</scroll-view>

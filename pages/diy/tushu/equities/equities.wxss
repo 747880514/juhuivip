@@ -4,16 +4,18 @@
 }
 
 .titlebuyemian_tushu {
+  
   width: 100%;
   background-color: #f3f3f3;
 }
 
 .titshangbuyemian_tushu {
   width: 100%;
-  height: 480rpx;
-  background-image: url("https://www.juhuivip.com/attachment/images/2/2018/08/aOs6e5q7Losmxipk41QQqXEEMLoLo1.png");
+  height: 540rpx;
+  background-image: url("http://img.juhuivip.com/images/2/2018/09/docn0N7YT0yYc3YCYdJgR3Jj43OONX.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  padding-top: 68rpx;
 }
 
 .topxiangdekuang_tushu {

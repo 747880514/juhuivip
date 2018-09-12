@@ -33,12 +33,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 88,
 			"list": [
 				{
 					"id": -1,
 					"name": "营销团队",
-					"pathName": "dividend/pages/index/index"
+					"pathName": "dividend/pages/index/index",
+					"query": ""
 				},
 				{
 					"id": -1,
@@ -560,6 +561,12 @@
 					"id": 86,
 					"name": "秒杀首页",
 					"pathName": "seckill/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "拼团活动",
+					"pathName": "pages/groups/index/index",
 					"query": ""
 				}
 			]

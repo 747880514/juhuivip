@@ -1,5 +1,5 @@
 <template name="bar">
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+  <scroll-view class="{{isIPX == true ? 'scroll-view_HH' : 'scroll-view_H' }}" scroll-x style="width: 100%">
       <view class="scroll-view-item_H">
         <navigator class="item {{pageid > 0?'':'active'}}" style="color: #ff204a" url="/pages/index/index">精选</navigator>
       </view>

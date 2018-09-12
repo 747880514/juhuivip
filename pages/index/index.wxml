@@ -1,34 +1,4 @@
 <view bindtap='assa'>
-
-
- <!-- 百里 新版 顶部 -->
-  <scroll-view class="scroll-view_H" scroll-x style="width: 100%;background-color:{{bannerBgcolor}};">
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid > 0?'':'active'}}" style="color: #ff204a" url="/pages/index/index">精选</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='14'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=14">优选水果</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='9'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=9">居家日用</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='7'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=7">食品酒水</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='8'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=8">美妆个护</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='12'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=12">数码家电</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='11'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=11">服饰鞋包</navigator>
-      </view>
-      <view class="scroll-view-item_H">
-        <navigator class="item {{pageid=='10'?'active':''}}" style="color: rgb(0, 0, 0);" url="/pages/custom/index?pageid=10">母婴保健</navigator>
-      </view>
-  </scroll-view>
-
   <template name="tpl_list">
       <view class="fui-goods-item" data-goodsid="{{item.id}}" data-type="{{item.type}}">
           <navigator openType="navigate" url="{{item.bargain>0?'/pages/bargain/detail/detail?id='+item.bargain:'/pages/goods/detail/index?id='+item.id}}">
@@ -58,6 +28,7 @@
       <view style="min-height:100%;height:100%;" wx:if="{{diypages}}">
           <include src="/pages/diy/index.wxml" wx:if="{{diypages.page.type==2}}"></include>
           <include src="/pages/custom/index.wxml" wx:if="{{diypages.page.type==20}}"></include> 
+          
       </view>
       <view wx:else>
           <block wx:if="{{item.visible==1}}" wx:for="{{shop.sorts}}" wx:key="{{index}}" wx:for-index="idx">
@@ -69,6 +40,7 @@
               <include src="nav.wxml" wx:if="{{item.type=='nav'}}"></include>
               <include src="recommand.wxml" wx:if="{{item.type=='recommand'}}"></include>
           </block>
+          111
           <view id="recommand" wx:if="{{storeRecommand}}">
               <view class="fui-line" style="background: #f4f4f4;">
                   <view class="text text-danger">

@@ -25,7 +25,7 @@
         <navigator class="item {{pageid=='10'?'active':''}}" url="/pages/custom/index?pageid=10">母婴保健</navigator>
       </view>
   </scroll-view>
-  <view class='fuzhukongbai_tushu'>.</view>
+  <view class="{{isIPX == true ? 'fuzhukongbaix_tushu' : 'fuzhukongbai_tushu' }}">.</view>
 </view>
 <!-- 以上导航 -->
 

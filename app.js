@@ -4,6 +4,7 @@ App({
     onShow: function() {
         this.onLaunch();
     },
+    
     onLaunch: function() {
         var e = this;
         wx.getSystemInfo({
@@ -149,7 +150,7 @@ App({
       api: "https://www.juhuivip.com/app/ewei_shopv2_api.php?i=2",
       // 域名改成你的微擎地址
       approot: "https://www.juhuivip.com/addons/ewei_shopv2/",
-        // www.jihuoxia.cn
-        userInfo: null
+      // www.jihuoxia.cn
+      userInfo: null
     }
 });
