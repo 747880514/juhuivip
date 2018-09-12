@@ -1,3 +1,13 @@
+.hongsedetiao_tushu{
+  width:100%;
+  height:50rpx; 
+  background:#FF204A;
+}
+.hongsedetiaoX_tushu{
+  width:100%;
+  height:100rpx; 
+  background:#FF204A;
+}
 .quantop_tushu{
   width: 100%;
   background-size: 100% 100%;

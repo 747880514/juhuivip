@@ -2,9 +2,9 @@
 
 @import "../../index/openauth.wxss";
 
-.cartlist {
+/* .cartlist {
     margin-top: -2rpx;
-}
+} */
 
 .price {
     text-align: right;

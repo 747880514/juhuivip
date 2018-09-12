@@ -40,6 +40,7 @@
 </view> -->
 
 <!-- 2018.08.02 tushu -->
+<view class="{{isIPX == true ? 'hongsedetiaoX_tushu' : 'hongsedetiao_tushu' }}"></view>
 <view class='quantop_tushu'>
   <view class='huiyuan_tushu'>
     <view class='gren_tushu'>

@@ -32,7 +32,21 @@ Page({
             }
         }), i.get(this, "member", function(e) {}), "" == e.getCache("userinfo") && a.setData({
             modelShow: !0
-        });
+          }), wx.getSystemInfo({
+            success: function (res) {
+              console.log(res.model)//手机机型
+              console.log(res.model == "iPhone X")
+              if (res.model == "iPhone X") {
+                a.setData({
+                  isIPX: true
+                });
+              } else {
+                a.setData({
+                  isIPX: false
+                });
+              }
+            }
+          })
     },
     getInfo: function() {
         var e = this;
