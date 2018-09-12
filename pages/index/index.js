@@ -172,7 +172,6 @@ Page((e = {
               }
             }
         }),
-        a.bailigetbannerbgcolor(),
         a.bailichangeimg()
     },
     
@@ -339,38 +338,27 @@ Page((e = {
           t.getSeckillGoods(e.timeid);
       });
     },
-    bailigetbannerbgcolor: function()
-    {
-      var bailigetbannerbgcolordata = [];
-      var bailigetbannerbgcolori = 0;
-      for (var index in diyitem.data) {
-        bailigetbannerbgcolordata[bailigetbannerbgcolori] = index;
-      }
-
-      console.log(bailigetbannerbgcolordata)
-    },
     //获取轮播下标
     bailichangeimg: function (e) {
-      var c = [
-          "#ff204a",
-          "#faf574",
-          "#74f6fa",
-          "#af1ec4",
-      ];
-      if (e)
+      
+      if (this.data.diypages && e)
       {
+        //获取当前组编号
+        var m = e.currentTarget.dataset.type;
+        //获取组数据
+        var c = this.data.diypages.items[m].data;
+        //第二次开始自动获取色值
         this.setData({
-          bannerBgcolor: c[e.detail.current]
+          bannerBgcolor: c[e.detail.current].bgColor
         })
       }
       else
       {
-        console.log(c[0])
+        //第一次进来主动获取第一个色值
         this.setData({
-          bannerBgcolor: c[0]
+          bannerBgcolor: "#8080ff"
         })
       }
-      
     }
 }, t(e, "unpaidcolse", function(t) {
     var a = "";
