@@ -66,7 +66,7 @@
 .yaoqing_tushu{
 font-family: "PingFangSC-Regular, sans-serif";
 margin-top: 5px;
-font-size: 30rpx;
+font-size: 25rpx;
 color:#333;
 position: relative;
 }
@@ -111,13 +111,13 @@ position: relative;
 }
 .gbtop_tushu{
   padding-top: 30rpx;
-  font-size: 32rpx;
+  font-size: 25rpx;
   line-height: 32rpx;
   color: #946b2c;
 }
 .gbbottom_tushu{
   padding-top: 15rpx;
-  font-size: 28rpx;
+  font-size: 25rpx;
   color: #be985e;
 }
 .diantequan_tushu{

@@ -1,9 +1,9 @@
 <loading wx:if="{{!show}}">加载中...</loading>
 <view class="page navbar" wx:if="{{show}}">
-    <view class="category-search">
+    <view class="category-search" >
         <view class="weui-flex">
-            <view class="weui-flex__item category-search-form">
-                <view class="flex-head-search" id="searchBar">
+            <view class="weui-flex__item {{isIPX}} {{isIPX ? 'category-search-form-x' : 'category-search-form' }}">
+                <view class="flex-head-search" id="searchBar" style='width:575rpx;'>
                     <navigator class="weui-search-bar__form" hoverClass="none" openType="navigate" url="/pages/goods/index/index?fromsearch=1">
                         <view class="weui-search-bar__box category-search-box">
                             <view class="flex-icon-search">

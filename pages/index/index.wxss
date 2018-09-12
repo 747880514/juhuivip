@@ -747,11 +747,11 @@
 }
 /* 空白屠苏 */
 .index_fuzhukongbai_tushu{
-  height: 120rpx;
+  height: 32rpx;
 }
 /* 空白 tushu_ipx */
 .index_fuzhukongbai_H_tushu{
-  height: 150rpx;
+  height: 86rpx;
 }
 /*百里-首页-横向滚动*/
 .scroll-view_H{

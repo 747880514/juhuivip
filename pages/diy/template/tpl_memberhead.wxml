@@ -55,22 +55,22 @@
           </view>
       </view>
       <view class='gbottom_tushu'>
-        <view class='gbot_one_tushu'>
+        <navigator bindtap='shenfen' class='gbot_one_tushu'>
             <view class='gbtop_tushu'>{{member.levelname}}</view>
             <view class='gbbottom_tushu'>身份</view>
-        </view>
-        <view class='gbot_two'>
+        </navigator>
+        <navigator bindtap='yve' class='gbot_two'>
             <view class='gbtop_tushu'>{{member.credit2}}</view>
             <view class='gbbottom_tushu'>余额</view>
-        </view>
-        <view class='gbot_three'>
+        </navigator>
+        <navigator bindtap='shenfen' class='gbot_three'>
              <view class='gbtop_tushu'>{{member.credit1}}</view>
             <view class='gbbottom_tushu'>蒜币</view>
-        </view>
-        <view class='gbot_for'>
+        </navigator>
+        <navigator bindtap='youhuijuan' class='gbot_for'>
              <view class='gbtop_tushu'>{{member.coupon_total}}</view>
             <view class='gbbottom_tushu'>优惠劵</view>
-        </view>
+        </navigator>
       </view>
     </view>
     <view class='tuquan_tushu'>

@@ -11,7 +11,6 @@
     display: -webkit-flex;
     display: flex;
     box-sizing: border-box;
-    background: #f1f1f2;
     padding: 10px 10px;
 }
 
@@ -51,6 +50,7 @@
     top: 0;
     width: 100%;
     z-index: 100;
+    
 }
 
 .category-search::before {
@@ -64,9 +64,17 @@
     backface-visibility: hidden;
     overflow: hidden;
 }
-
+/* tushu */
 .category-search-form {
-    background: #fff;
+    /* background: #fff; */
+    background: #f1f1f2;
+    padding-top: 30rpx;
+}
+/* ipx */
+.category-search-form-x {
+    /* background: #fff; */
+    background: #f1f1f2;
+    padding-top: 150rpx;
 }
 
 .category-search-box {

@@ -249,5 +249,24 @@ Page({
         }
       })
 
-    }
+  }, 
+    // 身份按钮
+    shenfen: function(){
+      wx.switchTab({
+        url: '/pages/commission/index'
+      })
+    },
+    // 余额按钮
+    yve: function () {
+      wx.navigateTo({
+        url: '/pages/commission/withdraw/index'
+      })
+    }, 
+  // 优惠券按钮
+    youhuijuan: function () {
+      wx.navigateTo({
+        url: '/pages/sale/coupon/index/index'
+      })
+    },
+
 });
