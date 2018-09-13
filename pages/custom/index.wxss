@@ -787,7 +787,7 @@ canvas {
 }
 /* tushu */
 .fuzhukongbai_tushu{
-  height: 168rpx;
+  height: 202rpx;
 }
 /* ipx */
 .fuzhukongbaix_tushu{

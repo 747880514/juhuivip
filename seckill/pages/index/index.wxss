@@ -2190,6 +2190,7 @@ canvas {
     background: #fff;
     text-align: center;
     overflow: auto;
+    margin-top: 40rpx;
 }
 
 .seckill-page .swiper-slide.time-slide {

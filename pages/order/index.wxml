@@ -1,6 +1,7 @@
 <loading wx:if="{{!show}}">加载中...</loading>
+<view class='fuzhukongbai_tushu{{isIPX}}'></view>
 <view class="page navbar order" wx:if="{{show}}">
-    <scroll-view class="fui-tab-scroll fixed" scrollX="true" style="overflow-x:scroll">
+    <scroll-view class="fui-tab-scroll fixed ipx{{isIPX}}" scrollX="true" style="overflow-x:scroll">
         <view bindtap="selected" class="item {{status==''?'active':''}}" data-type="">全部</view>
         <view bindtap="selected" class="item {{status=='0'?'active':''}}" data-type="0">待付款</view>
         <view bindtap="selected" class="item {{status=='1'?'active':''}}" data-type="1">待发货</view>

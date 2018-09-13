@@ -9,7 +9,7 @@ page {
 }
 
 .order .contain {
-    margin-top: 90rpx;
+    margin-top: -16rpx;
 }
 
 .order .btn {
@@ -81,4 +81,31 @@ page {
 width:160rpx;
 height:160rpx;
 object-fit: cover!important;
+}
+/* ipxtushu */
+.fui-tab-scroll.fixed.ipxtrue{
+  position:fixed;
+  top:100rpx;
+  z-index:1000;
+  width: 74%;
+  height: 65rpx;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.fui-tab-scroll.ipxtrue .item{
+  height:65rpx;
+  width:auto;
+  line-height:65rpx;
+  color:#666;
+  padding:0 20rpx;
+  font-size:28rpx;
+  display:inline-block;
+}
+.fuzhukongbai_tushufalse{
+  height:80rpx;
+  background:#fff;
+}
+.fuzhukongbai_tushutrue{
+  height:165rpx;
+  background:#fff;
 }
