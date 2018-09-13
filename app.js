@@ -19,6 +19,7 @@ App({
             });
         });
     },
+  
     requirejs: function(e) {
         return require("utils/" + e + ".js");
     },

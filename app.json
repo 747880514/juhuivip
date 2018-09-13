@@ -83,7 +83,8 @@
         "pages/diy/tushu/equities/equities",
         "pages/diy/tushu/service/service",
         "pages/diy/tushu/details/details",
-        "pages/diy/tushu/ceshi/ceshi"
+        "pages/diy/tushu/ceshi/ceshi",
+        "pages/diy/tushu/return/return"
     ],
     "window": {
         "backgroundColor": "#fafafa",

@@ -136,6 +136,7 @@ checkbox {
     background: #f8f8f8;
     /* flex-direction: column; */
     font-size: 28rpx;
+    color: #ff5555;
 }
 
 .page .fui-cell-group:nth-of-type(2) {

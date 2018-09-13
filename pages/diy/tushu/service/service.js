@@ -29,7 +29,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.dingWei();
+    this.listenerBtnGetLocation();
+    // this.dingWei();
     this.getDGA();
   },
 
@@ -89,39 +90,62 @@ Page({
     })
   },
   // 定位
-  dingWei: function(){
-    var that = this;
-    // 新建百度地图对象 
-    var BMap = new bmap.BMapWX({
-      ak: 'ZQiFErjQB7inrGpx27M1GR5w3TxZ64k7'
-    });
-    var fail = function (data) {
-      console.log(data)
-    };
-    var success = function (data) {
-      wxMarkerData = data.wxMarkerData;
-      that.setData({
-        markers: wxMarkerData
-      });
-      that.setData({
-        latitude: wxMarkerData[0].latitude
-      });
-      that.setData({
-        longitude: wxMarkerData[0].longitude
-      });
-      console.log(that.data.longitude)
-      console.log(that.data.latitude)
 
-      that.Appshangajax();
-    }
-    // 发起regeocoding检索请求 
-    BMap.regeocoding({
-      fail: fail,
-      success: success,
-      iconPath: '../../img/marker_red.png',
-      iconTapPath: '../../img/marker_red.png'
-    });
+  /**
+   * 监听定位到当前位置
+   */
+  listenerBtnGetLocation: function () {
+    var that = this;
+    wx.getLocation({
+      //定位类型 wgs84, gcj02
+      type: 'gcj02',
+      success: function (res) {
+        that.setData({
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
+        that.Appshangajax();
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    })
+    
+    
   },
+  // dingWei: function(){
+  //   var that = this;
+  //   // 新建百度地图对象 
+  //   var BMap = new bmap.BMapWX({
+  //     ak: 'M46DfGUF7dsYX9YGTlcrvoexd3ZodRH6'
+  //   });
+  //   var fail = function (data) {
+  //     console.log(data)
+  //   };
+  //   var success = function (data) {
+  //     wxMarkerData = data.wxMarkerData;
+  //     that.setData({
+  //       markers: wxMarkerData
+  //     });
+  //     that.setData({
+  //       latitude: wxMarkerData[0].latitude
+  //     });
+  //     that.setData({
+  //       longitude: wxMarkerData[0].longitude
+  //     });
+  //     console.log(that.data.longitude)
+  //     console.log(that.data.latitude)
+
+  //     that.Appshangajax();
+  //   }
+    // 发起regeocoding检索请求 
+  //   BMap.regeocoding({
+  //     fail: fail,
+  //     success: success,
+  //     iconPath: '../../img/marker_red.png',
+  //     iconTapPath: '../../img/marker_red.png'
+  //   });
+  // },
   // ajax调用
   Appshangajax: function () {
     var that = this;

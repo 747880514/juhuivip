@@ -28,7 +28,8 @@
       <view class='leijishouyi_tushu'>累计总收益额（元）</view>
       <view class='erduzong_tushu' bindtap='zongshouyi'>{{mm['commission_total'] > 0 ? mm['commission_total'] : '0.00'}}</view>
       <view class='dingweixia_tushu'>
-        <view class='jinri_tushu'  bindtap='jinrishouyi'>
+        <!-- <view class='jinri_tushu'  bindtap='jinrishouyi'> -->
+        <view class='jinri_tushu'  bindtap='return_return_top_tushu'>
           <view class='jinrishu_tushu'>{{ rr['today_price'] > 0 ? rr['today_price'] : '0.00' }}</view>
           <view class='jinriti_tushu'>今日收益</view>
         </view>

@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 89,
+			"current": 90,
 			"list": [
 				{
 					"id": -1,
@@ -572,7 +572,13 @@
 				{
 					"id": -1,
 					"name": "aaa",
-					"pathName": "pages/goods/detail/index"
+					"pathName": "pages/goods/detail/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "返回按钮",
+					"pathName": "pages/diy/tushu/return/return"
 				}
 			]
 		}

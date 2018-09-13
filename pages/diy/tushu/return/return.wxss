@@ -1,0 +1,17 @@
+.return_frame_tushu{
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 50rpx;
+  left: 50rpx;
+  border: 2rpx solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  background-color:rgba(0,0,0,0.08);
+  /* padding: 10rpx; */
+}
+.return_img_tushu{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 11.5rpx;
+
+}
