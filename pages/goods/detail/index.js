@@ -398,6 +398,11 @@ Page((a = {
         var e = this;
         c.number(t, e);
     },
+    // 返回上一页
+    return_top_tushu: function () {
+      console.log(123);
+      wx.navigateBack({ changed: true });//返回上一页
+    },
     onLoad: function(t) {
         var e = this;
         n.get(this, "goodsdetail", function(t) {
@@ -446,7 +451,27 @@ Page((a = {
             wx.redirectTo({
                 url: "/pages/message/auth/index"
             });
-        });
+          }), wx.getSystemInfo({
+            success: function (res) {
+              console.log(res.model)//手机机型
+              console.log(res.model == "iPhone X")
+              if (res.model == "iPhone X") {
+                e.setData({
+                  isIPX: "ipx"
+                });
+              }
+              else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>") {
+                e.setData({
+                  isIPX: "iPhone"
+                });
+              }
+              else {
+                e.setData({
+                  isIPX: "Android"
+                });
+              }
+            }
+          });
     },
     show_cycelbuydate: function() {
         var t = this, e = g.getCurrentDayString(this, t.data.showDate), a = [ "周日", "周一", "周二", "周三", "周四", "周五", "周六" ];

@@ -1,10 +1,10 @@
 <!-- 百里。展示2个秒杀商品 -->
 <view class='baili-skill-goods' style='text-align:center;width:50%;font-size:24rpx;color:#666;margin-top:70px;position:absolute;z-index:10;'>
-  <view class='one' style='width:50%;float:left'>
+  <view class='one' bindtap='miaoshayi_tushu' style='width:50%;float:left'>
     <image src="{{seckillGoods0.thumb}}" style='width:150rpx;height:150rpx'></image>
     <view>￥{{seckillGoods0.price}}</view>
   </view>
-  <view class='two' style='width:50%;float:left'>
+  <view class='two' bindtap='miaoshayi_tushu' style='width:50%;float:left'>
     <image src="{{seckillGoods1.thumb}}" style='width:150rpx;height:150rpx'></image>
     <view>￥{{seckillGoods1.price}}</view>
   </view>

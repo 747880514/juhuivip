@@ -77,6 +77,11 @@ Page((e = {
         screenWidth: a.windowWidth
       });
     },
+    // 返回上一页
+    return_top_tushu: function () {
+      console.log(123);
+      wx.navigateBack({ changed: true });//返回上一页
+    },
     onLoad: function(t) {
       t = t || {};
       var a = this;
@@ -135,22 +140,29 @@ Page((e = {
             swiperheight: e
           });
         }
-        }), wx.getSystemInfo({
+        }),
+        wx.getSystemInfo({
           success: function (res) {
             console.log(res.model)//手机机型
             console.log(res.model == "iPhone X")
             if (res.model == "iPhone X") {
               a.setData({
-                isIPX: true
+                isIPX: "ipx"
               });
-            } else {
+            }
+            else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>") {
               a.setData({
-                isIPX: false
+                isIPX: "iPhone"
+              });
+            }
+            else {
+              a.setData({
+                isIPX: "Android"
               });
             }
           }
         })
-    },
+      },
     getShop: function() {
       var t = this;
       s.get("shop/get_shopindex", {}, function(a) {

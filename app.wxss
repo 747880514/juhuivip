@@ -5786,3 +5786,45 @@ page {
     margin-top: -5rpx;
     margin-right: 10rpx;
 }
+/* tushu返回键 */
+/* iPhone x */
+.return_frame_ipx_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 100rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  background-color:rgba(0,0,0,0.08);
+}
+/* iPhone */
+.return_frame_iPhone_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 50rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  background-color:rgba(0,0,0,0.08);
+}
+/* Android */
+.return_frame_Android_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 65rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  background-color:rgba(0,0,0,0.08);
+}
+.return_img_tushu{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 11.5rpx;
+}

@@ -94,6 +94,14 @@ Page((e = {
             }), a.list.length < a.pagesize && (e.loaded = !0));
         });
     },
+
+    // 秒杀按钮1tushu
+    miaoshayi_tushu:function(){
+      wx.navigateTo({
+        url: '/seckill/pages/index/index'
+      })
+    },
+
     onLoad: function(t) {
         t = t || {};
         var a = this;
@@ -163,12 +171,18 @@ Page((e = {
               console.log(res.model == "iPhone X")
               if (res.model == "iPhone X") {
                 a.setData({
-                  isIPX : true
+                  isIPX: "ipx"
                 });
-              }else{
+              } 
+              else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>"){
                 a.setData({
-                  isIPX : false
+                  isIPX: "iPhone"
                 });  
+              }
+              else{
+                a.setData({
+                  isIPX: "Android"
+                }); 
               }
             }
         }),

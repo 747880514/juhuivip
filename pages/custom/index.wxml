@@ -1,5 +1,5 @@
 <view  wx:if="{{pageid=='14'||pageid=='9'||pageid=='7'||pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'}}">
-  <scroll-view class="{{isIPX == true ? 'scroll-view_HH' : 'scroll-view_H' }}" scroll-x="true" style="width: 100%" scroll-left="{{pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'?300:0}}">
+  <scroll-view class="scroll-view_{{isIPX}}" scroll-x="true" style="width: 100%" scroll-left="{{pageid=='10'||pageid=='11'||pageid=='12'||pageid=='8'?300:0}}">
       <view class="scroll-view-item_H">
         <navigator class="item" bindtap='index_tuhsutiao'>精选</navigator>
       </view>
@@ -25,10 +25,17 @@
         <navigator class="item {{pageid=='10'?'active':''}}" url="/pages/custom/index?pageid=10">母婴保健</navigator>
       </view>
   </scroll-view>
-  <view class="{{isIPX == true ? 'fuzhukongbaix_tushu' : 'fuzhukongbai_tushu' }}">.</view>
+  <view class="fuzhukongbai_{{isIPX}}_tushu">.</view>
 </view>
 <!-- 以上导航 -->
 
+<!-- 返回键tushu -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
+<!-- 以上返回键 -->
 <view class="custom" style="min-height:100%;background:{{diypages.page.background}}">
     <block wx:for="{{diypages.items}}" wx:for-index="diyitemid" wx:for-item="diyitem">
         <include src="/pages/diy/template/tpl_fixedsearch.wxml" wx:if="{{diyitem.id=='fixedsearch'}}"></include>

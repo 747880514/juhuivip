@@ -1,4 +1,11 @@
+<impout src="/pages/diy/tushu/return/return.wxml" />
 <view class='quanbushnaghukuang_tushu'>
+<!-- 返回键 -->
+  <view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+      <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>
+        <image src='/static/images/fx.png' class='return_img_tushu'></image>
+      </view>
+  </view>
   <view class='topdetu_tushu'>
     <image class='tupiantop_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/VmXyXxpVh0NyhxXGBXMYQtXVix00FT.png'></image>
   </view>

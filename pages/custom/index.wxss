@@ -786,10 +786,15 @@ canvas {
   bottom: 200rpx;
 }
 /* tushu */
-.fuzhukongbai_tushu{
+/* iPhone */
+.fuzhukongbai_iPhone_tushu{
   height: 202rpx;
 }
 /* ipx */
-.fuzhukongbaix_tushu{
+.fuzhukongbai_ipx_tushu{
+  height: 263rpx;
+}
+/* Android */
+.fuzhukongbai_Android_tushu{
   height: 263rpx;
 }

@@ -1,4 +1,16 @@
-.scroll-view_H{
+/* Android */
+.scroll-view_Android{
+  padding-top: 100rpx;
+  width: 100%;
+  white-space: nowrap;
+  background: #ffffff;
+  position: fixed;
+  top: 0rpx;
+  left: 0px;
+  z-index: 120;
+}
+/* iPhone */
+.scroll-view_iPhone{
   padding-top: 100rpx;
   width: 100%;
   white-space: nowrap;
@@ -9,7 +21,7 @@
   z-index: 120;
 }
 /* iphone x */
-.scroll-view_HH{
+.scroll-view_ipx{
   width: 100%;
   white-space: nowrap;
   background: #ffffff;

@@ -2,6 +2,13 @@
 <import src="/utils/wxParse/wxParse.wxml"></import>
 <loading wx:if="{{!show}}">加载中...</loading>
 <view bindtap="closeBtn" class="page-shade" wx:if="{{show&&closeBtn}}">></view>
+<!-- 返回键tushu -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
+<!-- 以上返回键 -->
 <view class="fui-share {{isIpx?'fui-iphonex-share':''}}" wx:if="{{show&&closeBtn}}">
     <view class="share-choose">
         <button openType="share" style="border: none;background:none;padding-left: 0;line-height: 1;margin: 0;">

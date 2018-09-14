@@ -1,8 +1,8 @@
-<!-- <template name="return_tushu"> -->
+<template name="return_tushu">
       <view class='return_frame_tushu' bindtap='return_top_tushu'>
         <image src='/static/images/fx.png' class='return_img_tushu'></image>
       </view>
-<!-- </template> -->
+</template>
 
 
 

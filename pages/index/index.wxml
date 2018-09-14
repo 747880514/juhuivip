@@ -40,7 +40,7 @@
               <include src="nav.wxml" wx:if="{{item.type=='nav'}}"></include>
               <include src="recommand.wxml" wx:if="{{item.type=='recommand'}}"></include>
           </block>
-          111
+          
           <view id="recommand" wx:if="{{storeRecommand}}">
               <view class="fui-line" style="background: #f4f4f4;">
                   <view class="text text-danger">

@@ -1,5 +1,5 @@
 <!-- tushu -->
-<view class="{{isIPX == true ? 'index_fuzhukongbai_H_tushu' : 'index_fuzhukongbai_tushu' }}" style='background-color:{{bannerBgcolor}}'></view>
+<view class="index_fuzhukongbai_{{isIPX}}_tushu" style='background-color:{{bannerBgcolor}}'></view>
 
 <view class="category-search" style='width:100%; background-color:{{bannerBgcolor}};'>
   <view class="weui-flex" style='width:480rpx;'>
