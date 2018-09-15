@@ -1,4 +1,5 @@
 var e = require("utils/core.js");
+var mta = require('utils/mta_analysis.js')
 
 App({
     onShow: function() {
