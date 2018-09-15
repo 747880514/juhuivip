@@ -10,6 +10,8 @@ function t(t, a, e) {
 var a, e, o = getApp(), i = o.requirejs("core"), s = o.requirejs("wxParse/wxParse"), n = o.requirejs("biz/diypage"), r = o.requirejs("biz/diyform"), d = o.requirejs("biz/goodspicker"), c = (o.requirejs("foxui"), 
 o.requirejs("jquery"));
 
+var mta = o.requirejs("mta_analysis");
+
 Page((e = {
     onPullDownRefresh: function() {
         var t = this;
@@ -191,8 +193,8 @@ Page((e = {
               }
             }
         }),
-        a.bailichangeimg();
-        mta.Page.init();
+        a.bailichangeimg(),
+        mta.Page.init()
     },
     
 

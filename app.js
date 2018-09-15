@@ -1,5 +1,5 @@
 var e = require("utils/core.js");
-var mta = require('utils/mta_analysis.js')
+var mta = require('utils/mta_analysis.js');
 
 App({
     onShow: function() {
@@ -18,7 +18,7 @@ App({
             t && wx.redirectTo({
                 url: "/pages/message/auth/index?close=" + t + "&text=" + e
             });
-        }),
+        });
         // 代码统计
         mta.App.init({
           "appID": "500630598",
