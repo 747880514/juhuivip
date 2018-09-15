@@ -9,6 +9,8 @@ function t(t, e, a) {
 
 var e, a, o = getApp(), i = o.requirejs("core"), s = (o.requirejs("icons"), o.requirejs("foxui")), n = o.requirejs("biz/diypage"), r = o.requirejs("biz/diyform"), c = o.requirejs("biz/goodspicker"), d = o.requirejs("jquery"), u = o.requirejs("wxParse/wxParse"), l = 0, g = o.requirejs("biz/selectdate");
 
+var mta = o.requirejs("mta_analysis");
+
 Page((a = {
     data: (e = {
         diypages: {},
@@ -173,6 +175,10 @@ Page((a = {
     },
     getDetail: function(t) {
         var e = this, a = parseInt(Date.now() / 1e3);
+
+        //腾讯移动分析
+        mta.Event.stat(t.id, {})
+        // console.log(t.id);
         e.setData({
             loading: !0
         }), i.get("goods/get_detail", {
@@ -472,6 +478,7 @@ Page((a = {
               }
             }
           });
+        
     },
     show_cycelbuydate: function() {
         var t = this, e = g.getCurrentDayString(this, t.data.showDate), a = [ "周日", "周一", "周二", "周三", "周四", "周五", "周六" ];
