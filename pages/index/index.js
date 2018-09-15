@@ -103,6 +103,7 @@ Page((e = {
     },
 
     onLoad: function(t) {
+       
         t = t || {};
         var a = this;
         a.getSeckillLists();
@@ -190,7 +191,8 @@ Page((e = {
               }
             }
         }),
-        a.bailichangeimg()
+        a.bailichangeimg();
+        mta.Page.init();
     },
     
 

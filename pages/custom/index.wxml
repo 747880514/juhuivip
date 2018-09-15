@@ -28,7 +28,10 @@
   <view class="fuzhukongbai_{{isIPX}}_tushu">.</view>
 </view>
 <!-- 以上导航 -->
-
+<view  wx:if="{{pageid=='30' || pageid=='48' || pageid=='23'}}">
+  <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
+         
+</view>
 <!-- 返回键tushu -->
 <view class='fudongreturn_tushu' bindtap='return_top_tushu'>
     <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>

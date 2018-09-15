@@ -74,6 +74,10 @@ Page({
           success: function (res) {
             console.log(res.model)//手机机型
             console.log(res.model == "iPhone X")
+            t.setData({
+              statusBarHeight: res.statusBarHeight,
+              fuzhukongbaiq: 105 + res.statusBarHeight * 2 + "rpx",
+            })
             if (res.model == "iPhone X") {
               t.setData({
                 isIPX: "ipx"

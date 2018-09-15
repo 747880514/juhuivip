@@ -4,9 +4,8 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
-<view class="{{isIpx?'fui-iphonex-button':''}}"></view>
+ <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
 <loading wx:if="{{!show}}">加载中...</loading>
-<view style='height:60rpx; width:100%;'></view>
 <view class="page footer {{paddingb}}" wx:if="{{show}}">
     <view class="nav" wx:if="{{list.showTab&&!list.isonlyverifygoods}}">
         <view bindtap="dispatchtype" class="{{data.dispatchtype==0?'red':'default'}}" data-type="0">快递配送</view>

@@ -91,7 +91,8 @@
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTextStyle": "white",
-        "navigationStyle":"custom"
+        "navigationStyle":"custom",
+        "enablePullDownRefresh": true
     },
     "tabBar": {
         "color": "#999999",

@@ -21,5 +21,30 @@ Page({
             isIpx: !1,
             iphonexnavbar: ""
         });
+        wx.getSystemInfo({  //tushu
+          success: function (res) {
+            console.log(res.model)//手机机型
+            console.log(res.model == "iPhone X")
+            o.setData({
+              statusBarHeight: res.statusBarHeight,
+              fuzhukongbaiq: 105 + res.statusBarHeight * 2 + "rpx",
+            })
+            if (res.model == "iPhone X") {
+              o.setData({
+                isIPX: "ipx"
+              });
+            }
+            else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>") {
+              o.setData({
+                isIPX: "iPhone"
+              });
+            }
+            else {
+              o.setData({
+                isIPX: "Android"
+              });
+            }
+          }
+        });
     }
 });

@@ -17,9 +17,16 @@ App({
             t && wx.redirectTo({
                 url: "/pages/message/auth/index?close=" + t + "&text=" + e
             });
+        }),
+        // 代码统计
+        mta.App.init({
+          "appID": "500630598",
+          "eventID": "500643315",
+          "statPullDownFresh": true,
+          "statShareApp": true,
+          "statReachBottom": true
         });
     },
-  
     requirejs: function(e) {
         return require("utils/" + e + ".js");
     },

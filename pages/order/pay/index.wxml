@@ -4,6 +4,7 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
 <loading wx:if="{{!show}}">加载中...</loading>
 <view class="page {{successData.seckill_color}}" wx:if="{{!success&&show}}">
     <view class="fui-cell-group">

@@ -1,3 +1,4 @@
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
 <view class="page navbar">
     <view class="fui-goods-group" wx:if="{{goods}}">
         <navigator class="fui-goods-item" hoverClass="none" openType="navigate" url="/pages/bargain/bargain/bargain?id={{item[0]['actor_id']}}&mid={{mid}}" wx:for="{{goods}}">
