@@ -1,3 +1,9 @@
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
 <loading wx:if="{{!show}}">加载中...</loading>
 <view class="page {{successData.seckill_color}}" wx:if="{{!success&&show}}">
     <view class="fui-cell-group">

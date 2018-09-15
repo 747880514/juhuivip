@@ -1,4 +1,10 @@
 <loading wx:if="{{!show}}">加载中...</loading>
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
 <view class="page navbar com-down" wx:if="{{show}}">
     <view class="fui-tab fui-tab-warning">
         <view bindtap="myTab" class="item {{level==item.level?'active':''}}" data-level="{{item.level}}" wx:for="{{levels}}">{{item.name}}(<text>{{item.total}}</text>)</view>

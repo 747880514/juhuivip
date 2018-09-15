@@ -1,4 +1,10 @@
 <view class="page">
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
     <scroll-view class="fui-tab-scroll" scrollX="true">
         <text bindtap="bindTab" class="item {{cateid==0?'active':''}}" data-cateid="0">全部优惠券</text>
         <text bindtap="bindTab" class="item {{cateid==item.id?'active':''}}" data-cateid="{{item.id}}" wx:for="{{cates}}">{{item.name}}</text>

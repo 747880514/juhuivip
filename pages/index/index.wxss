@@ -746,17 +746,17 @@
 }
 /* 空白屠苏 */
 /* Android */
-.index_fuzhukongbai_Android_tushu{
+/* .index_fuzhukongbai_Android_tushu{
   height: 54rpx;
-}
+} */
 /* iPhone */
-.index_fuzhukongbai_iPhone_tushu{
+/* .index_fuzhukongbai_iPhone_tushu{
   height: 32rpx;
-}
+} */
 /*iPhone x */
-.index_fuzhukongbai_ipx_tushu{
+/* .index_fuzhukongbai_ipx_tushu{
   height: 86rpx;
-}
+} */
 /*百里-首页-横向滚动*/
 .scroll-view_H{
   width: 100%;

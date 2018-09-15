@@ -19,6 +19,12 @@
         <i class="icon icon-roundclose"></i>
     </view>
 </view>
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
 <image class="applybanner" mode="widthFix" src="{{message.set.regbg||'/static/images/banner.png'}}"></image>
 <view class="content-info" wx:if="{{message.member.headsstatus==1&&message.member.isheads==1}}">
     <i class="icon icon-roundcheck text-success"></i>

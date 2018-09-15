@@ -37,12 +37,15 @@
     </view>
 </template>
 <loading wx:if="{{!show}}">加载中...</loading>
-    <!-- 返回键 -->
-    <view class='fudongreturn_tushu' bindtap='return_top_tushu'>
-        <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>
-          <image src='/static/images/fx.png' class='return_img_tushu'></image>
-        </view>
+
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
+</view>
+<!-- 辅助空白 -->
+<view class='fuzhukongbaiaaa_tushu' style='z-index:9;position:fixed;width:100%;background-color:#fff;top:0rpx; left:0rpx;height:{{fuiheader}};'></view>
 <view class="model" wx:if="{{modelShow}}">
     <view class="inner1">
         <view class="title">用户未授权</view>
@@ -57,7 +60,7 @@
     </view>
 </view>
 <view class="page header-sort navbar goodslist">
-    <view class="fui-header">
+    <view class="fui-header" style='top:{{fuiheader}}'>
         <view class="searchbar">
             <icon size="18" type="search"></icon>
             <input bindconfirm="bindSearch" bindfocus="bindFocus" bindinput="bindInput" focus="{{focusin}}" name="search" placeholder="输入关键字进行搜索" value="{{params.keywords}}"></input>
@@ -65,7 +68,7 @@
         <text bindtap="changeMode" class="icon icox {{listmode==''?'icox-app':'icox-viewlist'}}" wx:if="{{!fromsearch}}"></text>
         <view bindtap="bindback" class="cancel" wx:if="{{fromsearch}}">取消</view>
     </view>
-    <view class="sort">
+    <view class="sort" style="top:{{sort}}">
         <view bindtap="bindSort" class="item {{params.order==''||!params.order?'on':''}}" data-order="">
             <view class="text">综合</view>
         </view>
@@ -81,7 +84,7 @@
             </view>
         </view>
     </view>
-    <view class="fui-goods-group {{listmode}}">
+    <view class="fui-goods-group {{listmode}}" style="margin-top:{{fuiheader}}">
         <template is="tpl_list" data="{{item:item}}" wx:for="{{list}}"></template>
     </view>
     <view class="fui-loading" wx:if="{{loading}}">
@@ -94,7 +97,7 @@
     <view class="fui-loading empty" wx:if="{{total<=0&&!loading}}">
         <view class="text">暂时没有任何商品</view>
     </view>
-    <view class="records" wx:if="{{fromsearch}}">
+    <view class="records" style="top:{{sort}}" wx:if="{{fromsearch}}">
         <block wx:if="{{searchRecords.length>0}}">
             <view class="records-title">
                 <view bindtap="delRecord" class="pull-right text-danger">清除</view>
@@ -118,7 +121,7 @@
     <include src="/pages/common/goods-picker.wxml"></include>
     <include src="/pages/common/menu.wxml"></include>
     <include src="/pages/common/city-picker.wxml"></include>
-    <view class="screen {{isFilterShow?'in':''}}">
+    <view class="screen {{isFilterShow?'in':''}}" style='top:{{screen}}'>
 
         <view class="attribute">
             <view class="item on">
