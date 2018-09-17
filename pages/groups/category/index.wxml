@@ -1,5 +1,6 @@
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page groups" style="{{isIpx?'padding-bottom:168rpx':''}}">
-    <view class="fui-header flex">
+    <view class="fui-header flex" style="top:{{fuzhukongbaiq}}">
         <view class="searchbar flex1">
             <text class="icox icox-search"></text>
             <input bindconfirm="bindSearch" bindfocus="bindFocus" bindinput="bindInput" focus="{{focusin}}" name="search" placeholder="输入关键字进行搜索" value="{{params.keywords}}"></input>

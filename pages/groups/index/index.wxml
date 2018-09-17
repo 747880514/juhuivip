@@ -1,3 +1,4 @@
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page" style="{{isIpx?'padding-bottom:168rpx':''}}">
     <block wx:if="{{res.category.length>0||res.recgoods.length>0}}">
         <view class="fui-icon-group noborder col-4">

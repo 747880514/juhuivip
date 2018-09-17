@@ -1,6 +1,10 @@
 <loading bindchange="loadingChange" hidden="{{hidden}}">
     加载中...
-  </loading>
+</loading>
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
+<view class='return_frame_tushu' bindtap='return_top_tushu'>
+  <image src='/static/images/fx.png' class='return_img_tushu'></image>
+</view>
 <view class="category-search">
     <view class="weui-flex">
         <view class="weui-flex__item category-search-form">

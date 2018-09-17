@@ -19,6 +19,41 @@ Page({
         }), this.setData({
             options: e
         }), this.get_list();
+      t.getCache("isIpx") ? a.setData({
+        isIpx: !0,
+        iphonexnavbar: "fui-iphonex-navbar",
+        options: e
+      }) : a.setData({
+        isIpx: !1,
+        iphonexnavbar: "",
+        options: e
+      }), a.data.options.id, a.getList(),
+      wx.getSystemInfo({  //tushu
+        success: function (res) {
+          console.log(res.model)//手机机型
+          console.log(res.model == "iPhone X")
+          a.setData({
+            statusBarHeight: res.statusBarHeight,
+            fuzhukongbaiq: 105 + res.statusBarHeight*2 + "rpx",
+
+          })
+          if (res.model == "iPhone X") {
+            a.setData({
+              isIPX: "ipx"
+            });
+          }
+          else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>") {
+            a.setData({
+              isIPX: "iPhone"
+            });
+          }
+          else {
+            a.setData({
+              isIPX: "Android"
+            });
+          }
+        }
+      });
     },
     get_list: function(t) {
         var a = this;

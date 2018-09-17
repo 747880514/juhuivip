@@ -6,6 +6,8 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page footer {{paddingb}}" wx:if="{{show}}">
     <block wx:if="{{list.length>0}}">
         <view class="fui-list-group" wx:for="{{list}}">

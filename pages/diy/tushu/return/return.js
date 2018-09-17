@@ -19,7 +19,7 @@ Page({
         console.log(res.model == "iPhone X")
         that.setData({
           statusBarHeight: res.statusBarHeight,
-          fuzhukongbaiq: 105 + res.statusBarHeight + "rpx",
+          fuzhukongbaiq: 105 + res.statusBarHeight * 2 + "rpx",
           
         })
         if (res.model == "iPhone X") {
