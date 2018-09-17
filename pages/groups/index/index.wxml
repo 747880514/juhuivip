@@ -37,7 +37,7 @@
     <view class="fui-navbar footer-nav {{iphonexnavbar}}">
         <navigator class="nav-item" hoverClass="none" openType="switchTab" url="/pages/index/index">
             <!-- <span class="icox icox-back"></span> -->
-            <image class="tusu_huizhucheng" src='http://img.juhuivip.com/images/2/2018/09/G0f44UGNY44F9F4u414bFvIfG4FGgw.png'></image>
+            <image class="tusu_huizhucheng" style='width: 42rpx;height: 42rpx;' src='http://img.juhuivip.com/images/2/2018/09/G0f44UGNY44F9F4u414bFvIfG4FGgw.png'></image>
             <span class="label">返回商城</span>
         </navigator>
         <navigator class="nav-item active" hoverClass="none" openType="reLaunch">
