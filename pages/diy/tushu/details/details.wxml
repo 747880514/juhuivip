@@ -5,6 +5,9 @@
         <image src='/static/images/fx.png' class='return_img_tushu'></image>
       </view>
   </view>
+  <view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+    <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+  </view>
   <!-- 商品bander图 -->
   <view class='topbandershu_tushu'>
     <image class='topbandertu_tushu' src='{{shop.banner}}'></image>

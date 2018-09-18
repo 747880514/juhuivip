@@ -38,6 +38,9 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+  <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+</view>
 <!-- 以上返回键 -->
 <view class="custom" style="min-height:100%;background:{{diypages.page.background}}">
     <block wx:for="{{diypages.items}}" wx:for-index="diyitemid" wx:for-item="diyitem">

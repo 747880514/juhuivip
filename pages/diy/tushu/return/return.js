@@ -11,6 +11,17 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  // 屠苏返回键
+  return_return_top_tushu: function () {
+    // console.log(123);
+    wx.navigateBack({ changed: true });//返回上一页
+  },
+  return_index_tushu: function () {
+    wx.switchTab({
+      //返回首页
+      url: '/pages/index/index',
+    })
+  },
   onLoad: function (options) {
     var that = this;
     wx.getSystemInfo({  //tushu
@@ -88,11 +99,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  // 屠苏返回键
-  return_return_top_tushu: function () {
-    // console.log(123);
-    wx.navigateBack({ changed: true });//返回上一页
   }
-
+ 
 })
