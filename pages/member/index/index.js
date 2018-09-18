@@ -22,10 +22,10 @@ Page({
         bindagent_res_view_data: '',
         like_lists: !1,         //tushu
     },
-    onLoad: function(t) {
+    onLoad: function (t) {
         var a = this;
-        this.sti_sda();
-        this.getInfo();
+        a.sti_sda();
+        a.getInfo();
         e.url(t), wx.getSystemInfo({
             success: function(e) {
                 var t = e.windowWidth / 1.7;
@@ -52,38 +52,35 @@ Page({
               }
             }
           })
+    }, 
+    getInfo: function () {
+      var e = this;
+      t.get("member", {}, function (t) {
+        0 != t.error ? e.setData({
+          modelShow: !0
+        }) : e.setData({
+          member: t,
+          show: !0,
+          nickname: t.nickname,
+          agent_nickname: t.agent_nickname,
+          invitation_code: t.invitation_code,
+          avatar: t.avatar,
+          agent_weixin: t.agent_weixin
+        }), a.wxParse("wxParseData", "html", t.copyright, e, "5");
+      });
     },
-    getInfo: function() {
-        var e = this;
-        t.get("member", {}, function(t) {
-            0 != t.error ? e.setData({
-                modelShow: !0
-            }) : e.setData({
-                member: t,
-                show: !0,
-                customer: t.customer,
-                customercolor: t.customercolor,
-                // phone: t.phone,
-                // phonecolor: t.phonecolor,
-                // phonenumber: t.phonenumber,
-                iscycelbuy: t.iscycelbuy,
-                bargain: t.bargain
-            }), a.wxParse("wxParseData", "html", t.copyright, e, "5");
-        });
-    },
-    onShow: function() {
-        
-        var e = this;
-        wx.getSetting({
-            success: function(t) {
-                var a = t.authSetting["scope.userInfo"];
-                e.setData({
-                    limits: a
-                }), a || e.setData({
-                    modelShow: !0
-                });
-            }
-        });
+    onShow: function () {
+      var e = this;
+      wx.getSetting({
+        success: function (t) {
+          var a = t.authSetting["scope.userInfo"];
+          e.setData({
+            limits: a
+          }), a || e.setData({
+            modelShow: !0
+          });
+        }
+      });
     },
     onShareAppMessage: function() {
         return t.onShareAppMessage();
@@ -228,20 +225,36 @@ Page({
     },
     // tushu
     sti_sda: function () {
-      // var t, i = this;
       var a = this;
-      t.get("member/baili/guesslike", {}, function (e) {
-        t = {
-          show: !0,
-          ismerch: !1,
-          // ischeckall: e.ischeckall,
-          // total: e.total,
-          // cartcount: e.total,
-          // totalprice: e.totalprice,
-          empty: e.empty || !1
-        }, void 0 === e.like_lists ? (t.list = e.list || [], a.setData(t)) : (t.like_lists = e.like_lists || [],
-          t.ismerch = !0, a.setData(t));
+      var ss;
+      wx.request({
+        url: 'https://www.juhuivip.com/app/ewei_shopv2_api.php?i=2&r=member.baili.guesslike',
+        header: {
+          'Content-Type': 'application/json'
+        },
+        success: function (e) {
+            ss = {
+              show: !0,
+              ismerch: !1,
+              empty: e.empty || !1
+            }, void 0 === e.data.like_lists ? (ss.list = e.list || [], a.setData(ss)) : (ss.like_lists = e.data.like_lists || [],
+              ss.ismerch = !0, a.setData(ss));
+        }
       });
+      // var t, i = this;
+      // var a = this;
+      // t.get("member/baili/guesslike", "", function (e) {
+      //   t = {
+      //     show: !0,
+      //     ismerch: !1,
+      //     // ischeckall: e.ischeckall,
+      //     // total: e.total,
+      //     // cartcount: e.total,
+      //     // totalprice: e.totalprice,
+      //     empty: e.empty || !1
+      //   }, void 0 === e.like_lists ? (t.list = e.list || [], a.setData(t)) : (t.like_lists = e.like_lists || [],
+      //     t.ismerch = !0, a.setData(t));
+      // });
     },
     lianxikefu:function(){
       wx.makePhoneCall({
