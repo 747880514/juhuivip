@@ -20,15 +20,12 @@ Page({
         iscycelbuy: !1,
         bargain: !1,
         bindagent_res_view_data: '',
-        like_lists: !1         //tushu
-    },
-    onReady: function () {
-      this.getInfo();
-      this.sti_sda();
+        like_lists: !1,         //tushu
     },
     onLoad: function(t) {
         var a = this;
-        
+        this.sti_sda();
+        this.getInfo();
         e.url(t), wx.getSystemInfo({
             success: function(e) {
                 var t = e.windowWidth / 1.7;
@@ -232,32 +229,18 @@ Page({
     // tushu
     sti_sda: function () {
       // var t, i = this;
-      var that = this;
+      var a = this;
       t.get("member/baili/guesslike", {}, function (e) {
-
-        that.setData({
+        t = {
           show: !0,
           ismerch: !1,
-          ischeckall: e.ischeckall,
-          total: e.total,
-          cartcount: e.total,
-          totalprice: e.totalprice,
+          // ischeckall: e.ischeckall,
+          // total: e.total,
+          // cartcount: e.total,
+          // totalprice: e.totalprice,
           empty: e.empty || !1
-        })
-
-        // t = {
-        //   show: !0,
-        //   ismerch: !1,
-        //   ischeckall: e.ischeckall,
-        //   total: e.total,
-        //   cartcount: e.total,
-        //   totalprice: e.totalprice,
-        //   empty: e.empty || !1
-        // }, 
-        
-        // void 0 === e.like_lists ? (t.list = e.list || [], that.setData(t)) : (t.like_lists = e.like_lists || [],
-        //   t.ismerch = !0, 
-        //   that.setData(t));
+        }, void 0 === e.like_lists ? (t.list = e.list || [], a.setData(t)) : (t.like_lists = e.like_lists || [],
+          t.ismerch = !0, a.setData(t));
       });
     },
     lianxikefu:function(){

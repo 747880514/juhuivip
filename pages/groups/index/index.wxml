@@ -30,7 +30,7 @@
         </view>
     </block>
     <view class="backHome"></view>
-    <view class="empty" wx:if="{{res.category.length==0||res.recgoods.length==0}}">
+    <view class="empty" wx:if="{{res.category.length==0 && res.recgoods.length==0}}">
         <image src="/static/images/search_empty.png"></image>
         <view class="text">未找到任何活动</view>
     </view>
