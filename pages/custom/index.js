@@ -346,10 +346,10 @@ Page((e = {
       soundpic: !1
     });
   }), t(e, "phone", function() {
-    var t = this.data.phonenumber + "";
-    wx.makePhoneCall({
-      phoneNumber: t
-    });
+    // var t = this.data.phonenumber + "";
+    // wx.makePhoneCall({
+    //   phoneNumber: t
+    // });
   }), t(e, "cancelclick", function() {
     this.setData({
       modelShow: !1
@@ -373,7 +373,7 @@ Page((e = {
         });
       }
     }), e && wx.makePhoneCall({
-      phoneNumber: e
+      // phoneNumber: e
     }), i && wx.navigateToMiniProgram({
       appId: i,
       path: s

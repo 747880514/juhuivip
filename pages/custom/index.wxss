@@ -796,5 +796,5 @@ canvas {
 }
 /* Android */
 .fuzhukongbai_Android_tushu{
-  height: 263rpx;
+  height: 200rpx;
 }

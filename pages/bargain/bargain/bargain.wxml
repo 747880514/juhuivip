@@ -1,3 +1,8 @@
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
 <import src="/utils/wxParse/wxParse.wxml"></import>
 <view class="page navbar nobuy" style="">
     <view class="bargain-shop">

@@ -1,8 +1,8 @@
 var e = getApp(),
-  t = e.requirejs("core"),
-  a = e.requirejs("wxParse/wxParse"),
-  i = e.requirejs("biz/diypage"),
-  o = e.requirejs("jquery");
+    t = e.requirejs("core"),
+    a = e.requirejs("wxParse/wxParse"),
+    i = e.requirejs("biz/diypage"),
+    o = e.requirejs("jquery");
 Page({
 
   /**

@@ -87,7 +87,8 @@ Page((a = {
         showgoods: !0
     }, t(e, "timer", 0), t(e, "lasttime", 0), t(e, "hour", "-"), t(e, "min", "-"), t(e, "sec", "-"), 
     t(e, "currentDate", ""), t(e, "dayList", ""), t(e, "currentDayList", ""), t(e, "currentObj", ""), 
-    t(e, "currentDay", ""), t(e, "checkedDate", ""), t(e, "showDate", ""), t(e, "scope", ""), 
+    t(e, "currentDay", ""), t(e, "checkedDate", ""), t(e, "showDate", ""),
+    //  t(e, "scope", ""), 
     e),
     favorite: function(t) {
         var e = this;
@@ -203,12 +204,12 @@ Page((a = {
                 coupon: o,
                 coupon_l: o.length,
                 packagegoods: t.goods.packagegoods,
-                packagegoodsid: t.goods.packagegoods.goodsid,
+                // packagegoodsid: t.goods.packagegoods.goodsid,
                 credittext: t.goods.credittext,
                 activity: t.goods.activity,
-                phonenumber: t.goods.phonenumber,
-                showDate: t.goods.showDate,
-                scope: t.goods.scope
+                // phonenumber: t.goods.phonenumber,
+                // showDate: t.goods.showDate,
+                // scope: t.goods.scope
             }), t.goods.packagegoods && e.package(), u.wxParse("wxParseData", "html", t.goods.content, e, "0"), 
             u.wxParse("wxParseData_buycontent", "html", t.goods.buycontent, e, "0"), e.setData({
                 show: !0,
@@ -216,7 +217,7 @@ Page((a = {
                 minprice: t.goods.minprice,
                 maxprice: t.goods.maxprice,
                 preselltimeend: t.goods.preselltimeend,
-                style: t.goods.labelstyle.style,
+                // style: t.goods.labelstyle.style,
                 navbar: t.goods.navbar,
                 labels: t.goods.labels
             }), console.log(t.goods), wx.setNavigationBarTitle({
@@ -481,7 +482,8 @@ Page((a = {
         
     },
     show_cycelbuydate: function() {
-        var t = this, e = g.getCurrentDayString(this, t.data.showDate), a = [ "周日", "周一", "周二", "周三", "周四", "周五", "周六" ];
+        var t = this, a = [ "周日", "周一", "周二", "周三", "周四", "周五", "周六" ];
+        // e = g.getCurrentDayString(this, t.data.showDate),
         t.setData({
             currentObj: e,
             currentDate: e.getFullYear() + "年" + (e.getMonth() + 1) + "月" + e.getDate() + "日 " + a[e.getDay()],
@@ -490,7 +492,7 @@ Page((a = {
             currentDay: e.getDate(),
             initDate: Date.parse(e.getFullYear() + "/" + (e.getMonth() + 1) + "/" + e.getDate()),
             checkedDate: Date.parse(e.getFullYear() + "/" + (e.getMonth() + 1) + "/" + e.getDate()),
-            maxday: t.data.scope
+            // maxday: t.data.scope
         });
     },
     package: function() {
@@ -521,14 +523,15 @@ Page((a = {
                     scrollTop: 0
                 });
             }
-        }), wx.getSetting({
-            success: function(e) {
-                var a = e.authSetting["scope.userInfo"];
-                t.setData({
-                    limits: a
-                });
-            }
         });
+        // wx.getSetting({
+        //     success: function(e) {
+        //         var a = e.authSetting["scope.userInfo"];
+        //         t.setData({
+        //             limits: a
+        //         });
+        //     }
+        // });
     },
     onChange: function(t) {
         return r.onChange(this, t);
@@ -581,12 +584,12 @@ Page((a = {
             success: !0
         });
     },
-    phone: function() {
-        var t = this.data.phonenumber + "";
-        wx.makePhoneCall({
-            phoneNumber: t
-        });
-    },
+    // phone: function() {
+    //     var t = this.data.phonenumber + "";
+    //     wx.makePhoneCall({
+    //         phoneNumber: t
+    //     });
+    // },
     sharePoster: function() {
         wx.navigateTo({
             url: "/pages/goods/poster/poster?id=" + this.data.uid
@@ -739,7 +742,7 @@ Page((a = {
     e && wx.navigateTo({
         url: e
     }), a && wx.makePhoneCall({
-        phoneNumber: a
+        // phoneNumber: a
     }), o && wx.navigateToMiniProgram({
         appId: o,
         path: i
