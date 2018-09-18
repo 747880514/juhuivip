@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 91,
 			"list": [
 				{
 					"id": -1,
@@ -580,6 +580,11 @@
 					"name": "返回按钮",
 					"pathName": "pages/diy/tushu/return/return",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "团队长",
+					"pathName": "dividend/pages/index/index"
 				}
 			]
 		}
