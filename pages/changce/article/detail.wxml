@@ -48,10 +48,10 @@
         </block>
         <view class="envas"></view>
     </view>
-    <view bindtap="phone" class="phone" data-phone="{{article.phone}}" style="{{article.phonecolor?'background-color:'+article.phonecolor:''}}" wx:if="{{article.phone}}">
+    <!-- <view bindtap="phone" class="phone" data-phone="{{article.phone}}" style="{{article.phonecolor?'background-color:'+article.phonecolor:''}}" wx:if="{{article.phone}}">
         <text class="icox icox-call"></text>
     </view>
     <view bindtap="tohome" class="homepage" style="{{article.phonecolor?'background-color:'+article.phonecolor:''}}">
         <text class="icox icox-homepage" style="font-size:90rpx"></text>
-    </view>
+    </view> -->
 </block>

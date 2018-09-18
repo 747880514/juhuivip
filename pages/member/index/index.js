@@ -1,4 +1,8 @@
-var e = getApp(), t = e.requirejs("core"), a = e.requirejs("wxParse/wxParse"), i = e.requirejs("biz/diypage"), o = e.requirejs("jquery");
+var e = getApp(), 
+    t = e.requirejs("core"), 
+    a = e.requirejs("wxParse/wxParse"), 
+    i = e.requirejs("biz/diypage"), 
+    o = e.requirejs("jquery");
 
 Page({
     data: {
@@ -16,11 +20,12 @@ Page({
         iscycelbuy: !1,
         bargain: !1,
         bindagent_res_view_data: '',
-        like_lists: !1         //tushu
+        like_lists: !1,         //tushu
     },
     onLoad: function(t) {
         var a = this;
         this.sti_sda();
+        this.getInfo();
         e.url(t), wx.getSystemInfo({
             success: function(e) {
                 var t = e.windowWidth / 1.7;
@@ -58,16 +63,16 @@ Page({
                 show: !0,
                 customer: t.customer,
                 customercolor: t.customercolor,
-                phone: t.phone,
-                phonecolor: t.phonecolor,
-                phonenumber: t.phonenumber,
+                // phone: t.phone,
+                // phonecolor: t.phonecolor,
+                // phonenumber: t.phonenumber,
                 iscycelbuy: t.iscycelbuy,
                 bargain: t.bargain
             }), a.wxParse("wxParseData", "html", t.copyright, e, "5");
         });
     },
     onShow: function() {
-        this.getInfo();
+        
         var e = this;
         wx.getSetting({
             success: function(t) {
@@ -93,12 +98,12 @@ Page({
             modelShow: !1
         });
     },
-    phone: function() {
-        var e = this.data.phonenumber + "";
-        wx.makePhoneCall({
-            phoneNumber: e
-        });
-    },
+    // phone: function() {
+    //     var e = this.data.phonenumber + "";
+    //     wx.makePhoneCall({
+    //         phoneNumber: e
+    //     });
+    // },
     play: function(e) {
         var t = e.target.dataset.id, a = this.data.audiosObj[t] || !1;
         if (!a) {
@@ -157,7 +162,7 @@ Page({
         t && wx.navigateTo({
             url: t
         }), a && wx.makePhoneCall({
-            phoneNumber: a
+            // phoneNumber: a
         }), i && wx.navigateToMiniProgram({
             appId: i,
             path: o
@@ -229,10 +234,10 @@ Page({
         t = {
           show: !0,
           ismerch: !1,
-          ischeckall: e.ischeckall,
-          total: e.total,
-          cartcount: e.total,
-          totalprice: e.totalprice,
+          // ischeckall: e.ischeckall,
+          // total: e.total,
+          // cartcount: e.total,
+          // totalprice: e.totalprice,
           empty: e.empty || !1
         }, void 0 === e.like_lists ? (t.list = e.list || [], a.setData(t)) : (t.like_lists = e.like_lists || [],
           t.ismerch = !0, a.setData(t));

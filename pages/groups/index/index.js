@@ -3,7 +3,8 @@ var n = getApp(), t = n.requirejs("core");
 n.requirejs("jquery"), n.requirejs("foxui"), Page({
     onPullDownRefresh: function() {
         var n = this;
-        console.log(1), t.get("groups", {}, function(t) {
+        console.log(1), 
+        t.get("groups", {}, function(t) {
             0 == t.error && (n.setData({
                 res: t
             }), wx.stopPullDownRefresh());

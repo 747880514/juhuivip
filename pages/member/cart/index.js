@@ -49,10 +49,10 @@ Page({
         t = {
           show: !0,
           ismerch: !1,
-          ischeckall: e.ischeckall,
-          total: e.total,
-          cartcount: e.total,
-          totalprice: e.totalprice,
+          // ischeckall: e.ischeckall,
+          // total: e.total,
+          // cartcount: e.total,
+          // totalprice: e.totalprice,
           empty: e.empty || !1
         }, void 0 === e.like_lists ? (t.list = e.list || [], i.setData(t)) : (t.like_lists = e.like_lists || [],
           t.ismerch = !0, i.setData(t));

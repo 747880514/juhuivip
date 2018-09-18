@@ -194,3 +194,45 @@
     transform-origin: 0 0;
     transform: scaleX(0.5);
 }
+/* tushu返回键 */
+/* iPhone x */
+.return_frame_ipx_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 100rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  background-color:rgba(255,255,255,0.5);
+}
+/* iPhone */
+.return_frame_iPhone_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 50rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  background-color:rgba(255,255,255,0.5);
+}
+/* Android */
+.return_frame_Android_tushu{
+  z-index: 10000;
+  width: 53rpx;
+  height: 53rpx;
+  position: fixed;
+  top: 65rpx;
+  left: 20rpx;
+  border: 2rpx solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  background-color:rgba(255,255,255,0.5);
+}
+.return_img_tushu{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 11.5rpx;
+}

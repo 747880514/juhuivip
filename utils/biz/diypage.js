@@ -14,8 +14,8 @@ module.exports = {
             e.setData({
                 customer: i.customer,
                 phone: i.phone,
-                phonecolor: i.phonecolor,
-                phonenumber: i.phonenumber,
+                // phonecolor: i.phonecolor,
+                // phonenumber: i.phonenumber,
                 customercolor: i.customercolor
             });
             var p = {

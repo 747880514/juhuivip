@@ -99,9 +99,9 @@
       <button class="suspended-service" openType="contact" sessionFrom="weapp" showMessageCard="true" style="background-color:{{customercolor}}" wx:if="{{customer==1}}">
           <text class="icox icox-customerservice"></text>
       </button>
-      <view bindtap="phone" class="phone" style="background-color:{{phonecolor}}" wx:if="{{phone==1}}">
+      <!-- <view bindtap="phone" class="phone" style="background-color:{{phonecolor}}" wx:if="{{phone==1}}">
           <text class="icox icox-dianhua"></text>
-      </view>
+      </view> -->
       <include src="/pages/common/goods-picker.wxml"></include>
       <include src="/pages/common/city-picker.wxml"></include>
   </view>

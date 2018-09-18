@@ -60,7 +60,7 @@ Page((e = {
         diyform: {},
         specsTitle: "",
         seckillGoods: '',
-        bannerBgcolor: '#ffffff'
+        bannerBgcolor: '#8080ff'
     }, t(a, "total", 1), t(a, "active", ""), t(a, "slider", ""), t(a, "tempname", ""), 
     t(a, "buyType", ""), t(a, "areas", []), t(a, "closeBtn", !1), t(a, "soundpic", !0), 
     t(a, "modelShow", !1), t(a, "limits", !0), t(a, "result", {}), t(a, "showcoupon", !1), 
@@ -369,18 +369,20 @@ Page((e = {
         var m = e.currentTarget.dataset.type;
         //获取组数据
         var c = this.data.diypages.items[m].data;
-        //第二次开始自动获取色值
-        this.setData({
-          bannerBgcolor: c[e.detail.current].bgColor
-        })
+        if (c[e.detail.current].bgColor != ''){
+          //第二次开始自动获取色值
+          this.setData({
+            bannerBgcolor: c[e.detail.current].bgColor
+          })
+        }
+        else {
+          // 第一次进来主动获取第一个色值
+          this.setData({
+            bannerBgcolor: "#8080ff"
+          })
+        }
       }
-      else
-      {
-        //第一次进来主动获取第一个色值
-        this.setData({
-          bannerBgcolor: "#8080ff"
-        })
-      }
+      
     }
 }, t(e, "unpaidcolse", function(t) {
     var a = "";
@@ -452,12 +454,14 @@ Page((e = {
         sound: !0,
         soundpic: !1
     });
-}), t(e, "phone", function() {
-    var t = this.data.phonenumber + "";
-    wx.makePhoneCall({
-        phoneNumber: t
-    });
-}), t(e, "cancelclick", function() {
+}),
+//  t(e, "phone", function() {
+//     var t = this.data.phonenumber + "";
+//     wx.makePhoneCall({
+//         phoneNumber: t
+//     });
+// }),
+ t(e, "cancelclick", function() {
     this.setData({
         modelShow: !1
     });
@@ -470,7 +474,7 @@ Page((e = {
     a && wx.navigateTo({
         url: a
     }), e && wx.makePhoneCall({
-        phoneNumber: e
+        // phoneNumber: e
     }), o && wx.navigateToMiniProgram({
         appId: o,
         path: i
