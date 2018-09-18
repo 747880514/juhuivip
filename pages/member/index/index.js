@@ -24,7 +24,7 @@ Page({
     },
     onLoad: function(t) {
         var a = this;
-        this.sti_sda();
+        // this.sti_sda();
         this.getInfo();
         e.url(t), wx.getSystemInfo({
             success: function(e) {
