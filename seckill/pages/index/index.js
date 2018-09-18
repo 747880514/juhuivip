@@ -39,6 +39,12 @@ Page({
       console.log(123);
       wx.navigateBack({ changed: true });//返回上一页
     },
+    return_index_tushu: function () {
+      wx.switchTab({
+        //返回首页
+        url: '/pages/index/index',
+      })
+    },
     onLoad: function() {
         var t = this;
         e.get("seckill/get_list", {}, function(e) {

@@ -198,6 +198,12 @@ Page({
   return_top_tushu: function () {
     console.log(123);
     wx.navigateBack({ changed: true });//返回上一页
+  },
+  return_index_tushu: function () {
+    wx.switchTab({
+      //返回首页
+      url: '/pages/index/index',
+    })
   }
 
 })

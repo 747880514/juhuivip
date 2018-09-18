@@ -44,6 +44,9 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+  <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+</view>
 <!-- 辅助空白 -->
 <view class='fuzhukongbaiaaa_tushu' style='z-index:9;position:fixed;width:100%;background-color:#fff;top:0rpx; left:0rpx;height:{{fuiheader}};'></view>
 <view class="model" wx:if="{{modelShow}}">

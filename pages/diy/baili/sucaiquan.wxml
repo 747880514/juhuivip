@@ -8,6 +8,9 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+  <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+</view>
 <view class="fui-share {{isIpx?'fui-iphonex-share':''}}" wx:if="{{show&&closeBtn}}">
     <view class="share-choose">
         <button openType="share" class='buttonbus'>
