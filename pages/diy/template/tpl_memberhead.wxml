@@ -46,7 +46,7 @@
     <view class='gren_tushu'>
       <view class='gtop_tushu'>
           <view class='topleft_tushu'>
-            <image src="{{member.avatar||'https://static.btaeo.cn/static/images/noface.png'}}" class='gtoptu_tushu'></image>
+            <image src="{{member.avatar||'https://static.btaeo.cn/static/images/noface.png'}}" class='gtoptu_tushu' bindtap='shezhitiaozhuang'></image>
           </view>
           <view class='topright_tushu'>
               <view class='yongname_tushu'>{{member.nickname}}</view>

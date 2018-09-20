@@ -5,8 +5,9 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#ff204a; width:100%;"></view>
 <view class="page navbar com-order" wx:if="{{show}}">
-    <view class="fui-cell-group" style="margin-top:0px;background: #fea23d;color: #fff;">
+    <view class="fui-cell-group" style="margin-top:0px;background: #ff204a;color: #fff;">
         <view class="fui-cell">
             <view class="fui-cell-info" style="width:auto;color: #fff;text-align:left">{{textctotal}}<text>{{comtotal}}</text>{{textyuan}}</view>
         </view>

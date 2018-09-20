@@ -1,4 +1,4 @@
-<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
+<view class='fuzhu_kongbai_tushu {{fuzhukongbaiq}}' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page order" style="{{isIpx?'padding-bottom:168rpx':''}}">
     <view class="fui-tab fixed {{fuzhukongbaiq}}" scrollX="true" style="overflow-x:scroll; top:{{fuzhukongbaiq}}">
         <view bindtap="get_list" class="item {{type_==''?'active':''}}" data-type_="">全部</view>

@@ -1608,8 +1608,8 @@
 }
 
 .fui-tab.fui-tab-warning .item.active {
-    color: #ff9326;
-    border-color: #ff9326;
+    color: #ff204a;
+    border-color: #ff204a;
     z-index: 100;
 }
 
@@ -2137,7 +2137,7 @@
     width: 60rpx;
     height: 60rpx;
     position: absolute;
-    top: 50rpx;
+    top: 350rpx;
     right: 30rpx;
 }
 
@@ -2272,7 +2272,7 @@ cover-image {
 }
 
 .text-warning {
-    color: #ff8000;
+    color: #ff204a;
 }
 
 .text-danger {

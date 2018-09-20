@@ -1,5 +1,6 @@
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page" style="{{isIpx?'padding-bottom:168rpx':''}}">
-    <view class="fui-tab fixed" scrollX="true" style="overflow-x:scroll">
+    <view class="fui-tab fixed" scrollX="true" style="overflow-x:scroll; top:{{fuzhukongbaiq}}">
         <view bindtap="tab" class="item {{success==''||success==0?'active':''}}" data-success="0">组团中</view>
         <view bindtap="tab" class="item {{success=='1'?'active':''}}" data-success="1">组团成功</view>
         <view bindtap="tab" class="item {{success=='-1'?'active':''}}" data-success="-1">组团失败</view>
