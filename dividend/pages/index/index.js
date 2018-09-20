@@ -7,13 +7,13 @@ e.requirejs("jquery"), Page({
     // 屠苏返回键
     return_return_top_tushu: function () {
 
-      wx.navigateBack({ changed: true });
+      // wx.navigateBack({ changed: true });
       // wx.reLanch({
       //   url: '/pages/diy/tushu/equities/equities'
       // })
-      // wx.switchTab({
-      //   url: '/pages/diy/tushu/equities/equities'
-      // })
+      wx.switchTab({
+        url: '/pages/diy/tushu/equities/equities'
+      })
       // wx.navigateTo({
       //   url: '/pages/diy/tushu/equities/equities'
       // })
