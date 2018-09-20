@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 92,
+			"current": 93,
 			"list": [
 				{
 					"id": -1,
@@ -584,7 +584,19 @@
 				{
 					"id": -1,
 					"name": "团队长",
-					"pathName": "dividend/pages/index/index"
+					"pathName": "dividend/pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "营销团队-订单",
+					"pathName": "dividend/pages/order/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "营销团队-分红佣金",
+					"pathName": "dividend/pages/withdraw/index"
 				}
 			]
 		}

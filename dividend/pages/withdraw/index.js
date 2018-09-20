@@ -8,7 +8,7 @@ t.requirejs("jquery"), Page({
             isIpx: !0
         }) : i.setData({
             isIpx: !1
-        }), e.get("dividend/withdraw", "", function(t) {
+        }), e.get("dividendhuasuan/withdraw", "", function(t) {
             i.setData({
                 msg: t
             });
@@ -16,7 +16,7 @@ t.requirejs("jquery"), Page({
     },
     onShow: function(t) {
         var a = this;
-        e.get("dividend/withdraw", "", function(t) {
+        e.get("dividendhuasuan/withdraw", "", function(t) {
             a.setData({
                 msg: t
             });
@@ -24,7 +24,7 @@ t.requirejs("jquery"), Page({
     },
     submit: function(t) {
         t.currentTarget.dataset.price <= 0 || wx.navigateTo({
-            url: "/dividend/pages/apply/index"
+            url: "/dividendhuasuan/pages/apply/index"
         });
     }
 });

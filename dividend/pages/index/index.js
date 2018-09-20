@@ -53,7 +53,7 @@ e.requirejs("jquery"), Page({
     },
     getlist: function() {
         var e = this;
-        t.get("dividend", "", function(t) {
+        t.get("dividendhuasuan", "", function(t) {
             1 == t.error && (console.error(t.message), i.toast(e, t.message), setTimeout(function() {
                 wx.reLaunch({
                     url: "/pages/index/index"

@@ -44,7 +44,7 @@ t.requirejs("jquery"), Page({
         var e = this;
         e.setData({
             loading: !0
-        }), a.get("dividend/order", t, function(a) {
+        }), a.get("dividendhuasuan/order", t, function(a) {
             if (0 == a.error) {
                 if (a.list.length > 0) {
                     var s = e.data.list.concat(a.list);

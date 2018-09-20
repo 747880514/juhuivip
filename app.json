@@ -89,7 +89,7 @@
     ],
     "window": {
         "backgroundColor": "#fafafa",
-        "backgroundTextStyle": "light",
+        "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTextStyle": "white",
         "navigationStyle":"custom",
