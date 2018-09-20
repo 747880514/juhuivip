@@ -5,6 +5,7 @@
         <image src='/static/images/fx.png' class='return_img_tushu'></image>
       </view>
   </view>
+  <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#ff204a; width:100%;"></view>
     <view class="fui-cell-group" wx:if="{{!showimage}}">
         <view class="fui-cell">
             <view class="fui-cell-info text-center">

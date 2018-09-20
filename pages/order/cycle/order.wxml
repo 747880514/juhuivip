@@ -5,8 +5,10 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<!-- fuzhukuang -->
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page navbar order" wx:if="{{show}}">
-    <scroll-view class="fui-tab-scroll fixed" scrollX="true" style="overflow-x:scroll">
+    <scroll-view class="fui-tab-scroll fixed" scrollX="true" style="overflow-x:scroll;margin-top:{{fuzhukongbaiq}}">
         <view bindtap="selected" class="item {{status==''?'active':''}}" data-type="">全部</view>
         <view bindtap="selected" class="item {{status=='0'?'active':''}}" data-type="0">待付款</view>
         <view bindtap="selected" class="item {{status=='1'?'active':''}}" data-type="1">待发货</view>

@@ -5,10 +5,11 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#ff204a; width:100%;"></view>
 <loading wx:if="{{!show}}">加载中...</loading>
 <view class="page withdraw navbar {{paddingb}}" wx:if="{{show}}">
     <view class="header">
-        <navigator class="btn pull-right" hoverClass="none" openType="navigate" url="/pages/commission/log/index">{{set['texts']['commission_detail']}}</navigator>
+        <navigator class="btn pull-right" hoverClass="none" openType="navigate" style="color:#fff;" url="/pages/commission/log/index">{{set['texts']['commission_detail']}}</navigator>
         <view class="text">
             <view class="num">{{member['commission_total']}}</view>
             <view>{{set['texts']['commission_total']}}({{set['texts']['yuan']}})</view>

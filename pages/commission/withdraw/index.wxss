@@ -2,7 +2,7 @@
     height: auto;
     color: #fff;
     padding: 48rpx 20rpx;
-    background: #fea23d;
+    background: #ff204a;
     position: relative;
 }
 
@@ -35,7 +35,7 @@
     line-height: 50rpx;
     border-radius: 25rpx;
     font-size: 30rpx;
-    color: inherit;
+    color: #fff;
 }
 
 .withdraw .fui-cell-group .fui-cell .fui-cell-icon {

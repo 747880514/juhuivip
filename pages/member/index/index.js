@@ -286,5 +286,11 @@ Page({
         url: '/pages/sale/coupon/index/index'
       })
     },
+  // 头像按钮
+    shezhitiaozhuang:function(){
+      wx.navigateTo({
+        url: '/pages/member/info/index'
+      })
+    }
 
 });

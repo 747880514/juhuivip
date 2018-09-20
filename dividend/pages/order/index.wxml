@@ -1,3 +1,10 @@
+<!-- 返回键 -->
+  <view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+      <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu' style="background-color:rgba(255,255,255,0.5);">
+        <image src='/static/images/fx.png' class='return_img_tushu'></image>
+      </view>
+  </view>
+  <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#1b1b20; width:100%;"></view>
 <view class="moneytop">累计分红：+{{member.dividend_total}}元</view>
 <view class="flex topnav">
   <view bindtap="tab" class="{{status=='all'?'active':''}}" data-status="all">所有</view>

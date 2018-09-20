@@ -3,7 +3,7 @@
   <view class="titlebuyemian_tushu">
     <view class='titshangbuyemian_tushu'>
       <view class='topxiangdekuang_tushu'>
-        <image src="{{avatar}}" class='touxiangdetu_tushu'></image>
+        <image src="{{avatar}}" class='touxiangdetu_tushu' bindtap='huiyuanzhongxintushu'></image>
         <image src='https://www.juhuivip.com/attachment/images/2/2018/08/a0mNvIKVkVYmb98hyeh8Th8v6807Kk.png' class='dengji_tushu'></image>
         <text class='dengjizi_tushu'>{{ ee['levelname'] != '0' ? ee['levelname'] : '蒜粉'}}</text>
         

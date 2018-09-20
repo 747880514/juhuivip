@@ -368,13 +368,13 @@ Page((e = {
         //获取当前组编号
         var m = e.currentTarget.dataset.type;
         //获取组数据
-        var c = this.data.diypages.items[m].data;
+        var c = this.data.diypages.items[m].data; 
         if (c[e.detail.current].bgColor != ''){
           //第二次开始自动获取色值
           this.setData({
             bannerBgcolor: c[e.detail.current].bgColor
           })
-        }
+        } 
         else {
           // 第一次进来主动获取第一个色值
           this.setData({
@@ -382,7 +382,6 @@ Page((e = {
           })
         }
       }
-      
     }
 }, t(e, "unpaidcolse", function(t) {
     var a = "";

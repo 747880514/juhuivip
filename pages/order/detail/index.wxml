@@ -1,3 +1,6 @@
+<!-- 辅助空白 -->
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#FF2951; width:100%;"></view>
+
 <!-- 返回键 -->
 <view class='fudongreturn_tushu' bindtap='return_top_tushu'>
     <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>

@@ -5,6 +5,8 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<!-- fuzhukuang -->
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
 <view class="page footer" wx:if="{{show}}">
     <view class="fui-list-group" wx:if="{{total>0}}">
         <label bindtap="itemClick" class="fui-list" data-goodsid="{{item.goodsid}}" data-id="{{item.id}}" wx:for="{{list}}">

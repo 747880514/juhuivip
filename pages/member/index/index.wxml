@@ -236,7 +236,7 @@
     </navigator>
   </view>
   <!-- 猜你喜欢 -->
-    <view class='guesslike-title'>猜你喜欢</view>
+    <!-- <view class='guesslike-title'>猜你喜欢</view> -->
     <view class="fui-goods-group block"style="background:#fff">
       <view class="fui-goods-item" wx:for="{{like_lists}}" wx:key="{{index}}">
         <navigator class="image"data-text="recommand"style="background-image:url({{item.images}})"url="/pages/goods/detail/index?id={{item.id}}">

@@ -27,14 +27,15 @@ Page({
         isIpx: !1,
         iphonexnavbar: "",
         options: e
-      }), a.data.options.id, a.getList(),
+      }), a.data.options.id, 
+      // a.getList(),
       wx.getSystemInfo({  //tushu
         success: function (res) {
           console.log(res.model)//手机机型
           console.log(res.model == "iPhone X")
           a.setData({
             statusBarHeight: res.statusBarHeight,
-            fuzhukongbaiq: 105 + res.statusBarHeight*2 + "rpx",
+            fuzhukongbaiq: 105 + res.statusBarHeight + "rpx",
 
           })
           if (res.model == "iPhone X") {
