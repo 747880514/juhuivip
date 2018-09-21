@@ -62,7 +62,7 @@ e.requirejs("jquery"), Page({
             }, 1e3)), e.setData({
                 message: t
             }), t.member || wx.redirectTo({
-                url: "/dividend/pages/register/index"
+                url: "/dividendhuasuan/pages/register/index"
             });
         });
     },
@@ -70,7 +70,7 @@ e.requirejs("jquery"), Page({
         var e = this;
         e.setData({
             loading: !0
-        }), t.post("dividend/createTeam", "", function(t) {
+        }), t.post("dividendhuasuan/createTeam", "", function(t) {
             0 == t.error && (e.setData({
                 loading: !1
             }), i.toast(e, "创建完成"), e.getlist());
