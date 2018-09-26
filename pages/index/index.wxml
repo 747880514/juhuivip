@@ -1,3 +1,7 @@
+<!-- 顶部半透明背景层，首页测试功能 开始 -->
+<view style='background-color:#000;width:100%;height:{{statusBarHeight}}px;opacity:0.5;position:fixed;left:0;top:0;z-index:100'></view>
+<!-- 顶部半透明背景层，首页测试功能 结束 -->
+
 <view bindtap='assa'>
   <template name="tpl_list">
       <view class="fui-goods-item" data-goodsid="{{item.id}}" data-type="{{item.type}}">

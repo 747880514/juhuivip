@@ -37,6 +37,11 @@
 </view>
 <view class="overflow mar-top">
     <icon class="fl icox icox-daishouhuoyongjin"></icon>
+    <text class="fl">待发货奖励</text>
+    <text class="moneyitem fr">{{msg.member.dividend_send}}{{msg.set.texts.yuan}}</text>
+</view>
+<view class="overflow">
+    <icon class="fl icox icox-daishouhuoyongjin"></icon>
     <text class="fl">{{msg.set.texts.dividend_wait}}</text>
     <text class="moneyitem fr">{{msg.member.dividend_wait}}{{msg.set.texts.yuan}}</text>
 </view>
@@ -44,6 +49,11 @@
     <icon class="fl icox icox-weijiesuanyongjin"></icon>
     <text class="fl">{{msg.set.texts.dividend_lock}}</text>
     <text class="moneyitem fr">{{msg.member.dividend_lock}}{{msg.set.texts.yuan}}</text>
+</view>
+<view class="overflow mar-top">
+    <icon class="fl icox icox-daishouhuoyongjin"></icon>
+    <text class="fl">团队管理奖励</text>
+    <text class="moneyitem fr">{{msg.member.dividend_order}}{{msg.set.texts.yuan}}</text>
 </view>
 <view class="tips mar-top">
     <view>用户须知</view>

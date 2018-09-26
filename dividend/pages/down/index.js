@@ -47,7 +47,7 @@ t.requirejs("jquery"), Page({
         var a = this;
         a.setData({
             loading: !0
-        }), console.error(a.data.loading), e.get("dividend/down", t, function(e) {
+        }), console.error(a.data.loading), e.get("dividendhuasuan/down", t, function(e) {
             if (console.error(e), 0 == e.error) {
                 if (e.list.length > 0) {
                     var i = a.data.list.concat(e.list);
