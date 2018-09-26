@@ -109,6 +109,8 @@ Page((e = {
         t = t || {};
         var a = this;
         a.getSeckillLists();
+        a.getgroups();
+        a.bargain();
         wx.getSetting({
             success: function(t) {
                 t.authSetting["scope.userInfo"] ? a.setData({
@@ -345,7 +347,40 @@ Page((e = {
                 }
               }, 2000) //循环时间 这里是1秒  
       });
-    },
+  }, 
+      // 拼团商品
+      getgroups: function (t) {
+        var a = this;
+        i.get("groups", {}, function (e) {
+          console.log(e.recgoods)
+          var j = 0;
+          setInterval(function () {
+            j++;
+            a.setData({
+              gtigroups: e.recgoods[j],
+            });
+            if (j > 5) {
+              j = 0;
+            }
+          }, 5500) //循环时间 这里是1秒  
+        });
+      },
+      // 砍价商品
+        bargain: function (t) {
+        var a = this;
+        i.get("bargain/get_list", {}, function (e) {
+          var j = 0;
+          setInterval(function () {
+            j++;
+            a.setData({
+              gtibargain: e.list[j],
+            });
+            if (j > 5) {
+              j = 0;
+            }
+          }, 6000) //循环时间 这里是1秒  
+        });
+      },
     //获取秒杀信息
     getSeckillLists: function (e) {
       var t = this;
