@@ -1,5 +1,5 @@
 <!-- 顶部半透明背景层，首页测试功能 开始 -->
-<view style='background-color:#000;width:100%;height:{{statusBarHeight}}px;opacity:0.5;position:fixed;left:0;top:0;z-index:100'></view>
+<view style='background-color:#000;width:100%;height:{{statusBarHeight}}px;opacity:0.3;position:fixed;left:0;top:0;z-index:100'></view>
 <!-- 顶部半透明背景层，首页测试功能 结束 -->
 
 <view bindtap='assa'>
@@ -100,7 +100,7 @@
               <i bindtap="unpaidcolse" class="icox icox-guanbi1" id="unpaid-colse" style="font-size:60rpx;color:#fff;position: absolute;top:105%;left:46%"></i>
           </view>
       </view>
-      <button class="suspended-service" openType="contact" sessionFrom="weapp" showMessageCard="true" style="background-color:{{customercolor}}" wx:if="{{customer==1}}">
+      <button class="suspended-service" openType="contact" sessionFrom="weapp" showMessageCard="true" style="background-color:{{customercolor}};z-index:10" wx:if="{{customer==1}}">
           <text class="icox icox-customerservice"></text>
       </button>
       <!-- <view bindtap="phone" class="phone" style="background-color:{{phonecolor}}" wx:if="{{phone==1}}">
