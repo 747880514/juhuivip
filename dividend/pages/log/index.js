@@ -10,7 +10,11 @@ t.requirejs("jquery"), Page({
     // 返回上一页
     return_top_tushu: function () {
       console.log(123);
-      wx.navigateBack({ changed: true });//返回上一页
+      wx.navigateBack({ 
+        
+        changed: true 
+
+      });//返回上一页
     },
     onLoad: function() {
         var t = {

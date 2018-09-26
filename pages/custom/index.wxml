@@ -43,7 +43,7 @@
 </view>
 <!-- 以上返回键 -->
 <view class="custom" style="min-height:100%;background:{{diypages.page.background}}">
-    <block wx:for="{{diypages.items}}" wx:for-index="diyitemid" wx:for-item="diyitem">
+    <block wx:for="{{diypages.items}}" wx:for-index="diyitemid" wx:for-item="diyitem" wx:key="key" >
         <include src="/pages/diy/template/tpl_fixedsearch.wxml" wx:if="{{diyitem.id=='fixedsearch'}}"></include>
         <include src="/pages/diy/template/tpl_banner.wxml" wx:if="{{diyitem.id=='banner'}}"></include>
         <include src="/pages/diy/template/tpl_search.wxml" wx:if="{{diyitem.id=='search'}}"></include>

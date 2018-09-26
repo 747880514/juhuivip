@@ -16,7 +16,7 @@ Page((e = {
     onPullDownRefresh: function() {
         var t = this;
         n.get(this, "home", function(a) {
-            console.log(132), t.getDiypage(a), 0 == a.error && wx.stopPullDownRefresh();
+            t.getDiypage(a), 0 == a.error && wx.stopPullDownRefresh();
         });
     },
     data: (a = {
@@ -170,9 +170,6 @@ Page((e = {
         }),
         wx.getSystemInfo({
             success: function (res) {
-              console.log(res.model)//手机机型
-              console.log(res.model == "iPhone X")
-              console.log(res.statusBarHeight)
               a.setData({
                   statusBarHeight:res.statusBarHeight
               })
@@ -206,7 +203,6 @@ Page((e = {
         });
     },
     onShow: function() {
-        console.log('QQ交流二开群：563224208');
         var t = this, a = wx.getSystemInfoSync(), e = o.getCache("sysset");
         t.getShop(), t.getRecommand(), t.get_hasnewcoupon(), t.get_cpinfos(), wx.getSetting({
             success: function(a) {
@@ -334,10 +330,20 @@ Page((e = {
         roomid: a.data.roomid,
         timeid: t
       }, function (e) {
-        a.setData({
-          seckillGoods0: e.goods[0],
-          seckillGoods1: e.goods[1]
-        });
+          // a.setData({
+          //   seckillGoods0: e.goods[0],
+          //   seckillGoods1: e.goods[1]
+          // });
+              var j = 0;
+              setInterval(function () {
+                j++;
+                a.setData({
+                  seckillGoods: e.goods[j],
+                });
+                if(j>5){
+                    j=0;
+                }
+              }, 2000) //循环时间 这里是1秒  
       });
     },
     //获取秒杀信息

@@ -1,6 +1,19 @@
 <loading wx:if="{{!show}}">加载中...</loading>
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
+<view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+  <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+</view>
+<!-- 返回键结束 -->
+<!-- 辅助空白 -->
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#ff204a; width:100%; position:relative;top:0px;left:0px;"></view>
+<!-- 结束 -->
 <view class="page com-log" wx:if="{{show}}">
-    <view class="fui-cell-group" style="margin-top:0px;background: #fea23d;color: #fff;">
+    <view class="fui-cell-group" style="margin-top:0px;background: #ff204a;color: #fff;">
         <view class="fui-cell">
             <view class="fui-cell-info" style="width:auto;color: #fff;text-align:left">预计{{textcomm}}<text>+{{commissioncount}}</text>{{textyuan}}</view>
         </view>

@@ -1,12 +1,22 @@
 <!-- 百里。展示2个秒杀商品 -->
 <view class='baili-skill-goods {{pageid}}' wx:if="{{pageid!='14' && pageid!='9' && pageid!='7' && pageid!='10' && pageid!='11' && pageid!='12' && pageid!='8'}}" style='text-align:center;width:50%;font-size:24rpx;color:#666;margin-top:70px;position:absolute;z-index:10;'>
-  <view class='one' bindtap='miaoshayi_tushu' style='width:50%;float:left'>
+  <!-- <view class='one' bindtap='miaoshayi_tushu' style='width:50%;float:left'>
     <image src="{{seckillGoods0.thumb}}" style='width:150rpx;height:150rpx'></image>
     <view>￥{{seckillGoods0.price}}</view>
   </view>
   <view class='two' bindtap='miaoshayi_tushu' style='width:50%;float:left'>
     <image src="{{seckillGoods1.thumb}}" style='width:150rpx;height:150rpx'></image>
     <view>￥{{seckillGoods1.price}}</view>
+  </view> -->
+  <!-- 水牛新秒杀 -->
+  <view class='xinmiaosha_tushu' bindtap='miaoshayi_tushu'>
+    <view class='miaoshajiage_tushu'>
+        <view class='xianjia_tushu'><text class='jiagefu_tushu'>￥</text><text class='jiageshu_tushu'>{{seckillGoods.price}}</text></view>
+        <view class='yuanjia_tushu'><text class='jiagefu_tushu'>￥</text><text class='jiageshu_tushu'>{{seckillGoods.productprice}}</text></view>
+    </view>
+    <view class='xinmiaoshadishe_tushu'>
+      <image class='xinmiaoshatupian' src="{{seckillGoods.thumb}}"></image>
+    </view>
   </view>
 </view>
 

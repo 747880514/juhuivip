@@ -88,7 +88,7 @@
         </view>
     </view>
     <view class="fui-goods-group {{listmode}}" style="margin-top:{{fuiheader}}">
-        <template is="tpl_list" data="{{item:item}}" wx:for="{{list}}"></template>
+        <template is="tpl_list" data="{{item:item}}" wx:for="{{list}}" wx:key="key" ></template>
     </view>
     <view class="fui-loading" wx:if="{{loading}}">
         <view class="icon"></view>
@@ -107,7 +107,7 @@
                 <view>历史搜索</view>
             </view>
             <view class="navs">
-                <nav bindtap="bindnav" data-text="{{item}}" wx:for="{{searchRecords}}">{{item}}</nav>
+                <nav bindtap="bindnav" data-text="{{item}}" wx:for="{{searchRecords}}" wx:key="key" >{{item}}</nav>
             </view>
         </block>
         <view hidden class="records-title">

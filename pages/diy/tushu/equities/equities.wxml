@@ -132,7 +132,7 @@
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ISJjzgy47tRGY3D943n423d94s4F7x.png'></image>
       <view class='caidanbiaoti_tushu'>粉丝福利</view>
     </navigator>
-    <navigator class='tubiaocai_tushu' url="##">
+    <navigator class='tubiaocai_tushu' url="/pages/custom/index?pageid=13">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ydVO0DerB070GNv771b1Le1Ln7deOm.png'></image>
       <view class='caidanbiaoti_tushu'>会员商品</view>
     </navigator>

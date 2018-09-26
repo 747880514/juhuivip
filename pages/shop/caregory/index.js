@@ -59,8 +59,6 @@ Page({
       var tt = this;
       wx.getSystemInfo({
         success: function (res) {
-          console.log(res.model);//手机机型
-          console.log(res.model == "iPhone X");
           if (res.model == "iPhone X") {
             tt.setData({
               isIPX:'true'

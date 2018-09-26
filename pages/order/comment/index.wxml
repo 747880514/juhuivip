@@ -1,4 +1,17 @@
 <loading wx:if="{{!show}}">加载中...</loading>
+<!-- 返回键 -->
+<view class='fudongreturn_tushu' bindtap='return_top_tushu'>
+    <view class='return_frame_{{isIPX}}_tushu  {{isIPX}}' bindtap='return_top_tushu'>
+      <image src='/static/images/fx.png' class='return_img_tushu'></image>
+    </view>
+</view>
+<view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
+  <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
+</view>
+<!-- 返回键结束 -->
+<!-- 辅助空白 -->
+<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
+<!-- 结束 -->
 <view clas="page" wx:if="{{show}}">
     <view class="fui-list-group">
         <view class="fui-list-group-title">

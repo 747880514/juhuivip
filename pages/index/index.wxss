@@ -683,6 +683,7 @@
   /* margin: 10rpx 15rpx 0 15rpx; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  margin-bottom: -1rpx;
 }
 /* tuhsu */
 .index-adcs-sqiper.index-banner-sqiper{
@@ -1018,4 +1019,56 @@
 /*百里*/
 .bailiGetBgColor{
   display: none;
+}
+
+/* tushu */
+.xinmiaosha_tushu{
+  position: relative;
+  margin-top: -20rpx;
+}
+.miaoshajiage_tushu{
+  position: absolute;
+  height:100rpx;
+  width:100rpx;
+  background-color:#F31842;
+  border-radius: 50%;
+  top: 8rpx;
+  right:45rpx;
+  z-index: 3;
+  color: #fff;
+}
+.xinmiaoshadishe_tushu{
+  position: absolute;
+  height:225rpx;
+  width:225rpx;
+  /* background-color:#FEB0B0; */
+  background-color: #fff;
+  border-radius: 50%;
+  top: 10rpx;
+  right:100rpx;
+  z-index: 2;
+} 
+.xianjia_tushu{
+  margin-top: 20rpx;
+  
+}
+.xianjia_tushu .jiagefu_tushu{
+  font-size: 20rpx;
+}
+.xianjia_tushu .jiageshu_tushu{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.yuanjia_tushu .jiagefu_tushu{
+  font-size: 16rpx;
+}
+.yuanjia_tushu .jiageshu_tushu{
+  font-size: 22rpx;
+  font-weight: bold;
+  text-decoration:line-through;
+}
+.xinmiaoshadishe_tushu .xinmiaoshatupian{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 20rpx;
 }
