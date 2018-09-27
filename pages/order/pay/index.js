@@ -1,4 +1,4 @@
-var t = getApp(), e = t.requirejs("core"), o = t.requirejs("foxui");
+var t = getApp(), e = t.requirejs("core"), o = t.requirejs("foxui"), oe = t.requirejs("biz/order");
 
 Page({
     data: {
@@ -48,6 +48,14 @@ Page({
     },
     get_list: function() {
         var t = this;
+        //验证是否存在下架商品
+        e.get("order/baili/taokezhushou_detail", t.data.options, function(res){
+          t.setData({
+            showpaylist: res.min
+          });
+          oe.cancel(res.orderid, '商品下架，系统自动取消', "/pages/order/index?status=0");
+        });
+
         e.get("order/pay", t.data.options, function(o) {
             50018 != o.error ? (!o.wechat.success && "0.00" != o.order.price && o.wechat.payinfo && e.alert(o.wechat.payinfo.message + "\n不能使用微信支付!"), 
             t.setData({

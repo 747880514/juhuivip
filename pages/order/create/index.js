@@ -245,7 +245,7 @@ Page({
             bargain_id: this.data.bargainid
         }, function(a) {
             t.dispatch_price = a.price, t.enoughdeduct = a.deductenough_money, t.enoughmoney = a.deductenough_enough, 
-            t.taskdiscountprice = a.taskdiscountprice, t.discountprice = a.discountprice, t.isdiscountprice = a.isdiscountprice, 
+              t.taskdiscountprice = a.taskdiscountprice, t.discountprice = a.discountprice, t.isdiscountprice = a.isdiscountprice, 
             t.seckill_price = a.seckill_price, e.data.data.deduct && (a.realprice -= a.deductcredit), 
             e.data.data.deduct2 && (a.realprice -= a.deductcredit2), e.data.coupon && void 0 !== e.data.coupon.deductprice && (a.realprice -= e.data.coupon.deductprice), 
             t.realprice = r.toFixed(a.realprice, 2), e.setData({

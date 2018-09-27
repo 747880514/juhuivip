@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 93,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -596,7 +596,14 @@
 				{
 					"id": -1,
 					"name": "营销团队-分红佣金",
-					"pathName": "dividend/pages/withdraw/index"
+					"pathName": "dividend/pages/withdraw/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "下架订单测试",
+					"pathName": "pages/order/pay/index?id=2076",
+					"query": ""
 				}
 			]
 		}
