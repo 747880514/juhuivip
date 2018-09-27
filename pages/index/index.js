@@ -100,7 +100,19 @@ Page((e = {
     // 秒杀按钮1tushu
     miaoshayi_tushu:function(){
       wx.navigateTo({
-        url: '/seckill/pages/index/index'
+        url: '/seckill/pages/index/index' / pages / groups / index / index
+      })
+    },
+    // 拼团按钮
+    pintuanyi_tushu: function () {
+      wx.navigateTo({
+        url: '/pages/groups/index/index'
+      })
+    },
+    // 砍价按钮
+    kanjiayi_tushu: function () {
+      wx.navigateTo({
+        url: '/pages/bargain/index/index'
       })
     },
 

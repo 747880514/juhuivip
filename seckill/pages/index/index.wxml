@@ -1,5 +1,6 @@
 <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%; position:relative;top:0px;left:0px;"></view>
 <view class="fui-page seckill-page {{seckill_style}} {{seckill_color}} fui-page-current" style="background:{{background_color}}">
+
     <view style="min-height:100%;height:100%;" wx:if="{{diypages}}">
         <include src="/pages/custom/index.wxml"></include>
     </view>

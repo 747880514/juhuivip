@@ -1,4 +1,4 @@
-<view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view>
+<!-- <view class='fuzhu_kongbai_tushu' style="height:{{fuzhukongbaiq}}; background-color:#fff; width:100%;"></view> -->
 <view class="page" style="{{isIpx?'padding-bottom:168rpx':''}}">
     <block wx:if="{{res.category.length>0||res.recgoods.length>0}}">
         <view class="fui-icon-group noborder col-4">
@@ -10,6 +10,12 @@
             {{item.name}}
           </view>
             </navigator>
+        </view>
+        <!-- tushu -->
+        <view class='tushu_tupian'>
+          <navigator url="/pages/groups/category/index?id={{item.id}}" wx:for="{{res.advs}}">
+            <image src='{{item.thumb}}' class='tupina_tuahu' style='height:300rpx; width:100%;'></image>
+          </navigator>
         </view>
         <view class="fui-list-group">
             <navigator class="fui-list" url="/pages/groups/goods/index?id={{item.id}}" wx:for="{{res.recgoods}}">
@@ -34,7 +40,7 @@
         <image src="/static/images/search_empty.png"></image>
         <view class="text">未找到任何活动</view>
     </view>
-    <view class="fui-navbar footer-nav {{iphonexnavbar}}">
+    <view class="fui-navbar footer-nav {{iphonexnavbar}}" style='bottom:0rpx'>
         <navigator class="nav-item" hoverClass="none" openType="switchTab" url="/pages/index/index">
             <!-- <span class="icox icox-back"></span> -->
             <image class="tusu_huizhucheng" style='width: 42rpx;height: 42rpx;' src='http://img.juhuivip.com/images/2/2018/09/G0f44UGNY44F9F4u414bFvIfG4FGgw.png'></image>
@@ -57,5 +63,5 @@
             <span class="label">我的团</span>
         </navigator>
     </view>
-    <view class="{{isIpx?'fui-iphonex-button':''}}"></view>
+    <!-- <view class="{{isIpx?'fui-iphonex-button':''}}"></view> -->
 </view>

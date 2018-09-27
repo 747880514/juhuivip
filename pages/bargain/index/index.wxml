@@ -36,7 +36,7 @@
         <image src="https://static.btaeo.cn/static/images/search_empty.png"></image>
         <view class="text">暂时没有任何商品</view>
     </view>
-    <view class="fui-navbar footer-nav {{iphonexnavbar}}">
+    <view class="fui-navbar footer-nav {{iphonexnavbar}}" style='bottom:0rpx'>
         <navigator class="nav-item" hoverClass="none" openType="switchTab" url="/pages/index/index">
             <span class="icox icox-shouye1"></span>
             <span class="label">商城首页</span>
@@ -54,5 +54,5 @@
             <span class="label">已购买</span>
         </navigator>
     </view>
-    <view class="{{isIpx?'fui-iphonex-button':''}}"></view>
+    <!-- <view class="{{isIpx?'fui-iphonex-button':''}}"></view> -->
 </view>

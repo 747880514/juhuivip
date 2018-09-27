@@ -12,8 +12,8 @@
                         {{time.status==1?'距开始':'距结束'}}<span class="time-hour">{{hour}}</span>:<span class="time-min">{{min}}</span>:<span class="time-sec">{{sec}}</span>
                     </view>
                 </view>
-                <view class="fui-list align-start" wx:key="{{index}}" wx:for="{{goods}}" wx:for-item="goods_item" wx:key="{{index}}">
-                    <view class="fui-list-media">
+                <view class="fui-list align-start" wx:key="{{index}}" wx:for="{{goods}}" wx:for-item="goods_item" wx:key="{{index}}" style="display:{{goods_item.price > 0 ? '' : 'none'}}">
+                    <view class="fui-list-media {{goods_item.price}}">
                         <navigator url="./index.php?i=12&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=goods.detail&amp;mid=12643&amp;id=9346">
                             <image src="{{goods_item.thumb}}"></image>
                         </navigator>
@@ -31,7 +31,7 @@
                                 <view wx:else>
                                     <navigator class="btn btn-danger btn-sm " hoverClass="none" url="/pages/goods/detail/index?id={{goods_item.goodsid}}"> 去抢购</navigator>
                                 </view>
-                                <view class="price" wx:if="{{goods_item.price}}">¥{{goods_item.price}}</view>
+                                <view class="price 111" wx:if="{{goods_item.price}}">¥{{goods_item.price}}</view>
                             </view>
                             <view class="info info1" wx:if="{{time.status!=1}}">
                                 <view class="process">
@@ -39,13 +39,13 @@
                                 </view>
                                 <span class="process-text">已抢 <span>{{goods_item.percent}}%</span>
                                 </span>
-                                <view class="price1" wx:if="{{goods_item.productprice}}">¥{{goods_item.productprice}} </view>
+                                <view class="price1" style="display:{{goods_item.productprice > 0 ? '' : 'none'}}"  wx:if="{{goods_item.productprice}}">¥{{goods_item.productprice}} </view>
                             </view>
                         </view>
                         <view class="info-container2">
                             <view class="info">
                                 <view class="price" wx:if="{{goods_item.price}}">¥{{goods_item.price}}</view>
-                                <view class="price1" wx:if="{{goods_item.productprice}}">¥{{goods_item.productprice}}</view>
+                                <view class="price1"  style="display:{{goods_item.productprice > 0 ? '' : 'none'}}"  wx:if="{{goods_item.productprice}}">¥{{goods_item.productprice}}</view>
                             </view>
                             <view class="info info1">
                                 <view wx:if="{{time.status==1}}">
