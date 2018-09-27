@@ -100,7 +100,7 @@ Page((e = {
     // 秒杀按钮1tushu
     miaoshayi_tushu:function(){
       wx.navigateTo({
-        url: '/seckill/pages/index/index' / pages / groups / index / index
+        url: '/seckill/pages/index/index'
       })
     },
     // 拼团按钮
@@ -387,7 +387,7 @@ Page((e = {
             a.setData({
               gtibargain: e.list[j],
             });
-            if (j > 5) {
+            if (j > 3) {
               j = 0;
             }
           }, 6000) //循环时间 这里是1秒  

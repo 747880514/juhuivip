@@ -1028,24 +1028,24 @@
 }
 .miaoshajiage_tushu{
   position: absolute;
-  height:100rpx;
-  width:100rpx;
+  height:90rpx;
+  width:90rpx;
   background-color:#F31842;
   border-radius: 50%;
-  top: 8rpx;
-  right:45rpx;
+  top: -3px;
+  right:19px;
   z-index: 3;
   color: #fff;
 }
 .xinmiaoshadishe_tushu{
   position: absolute;
-  height:225rpx;
-  width:225rpx;
+  height:220rpx;
+  width:220rpx;
   /* background-color:#FEB0B0; */
   background-color: #fff;
   border-radius: 50%;
-  top: 10rpx;
-  right:100rpx;
+  top: 0rpx;
+  right:92rpx;
   z-index: 2;
 } 
 .xianjia_tushu{
@@ -1056,14 +1056,14 @@
   font-size: 20rpx;
 }
 .xianjia_tushu .jiageshu_tushu{
-  font-size: 32rpx;
+  font-size: 26rpx;
   font-weight: bold;
 }
 .yuanjia_tushu .jiagefu_tushu{
   font-size: 16rpx;
 }
 .yuanjia_tushu .jiageshu_tushu{
-  font-size: 22rpx;
+  font-size: 20rpx;
   font-weight: bold;
   text-decoration:line-through;
 }
