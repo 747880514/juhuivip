@@ -26,8 +26,6 @@ n.requirejs("jquery"), n.requirejs("foxui"), Page({
         });
       wx.getSystemInfo({  //tushu
         success: function (res) {
-          console.log(res.model)//手机机型
-          console.log(res.model == "iPhone X")
           o.setData({
             statusBarHeight: res.statusBarHeight,
             fuzhukongbaiq: 105 + res.statusBarHeight + "rpx",

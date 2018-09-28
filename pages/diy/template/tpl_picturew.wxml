@@ -12,7 +12,7 @@
   <view class='xinmiaosha_tushu' bindtap='miaoshayi_tushu'>
     <view class='miaoshajiage_tushu' bindtap='miaoshayi_tushu'>
         <view class='xianjia_tushu'><text class='jiagefu_tushu'>￥</text><text class='jiageshu_tushu'>{{seckillGoods.price}}</text></view>
-        <view class='yuanjia_tushu'><text class='jiagefu_tushu'>￥</text><text class='jiageshu_tushu'>{{seckillGoods.productprice}}</text></view>
+        <view class='yuanjia_tushu' style="display:{{seckillGoods.productprice == 0?'none': 'block'}}"><text class='jiagefu_tushu'>￥</text><text class='jiageshu_tushu'>{{seckillGoods.productprice}}</text></view>
     </view>
     <view class='xinmiaoshadishe_tushu'  bindtap='miaoshayi_tushu'>
       <image class='xinmiaoshatupian' src="{{seckillGoods.thumb}}" style='border-radius:50%;'></image>

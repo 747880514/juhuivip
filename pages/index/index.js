@@ -364,7 +364,6 @@ Page((e = {
       getgroups: function (t) {
         var a = this;
         i.get("groups", {}, function (e) {
-          console.log(e.recgoods)
           var j = 0;
           setInterval(function () {
             j++;

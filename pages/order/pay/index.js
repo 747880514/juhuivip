@@ -48,14 +48,6 @@ Page({
     },
     get_list: function() {
         var t = this;
-        //验证是否存在下架商品
-        e.get("order/baili/taokezhushou_detail", t.data.options, function(res){
-          t.setData({
-            showpaylist: res.min
-          });
-          oe.cancel(res.orderid, '商品下架，系统自动取消', "/pages/order/index?status=0");
-        });
-
         e.get("order/pay", t.data.options, function(o) {
             50018 != o.error ? (!o.wechat.success && "0.00" != o.order.price && o.wechat.payinfo && e.alert(o.wechat.payinfo.message + "\n不能使用微信支付!"), 
             t.setData({
@@ -64,8 +56,52 @@ Page({
             })) : wx.navigateTo({
                 url: "/pages/order/details/index?id=" + t.data.options.id
             });
+          t.ouririj();
         });
+      //验证是否存在下架商品
+      e.get("order/baili/taokezhushou_detail", t.data.options, function (res) {
+        t.setData({
+          showpaylist: res.min
+        });
+
+        if (res.min == 0) {
+          oe.cancel(res.orderid, '商品下架，系统自动取消', "/pages/order/index?status=0");
+        }
+
+      });
+      
+       
     },
+    ouririj:function(){
+      var t = this;
+      
+        //  验证是否需要填写身份证号
+        e.get("order/baili/checkIdNumber", { ordersn: t.data.list.order.ordersn }, function (res) {
+          console.log(123);
+          t.setData({
+            status: res.status,
+          })
+          if (res.status == 0)
+            {
+
+              wx.showModal({
+                title: '提示',
+                content: '订单存在海外商品，需要提供您的身份证号，立即填写',
+                success: function (res) {
+                  if (res.confirm) {
+                    wx.navigateTo({
+                      url: '/pages/member/info/index'
+                    })
+                  } else if (res.cancel) {
+
+                  }
+                }
+              })
+            }
+
+        })
+    },
+
     pay: function(t) {
         var o = e.pdata(t).type, a = this, i = this.data.list.wechat;
         "wechat" == o ? e.pay(i.payinfo, function(t) {

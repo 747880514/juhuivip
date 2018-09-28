@@ -1,15 +1,15 @@
 <view>
   <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
-    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">精选</view>
-    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">优选水果</view>
-    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">家居日用</view>
-    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">美食饮料</view>
-    <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">美妆个护</view>
-    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">数码家电</view>
-    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">箱包服饰</view>
-    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">母婴玩具</view>
+    <view class="tab-item {{currentTaball==0?'active':''}}" data-current="0" bindtap="swichNav">精选</view>
+    <view class="tab-item {{currentTaball==1?'active':''}}" data-current="1" bindtap="swichNav">优选水果</view>
+    <view class="tab-item {{currentTaball==2?'active':''}}" data-current="2" bindtap="swichNav">家居日用</view>
+    <view class="tab-item {{currentTaball==3?'active':''}}" data-current="3" bindtap="swichNav">美食饮料</view>
+    <view class="tab-item {{currentTaball==4?'active':''}}" data-current="4" bindtap="swichNav">美妆个护</view>
+    <view class="tab-item {{currentTaball==5?'active':''}}" data-current="5" bindtap="swichNav">数码家电</view>
+    <view class="tab-item {{currentTaball==6?'active':''}}" data-current="6" bindtap="swichNav">箱包服饰</view>
+    <view class="tab-item {{currentTaball==7?'active':''}}" data-current="7" bindtap="swichNav">母婴玩具</view>
   </scroll-view>
-  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+  <swiper class="tab-content" current="{{currentTaball}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
     <!-- 精选 -->
     <swiper-item>
       <scroll-view scroll-y="true" class="scoll-h">
@@ -19,7 +19,7 @@
     <swiper-item>
       <scroll-view scroll-y="true" class="scoll-h">
 
-        12
+     
 
       </scroll-view>
       

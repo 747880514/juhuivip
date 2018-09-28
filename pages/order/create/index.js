@@ -50,7 +50,7 @@ Page({
     },
     onLoad: function(t) {
         var i = this, s = [];
-        
+      i.goodids();
         if (t.goods) {
             var r = JSON.parse(t.goods);
             t.goods = r, this.setData({
@@ -62,63 +62,7 @@ Page({
         }), i.setData({
             bargainid: t.bargainid
         }), e.url(t), console.log(i.data.options), 
-        a.get("order/create", i.data.options, function(t) {
-            i.goodsIds(t.goods);
-            //是否绑定手机号
-            if(!t.member.mobile)
-            {
-              wx.showModal({
-                title: '提示',
-                content: '您还没有绑定手机号，请先绑定！',
-                success: function (res) {
-                  if (res.confirm) {
-                    wx.redirectTo({
-                      url: '../../../pages/member/bind/index'
-                    })
-                  } else if (res.cancel) {
-                    wx.navigateBack({ changed: true });//返回上一页
-                  }
-                }
-              });
-            };
-            if (console.log(t), 0 == t.error) {
-                console.log(t), s = i.getGoodsList(t.goods);
-                var r = (i.data.originalprice - t.goodsprice).toFixed(2);
-                i.setData({
-                    list: t,
-                    goods: t,
-                    show: !0,
-                    address: !0,
-                    goodslist: s,
-                    merchid: t.merchid,
-                    comboprice: r,
-                    diyform: {
-                        f_data: t.f_data,
-                        fields: t.fields
-                    },
-                    city_express_state: t.city_express_state,
-                    cycelbuy_showdate: t.selectDate,
-                    receipttime: t.receipttime,
-                    iscycel: t.iscycel,
-                    scope: t.scope,
-                    fromquick: t.fromquick
-                }), e.setCache("goodsInfo", {
-                    goodslist: s,
-                    merchs: t.merchs
-                }, 1800);
-            } else a.toast(t.message, "loading"), setTimeout(function() {
-                wx.navigateBack();
-            }, 1e3);
-            if ("" != t.fullbackgoods) {
-                if (void 0 == t.fullbackgoods) return;
-                var d = t.fullbackgoods.fullbackratio, o = t.fullbackgoods.maxallfullbackallratio, d = Math.round(d), o = Math.round(o);
-                i.setData({
-                    fullbackratio: d,
-                    maxallfullbackallratio: o
-                });
-            }
-            1 == t.iscycel && i.show_cycelbuydate();
-        }), this.getQuickAddressDetail(), e.setCache("coupon", ""), setTimeout(function() {
+         this.getQuickAddressDetail(), e.setCache("coupon", ""), setTimeout(function() {
             i.setData({
                 areas: e.getCache("cacheset").areas
             });
@@ -164,6 +108,7 @@ Page({
     },
     onShow: function() {
         var i = this, s = e.getCache("orderAddress"), d = e.getCache("orderShop");
+        i.goodids();
         e.getCache("isIpx") ? i.setData({
             isIpx: !0,
             iphonexnavbar: "fui-iphonex-navbar",
@@ -197,6 +142,65 @@ Page({
             "data.couponname": null,
             coupon: null
         }), r.isEmptyObject(i.data.list) || i.caculate(i.data.list));
+    },
+    goodids: function(){
+      var i = this, s = [];
+      a.get("order/create", i.data.options, function (t) {
+        i.goodsIds(t.goods);
+        //是否绑定手机号
+        if (!t.member.mobile) {
+          wx.showModal({
+            title: '提示',
+            content: '您还没有绑定手机号，请先绑定！',
+            success: function (res) {
+              if (res.confirm) {
+                wx.redirectTo({
+                  url: '../../../pages/member/bind/index'
+                })
+              } else if (res.cancel) {
+                wx.navigateBack({ changed: true });//返回上一页
+              }
+            }
+          });
+        };
+        if (console.log(t), 0 == t.error) {
+          console.log(t), s = i.getGoodsList(t.goods);
+          var r = (i.data.originalprice - t.goodsprice).toFixed(2);
+          i.setData({
+            list: t,
+            goods: t,
+            show: !0,
+            address: !0,
+            goodslist: s,
+            merchid: t.merchid,
+            comboprice: r,
+            diyform: {
+              f_data: t.f_data,
+              fields: t.fields
+            },
+            city_express_state: t.city_express_state,
+            cycelbuy_showdate: t.selectDate,
+            receipttime: t.receipttime,
+            iscycel: t.iscycel,
+            scope: t.scope,
+            fromquick: t.fromquick
+          }), e.setCache("goodsInfo", {
+            goodslist: s,
+            merchs: t.merchs
+          }, 1800);
+        } else a.toast(t.message, "loading"), setTimeout(function () {
+          wx.navigateBack();
+        }, 1e3);
+        if ("" != t.fullbackgoods) {
+          if (void 0 == t.fullbackgoods) return;
+          var d = t.fullbackgoods.fullbackratio, o = t.fullbackgoods.maxallfullbackallratio, d = Math.round(d), o = Math.round(o);
+          i.setData({
+            fullbackratio: d,
+            maxallfullbackallratio: o
+          });
+        }
+        1 == t.iscycel && i.show_cycelbuydate();
+      })
     },
     getGoodsList: function(t) {
         var e = [];

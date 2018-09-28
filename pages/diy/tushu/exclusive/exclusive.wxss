@@ -23,17 +23,6 @@
   position: relative;
 }
 
-/* .tab-item.active:after {
-  content: "";
-  display: block;
-  height: 8rpx;
-  width: 52rpx;
-  background: #4675f9;
-  position: absolute;
-  bottom: 0;
-  left: 5rpx;
-  border-radius: 16rpx;
-} */
 
 
 

@@ -11,8 +11,37 @@ Page({
         smsimgcode: "",
         verifycode_img: ""
     },
+    // 返回上一页
+    return_top_tushu: function () {
+      wx.navigateBack({ changed: true });//返回上一页
+    },
     onLoad: function(i) {
+      var o = this;
         e.url(i), t.loading(), this.getInfo();
+        wx.getSystemInfo({  //tushu
+          success: function (res) {
+            o.setData({
+              statusBarHeight: res.statusBarHeight,
+              fuzhukongbaiq: 105 + res.statusBarHeight + "rpx",
+
+            })
+            if (res.model == "iPhone X") {
+              o.setData({
+                isIPX: "ipx"
+              });
+            }
+            else if (res.model == "iPhone 7 Plus" || res.model == "iPhone 7" || res.model == "iPhone 6 Plus" || res.model == "iPhone 6" || res.model == "iPhone 5" || res.model == "iPhone 7 Plus<iPhone9,2>") {
+              o.setData({
+                isIPX: "iPhone"
+              });
+            }
+            else {
+              o.setData({
+                isIPX: "Android"
+              });
+            }
+          }
+        });
     },
     getInfo: function() {
         var e, i = this;

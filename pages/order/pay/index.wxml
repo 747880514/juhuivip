@@ -20,11 +20,11 @@
             </view>
         </view>
     </view>
-    <view class="fui-list-group" style="color:#999;font-size:26rpx;line-height:50rpx;padding:30rpx;" openType="navigate" wx:if="{{showpaylist == 0}}">
+    <view class="fui-list-group" style="color:#999;font-size:26rpx;line-height:50rpx;padding:30rpx; " openType="navigate" wx:if="{{showpaylist == 0}}">
       <view>订单存在下架商品，已为您取消订单</view>
       <view>请重新下单</view>
     </view>
-    <view class="fui-list-group" wx:if="{{showpaylist == 1}}">
+    <view class="fui-list-group" wx:if="{{showpaylist == 1}}" style="display:{{status == 0 ? 'none' : 'block' }};">
         <view bindtap="pay" class="btn btn-danger block" data-type="credit" style="margin-top:1.25rem" wx:if="{{list.credit.success&&list.order.price==0}}">
            确认支付
         </view>

@@ -65,6 +65,27 @@ Page({
           avatar: t.avatar,
           agent_weixin: t.agent_weixin
         }), a.wxParse("wxParseData", "html", t.copyright, e, "5");
+
+        // 强制绑定手机号
+        if (t.needbind == 1) {
+          wx.showModal({
+            title: '提示',
+            content: '请填写手机号',
+            showCancel: false,
+            confirmText: '前去填写',
+            success: function (res) {
+              if (res.confirm) {//这里是点击了确定以后
+
+                wx.navigateTo({
+                  url: '/pages/member/bind/index'
+                })
+
+              }
+            }
+          })
+        }
+
+
       });
     },
     onShow: function () {

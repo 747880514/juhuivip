@@ -28,3 +28,6 @@
     bottom: 0;
     background: #ff3300;
 }
+.fui-cell-remark.noremark image{
+  width: 200rpx;
+}
