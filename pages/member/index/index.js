@@ -90,6 +90,7 @@ Page({
     },
     onShow: function () {
       var e = this;
+      e.getInfo();
       wx.getSetting({
         success: function (t) {
           var a = t.authSetting["scope.userInfo"];

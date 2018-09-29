@@ -48,4 +48,5 @@
 }
 .active{
   color: #ff204a;
+  text-align: center;
 }

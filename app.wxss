@@ -5747,7 +5747,7 @@ page {
     height: 88rpx;
     background: #fdfde5;
     position: fixed;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     z-index: 188;
     color: #ff8000;
@@ -5755,6 +5755,7 @@ page {
     line-height: 88rpx;
     padding-left: 20rpx;
     display: flex;
+    bottom:0;
 }
 
 .coupontips .text {
