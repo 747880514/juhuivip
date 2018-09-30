@@ -380,14 +380,14 @@ Page((e = {
         bargain: function (t) {
         var a = this;
         i.get("bargain/get_list", {}, function (e) {
-          var j = 1;
+          var po = 0;
           setInterval(function () {
-            j++;
+            po++;
             a.setData({
-              gtibargain: e.list[j],
+              gtibargain: e.list[po],
             });
-            if (j > 3) {
-              j = 1;
+            if (po >3) {
+              po = 0;
             }
           }, 6000) //循环时间 这里是1秒  
         });
