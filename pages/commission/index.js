@@ -23,7 +23,7 @@ Page({
     getPage: function () {
       t.get("commission/register", {}, function (t) {
         70003 != t.error ? wx.redirectTo({
-          url:"/pages/custom/index?pageid=13"
+          url:"/pages/custom/index?pageid=76"
         }) : wx.redirectTo({
           url:"/pages/diy/tushu/equities/equities"
         });
