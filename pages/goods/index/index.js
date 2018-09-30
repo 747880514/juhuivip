@@ -93,6 +93,9 @@ Page({
           fuiheader: 105 + res.statusBarHeight + "rpx",
           sort: 193 + res.statusBarHeight + "rpx",
           screen: 263 + res.statusBarHeight + "rpx",
+          zhongjian: 25 + res.statusBarHeight * 2 + "rpx",
+          zhoredn: 70 + res.statusBarHeight * 2 + "rpx",
+
         })
         if (res.model == "iPhone X") {
           s.setData({

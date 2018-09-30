@@ -44,6 +44,14 @@
       <image src='/static/images/fx.png' class='return_img_tushu'></image>
     </view>
 </view>
+<!-- 标题 -->
+<view>
+<view class='shjaas' style="height:{{zhoredn}}; width:100%; background-color: #ff204a; z-index:5555; position: fixed;top: 0px;">.</view>
+  <view class='center_tushu' style="top:{{zhongjian}}; color:#fff;">花蒜商城</view>
+</view>
+
+
+
 <view class='return_index_{{isIPX}}_tushu' bindtap='return_index_tushu'>
   <image src='/static/images/ts.png' class='return_index_img_tushu'></image>
 </view>
