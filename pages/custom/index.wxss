@@ -798,12 +798,3 @@ canvas {
 .fuzhukongbai_Android_tushu{
   height: 200rpx;
 }
-/* 中间标题 */
-.center_tushu{
-  background-color: rgba(255,255,255,0);
-  width: 100%;
-  position: fixed;
-  text-align: center;
-  z-index: 99999;
-  
-}

@@ -83,6 +83,7 @@ Page({
             t.setData({
               statusBarHeight: res.statusBarHeight,
               fuzhukongbaiq: 105 + res.statusBarHeight * 2 + "rpx",
+              zhongjian: 25 + res.statusBarHeight * 2 + "rpx",
             })
             if (res.model == "iPhone X") {
               t.setData({
