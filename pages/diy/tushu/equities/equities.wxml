@@ -105,10 +105,10 @@
     </view>
   </view>
 
-<!-- 
-  <navigator url='/pages/custom/index?pageid=77'>
-    <image src='http://img.juhuivip.com/images/2/2018/09/y6FG3q07lfVL11b3v15I69v9V9BfVG.jpg' class='guanggaotu_tushu'></image>
-  </navigator> -->
+  <navigator url='/pages/custom/index?pageid=76'>
+    <image src='http://img.juhuivip.com/images/2/2018/09/gev7x41ShE267k8CpCvE426D69VcCc.png' class='guanggaotu_tushu'></image>
+  </navigator>
+
   <view class='caidanlan_tushu'>
     <navigator class='tubiaocai_tushu' url="/dividend/pages/index/index" wx:if="{{member.isheads_huasuan==1}}">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/X55ouyNuZnBuV5a6NGNg6aOAUaOgn5.png'></image>
@@ -132,7 +132,7 @@
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ISJjzgy47tRGY3D943n423d94s4F7x.png'></image>
       <view class='caidanbiaoti_tushu'>粉丝福利</view>
     </navigator>
-    <navigator class='tubiaocai_tushu' url="/pages/custom/index?pageid=13">
+    <navigator class='tubiaocai_tushu' url="/pages/custom/index?pageid=76">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ydVO0DerB070GNv771b1Le1Ln7deOm.png'></image>
       <view class='caidanbiaoti_tushu'>会员商品</view>
     </navigator>
