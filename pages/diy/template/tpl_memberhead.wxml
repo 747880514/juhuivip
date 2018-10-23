@@ -74,7 +74,10 @@
       </view>
     </view>
     <view class='tuquan_tushu'>
-      <navigator url="/pages/custom/index?pageid=76" class='diantequan_tushu'>点击查看特权></navigator>
+      <navigator url="##" class='diantequan_tushu'>点击查看特权></navigator>
     </view>
+    <!-- <view class='tuquan_tushu'>
+      <navigator url="/pages/custom/index?pageid=76" class='diantequan_tushu'>点击查看特权></navigator>
+    </view> -->
   </view>
 </view>

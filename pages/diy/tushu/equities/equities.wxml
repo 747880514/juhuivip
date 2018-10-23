@@ -67,7 +67,7 @@
       </view>
     </view>
   </view>
-  <view class='yaoqingkuang_tushu'>
+  <!-- <view class='yaoqingkuang_tushu'>
     <navigator url='/pages/custom/index?pageid=16'>
       <view class='yaoqingsuanfen_tushu'>
         <view class='zhuanshu_tushu'>专属蒜粉</view>
@@ -80,7 +80,7 @@
         <view class='yaoqingdejiang_tushu'>邀请得奖励</view>
       </view>
     </navigator>
-  </view>
+  </view> -->
 <!-- 底部悬浮 -->
   <view class="page_hd">
     <view bindtap='shouyetushu' class='daohang_tushu'>
@@ -105,9 +105,9 @@
     </view>
   </view>
 
-  <navigator url='/pages/custom/index?pageid=76'>
+  <!-- <navigator url='/pages/custom/index?pageid=76'>
     <image src='http://img.juhuivip.com/images/2/2018/09/gev7x41ShE267k8CpCvE426D69VcCc.png' class='guanggaotu_tushu'></image>
-  </navigator>
+  </navigator> -->
 
   <view class='caidanlan_tushu'>
     <navigator class='tubiaocai_tushu' url="/dividend/pages/index/index" wx:if="{{member.isheads_huasuan==1}}">
@@ -132,10 +132,10 @@
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ISJjzgy47tRGY3D943n423d94s4F7x.png'></image>
       <view class='caidanbiaoti_tushu'>粉丝福利</view>
     </navigator>
-    <navigator class='tubiaocai_tushu' url="/pages/custom/index?pageid=76">
+    <!-- <navigator class='tubiaocai_tushu' url="/pages/custom/index?pageid=76">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/ydVO0DerB070GNv771b1Le1Ln7deOm.png'></image>
       <view class='caidanbiaoti_tushu'>会员商品</view>
-    </navigator>
+    </navigator> -->
     <navigator class='tubiaocai_tushu' url="##">
       <image class='tubiaotu_tushu' src='https://www.juhuivip.com/attachment/images/2/2018/08/U2pIPMq9BLxaTaaP833b89HTbpTrX5.png'></image>
       <view class='caidanbiaoti_tushu'>爆款推单</view>
