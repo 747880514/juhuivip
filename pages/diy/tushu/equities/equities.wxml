@@ -67,7 +67,7 @@
       </view>
     </view>
   </view>
-  <!-- <view class='yaoqingkuang_tushu'>
+  <view class='yaoqingkuang_tushu'>
     <navigator url='/pages/custom/index?pageid=16'>
       <view class='yaoqingsuanfen_tushu'>
         <view class='zhuanshu_tushu'>专属蒜粉</view>
@@ -80,7 +80,7 @@
         <view class='yaoqingdejiang_tushu'>邀请得奖励</view>
       </view>
     </navigator>
-  </view> -->
+  </view>
 <!-- 底部悬浮 -->
   <view class="page_hd">
     <view bindtap='shouyetushu' class='daohang_tushu'>
@@ -105,9 +105,9 @@
     </view>
   </view>
 
-  <!-- <navigator url='/pages/custom/index?pageid=76'>
+  <navigator url='/pages/custom/index?pageid=76'>
     <image src='http://img.juhuivip.com/images/2/2018/09/gev7x41ShE267k8CpCvE426D69VcCc.png' class='guanggaotu_tushu'></image>
-  </navigator> -->
+  </navigator>
 
   <view class='caidanlan_tushu'>
     <navigator class='tubiaocai_tushu' url="/dividend/pages/index/index" wx:if="{{member.isheads_huasuan==1}}">
