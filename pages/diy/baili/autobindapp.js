@@ -9,6 +9,7 @@ Page({
     route: "member",
     icons: e.requirejs("icons"),
     member: {},
+    queren: ''
   },
   onLoad: function (options) { 
     this.setData({
@@ -33,6 +34,7 @@ Page({
     var unionId = this.data.userInfo.unionId;
     var avatarUrl = this.data.userInfo.avatarUrl;
     var nickName = this.data.userInfo.nickName;
+    var contact = 'contact';
 
     t.get("member/baili/wxappToSuperapp", { 'mobile': mobile, 'tgid': tgid, 'unionId': unionId, 'avatarUrl': avatarUrl, 'nickName': nickName}, function (t) {
       that.setData({
@@ -42,6 +44,9 @@ Page({
       if(t.status == 1)
       {
         //会员已存在 OR 验证成功
+       that.setData({
+         queren: contact,
+       })
       }
     });
   },
