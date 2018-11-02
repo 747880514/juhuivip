@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 95,
 			"list": [
 				{
 					"id": -1,
@@ -604,6 +604,12 @@
 					"name": "下架订单测试",
 					"pathName": "pages/order/pay/index?id=2076",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "下载超级APP",
+					"pathName": "pages/diy/baili/autobindapp",
+					"query": "tgid=21199"
 				}
 			]
 		}
