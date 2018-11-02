@@ -1,7 +1,7 @@
 
 <view class='box' style='margin-top:100rpx'>
-  <view style='height:60rpx;line-height:60rpx;'>下载花蒜APP</view>
-  <input placeholder="输入手机号下载" placeholder-class="phClass" bindinput ="getmobile"></input>
+  <view style='height:60rpx;line-height:60rpx;text-align:center;'>下载花蒜APP</view>
+  <input placeholder="输入手机号下载" placeholder-class="phClass" bindinput ="getmobile" style='border:1px #ccc solid;margin:10px;height:16px;line-height:16px;padding:5px;'></input>
   <button bindtap='toSuperapp'>确定</button>
-  <view style='color:red'>{{ts}}</view>
+  <view style='color:red;font-size:12px;text-align:center;margin-top:10px;'>{{ts}}</view>
 </view>
