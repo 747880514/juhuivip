@@ -29,17 +29,18 @@ Page({
   //输入手机号后检用户是否存在
   toSuperapp:function() {
     var that = this;
-    var mobile = this.data.mobile;
-    var tgid = this.data.tgid;
-    var unionId = this.data.userInfo.unionId;
-    var avatarUrl = this.data.userInfo.avatarUrl;
-    var nickName = this.data.userInfo.nickName;
+
+    var mobile = that.data.mobile;
+    var tgid = that.data.tgid;
+    var unionId = that.data.userInfo.unionId;
+    var avatarUrl = that.data.userInfo.avatarUrl;
+    var nickName = that.data.userInfo.nickName;
 
     t.get("member/baili/wxappToSuperapp", { 'mobile': mobile, 'tgid': tgid, 'unionId': unionId, 'avatarUrl': avatarUrl, 'nickName': nickName}, function (t) {
       that.setData({
         ts: t.msg,
         queren: 'contact',
-      })
+      });
     });
   },
 
