@@ -606,10 +606,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 95,
 					"name": "下载超级APP",
 					"pathName": "pages/diy/baili/autobindapp",
-					"query": "tgid=21199"
+					"query": "tgid=24703"
 				}
 			]
 		}
