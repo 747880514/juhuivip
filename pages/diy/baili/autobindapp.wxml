@@ -1,8 +1,5 @@
-<view class='box' style='margin-top:100rpx; display:none;'>
-  <view style='height:60rpx;line-height:60rpx;text-align:center;'>下载花蒜APP</view>
-  <input placeholder="输入手机号下载" placeholder-class="phClass" bindinput="getmobile" style='border:1px #ccc solid;margin:10px;height:16px;line-height:16px;padding:5px;'></input>
-  <button bindtap='toSuperapp' openType="{{queren}}" sessionFrom="weapp" showMessageCard="true">确定</button>
-  <view style='color:red;font-size:12px;text-align:center;margin-top:10px;'>{{ts}}</view>
+<view class='warp' hidden='{{eye}}'>
+    <button open-type="getUserInfo" style='z-index:{{shuzz}}; display:{{yinca}}' hover-class='none' bindgetuserinfo="getUserInfoFun">.</button> 
 </view>
 <view class='boxs'>
   <view>
@@ -12,7 +9,7 @@
     <view>
       <input type='number' placeholder="输入手机号 领取现金红包" class='shuruku' placeholder-class="phClass" bindinput="getmobile" style='display:{{yin}}'/>
     </view>
-    <view class='ziti'>{{ts}}</view>
-    <button class='xiaziaanniu' bindtap='toSuperapp' openType="{{queren}}" sessionFrom="weapp" showMessageCard="true">下载花蒜APP</button>
+    <view class='ziti' style='display:{{yin}}'>{{ts}}</view>
+    <button class='xiaziaanniu' style="{{topaa}}" bindtap='toSuperapp' openType="{{queren}}" sessionFrom="weapp" showMessageCard="true">下载花蒜APP</button>
   </view>
 </view>

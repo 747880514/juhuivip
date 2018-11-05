@@ -9,17 +9,24 @@ Page({
     route: "member",
     icons: e.requirejs("icons"),
     member: {},
-    queren: ''
+    queren: '',
+    shuzz:100,
+    yinca:'block',
+    
   },
-  onLoad: function (options) { 
+  onLoad: function (options) {
+
     this.setData({
       userInfo: e.getCache("userinfo"),
       tgid: options.tgid,
     });
+
   },
-  onShow: function () {
+  onShow: function (options) {
     //自检用户是否存在
     this.toSuperapp();
+    // 获取用户信息
+    this.getUserInfoFun();
   },
   getmobile: function(e) {
     this.setData({
@@ -37,11 +44,33 @@ Page({
     var nickName = that.data.userInfo.nickName;
 
     t.get("member/baili/wxappToSuperapp", { 'mobile': mobile, 'tgid': tgid, 'unionId': unionId, 'avatarUrl': avatarUrl, 'nickName': nickName}, function (t) {
+      var topbb = t.display == 'none' ? 'margin-top: 20vw;' : '';
       that.setData({
         ts: t.msg,
-        queren: 'contact',
+        queren: t.contact,
+        yin: t.display,
+        topaa: topbb,
+
       });
     });
   },
-
+  getUserInfoFun: function () {
+    var S = this;
+    wx.getUserInfo({
+      success: function (res) {
+        S.setData({
+          yinca:'none',
+          shuzz:-10,
+        })
+      },
+      fail: S.showPrePage
+    })
+  },
+  showPrePage: function () {
+    var S = this;
+    S.setData({
+      yinca: 'block',
+      shuzz: 100,
+    })
+  }
 });
