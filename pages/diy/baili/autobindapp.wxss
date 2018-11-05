@@ -1,0 +1,35 @@
+.boxs{
+  background-color: #fff;
+  height: 100%;
+}
+xia_shuruk{
+  position: relative;
+  width: 100vw;
+}
+.shuruku{ 
+  width: 60vw;
+  text-align: center;
+  border-radius:50rpx;
+  background-color: #F3F3F3;
+  height: 10vw;
+  margin: 0 auto;
+  margin-top: 3vw;
+}
+.ziti{
+  text-align: center;
+  color: #ff204a;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 25rpx;
+}
+.xiaziaanniu{
+  width: 60vw;
+  margin: 0 auto;
+  height: 10vw;
+  background-color: #ff204a;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 10vw;
+}
