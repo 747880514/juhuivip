@@ -6,7 +6,7 @@ App({
         this.onLaunch();
     },
     
-    onLaunch: function() {
+  onLaunch: function (options) {
         var e = this;
         wx.getSystemInfo({
             success: function(t) {
@@ -91,7 +91,8 @@ App({
                                 i.userInfo.unionId = e.unionId, 
                                 i.needauth = 0, o.setCache("userinfo", i.userInfo, 7200), o.setCache("userinfo_openid", i.userInfo.openid), 
                                 o.setCache("userinfo_id", e.id), o.getSet(), t && "function" == typeof t && t(a);
-                                if(e.bind_agentid == 1)
+                              console.log(getCurrentPages());
+                              if (e.bind_agentid == 1 && getCurrentPages()[0].route != 'pages/diy/baili/autobindapp')
                                 {
                                   wx.switchTab({
                                     url: '../../../pages/member/index/index'
