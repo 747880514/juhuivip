@@ -1,6 +1,6 @@
 <loading wx:if="{{!show&&!modelShow}}">加载中...</loading>
 <!-- 绑定推荐人开始 -->
-<view class="member page" style="background:{{diypages.page.background}};" id="the-input-agentid" wx:if="{{member.bind_agentid==1}}">
+<!-- <view class="member page" style="background:{{diypages.page.background}};" id="the-input-agentid" wx:if="{{member.bind_agentid==1}}">
   <view class='box'>
     <view class='title'>邀请码</view>
     <view class="qidai">您期待成为谁的蒜粉？</view>
@@ -14,7 +14,7 @@
       <view class='ok2'>确认</view>
     </view>
   </view>
-</view>
+</view> -->
 <!-- 绑定推荐人结束 -->
 
 <view wx:if="{{member.bind_agentid==0}}">
