@@ -72,5 +72,15 @@ Page({
       yinca: 'block',
       shuzz: 100,
     })
+  },
+  onShareAppMessage: function () {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '花蒜',
+      path: '/pages/diy/baili/autobindapp'
+    }
   }
 });
