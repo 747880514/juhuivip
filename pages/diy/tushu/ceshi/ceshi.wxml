@@ -3,5 +3,6 @@
 </view>
 
 <view class="right">向右</view>
+<web-view src="https://www.juhuivip.com"></web-view>
 
 

@@ -73,14 +73,15 @@ Page({
       shuzz: 100,
     })
   },
-  onShareAppMessage: function () {
+  onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(res.target)
     }
+    console.log('/pages/diy/baili/autobindapp?tgid=' + this.data.tgid);
     return {
       title: '花蒜',
-      path: '/pages/diy/baili/autobindapp'
+      path: '/pages/diy/baili/autobindapp?tgid=' + this.data.tgid
     }
   }
 });
