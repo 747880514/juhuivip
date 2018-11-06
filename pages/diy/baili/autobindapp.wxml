@@ -1,6 +1,16 @@
 <view class='warp' hidden='{{eye}}'>
     <button open-type="getUserInfo" style='z-index:{{shuzz}}; display:{{yinca}}' hover-class='none' bindgetuserinfo="getUserInfoFun">.</button> 
 </view>
+<!-- <view class='shouquan'>
+    <view class='shouquank'>
+      <view class='shouquantit'>用户未授权</view>
+      <view class='shouquancen'>您需要先允许授权，才能进行后续操作哦~</view>
+      <view class='shouquanzhuangtai'>
+        <button>取消</button>
+        <button>确定</button>
+      </view>
+    </view>
+</view> -->
 <view class='boxs'>
   <view>
     <image src='http://img.juhuivip.com/images/2/2018/11/oTIRTqRPh0AZhZw7HZUr0abwwe0vGi.png' style='width:100vw;height:139vw;'></image>
