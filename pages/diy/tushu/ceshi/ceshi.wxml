@@ -3,6 +3,6 @@
 </view>
 
 <view class="right">向右</view>
-<web-view src="https://www.juhuivip.com"></web-view>
+<web-view src="https://www.juhuivip.com/app/index.php?i=2&c=entry&m=ewei_shopv2&do=mobile&r=diypage&id=72"></web-view>
 
 
