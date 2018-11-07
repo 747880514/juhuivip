@@ -10,12 +10,12 @@ Page({
     icons: e.requirejs("icons"),
     member: {},
     queren: '',
+    yinc:'block',
 
 
     
   },
   onLoad: function (options) {
-    // this.getUserInfoFun();
     var userInfo = e.getCache("userinfo");
     var tgid = options.tgid;
     this.setData({
@@ -65,6 +65,9 @@ Page({
     wx.getUserInfo({
       success: function (res) {
         console.log('用户已授权');
+        S.setData({
+          yinc:'none',
+        })
   
         S.toSuperapp();
 
