@@ -1,16 +1,4 @@
-<view class='warp' hidden='{{eye}}'>
-    <button open-type="getUserInfo" style='z-index:{{shuzz}}; display:{{yinca}}' hover-class='none' bindgetuserinfo="getUserInfoFun">.</button> 
-</view>
-<!-- <view class='shouquan'>
-    <view class='shouquank'>
-      <view class='shouquantit'>用户未授权</view>
-      <view class='shouquancen'>您需要先允许授权，才能进行后续操作哦~</view>
-      <view class='shouquanzhuangtai'>
-        <button>取消</button>
-        <button>确定</button>
-      </view>
-    </view>
-</view> -->
+
 <view class='boxs'>
   <view>
     <image src='http://img.juhuivip.com/images/2/2018/11/oTIRTqRPh0AZhZw7HZUr0abwwe0vGi.png' style='width:100vw;height:139vw;'></image>
@@ -22,4 +10,17 @@
     <view class='ziti' style='display:{{yin}}'>{{ts}}</view>
     <button class='xiaziaanniu' style="{{topaa}}" bindtap='toSuperapp' openType="{{queren}}" sessionFrom="weapp" showMessageCard="true">下载花蒜APP</button>
   </view>
+</view>
+
+
+
+<view class='shouquan' style='display:{{yin}};'>
+    <view class='shouquank'>
+      <view class='shouquantit'>用户未授权</view>
+      <view class='shouquancen'>您需要先允许【用户授权】，才能进行后续操作哦~</view>
+      <view class='shouquanzhuangtai'>
+        <button class='qvxiao'>取消</button>
+        <button class='queding' open-type="getUserInfo" hover-class='none' bindgetuserinfo="getUserInfoFun">确定</button>
+      </view>
+    </view>
 </view>

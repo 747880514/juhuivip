@@ -10,23 +10,27 @@ Page({
     icons: e.requirejs("icons"),
     member: {},
     queren: '',
-    shuzz:100,
-    yinca:'block',
+
+
     
   },
   onLoad: function (options) {
-
+    // this.getUserInfoFun();
+    var userInfo = e.getCache("userinfo");
+    var tgid = options.tgid;
     this.setData({
-      userInfo: e.getCache("userinfo"),
-      tgid: options.tgid,
+      userInfo: userInfo,
+      tgid: tgid,
+      options: options,
     });
+    this.toSuperapp();
 
   },
   onShow: function (options) {
     //自检用户是否存在
     this.toSuperapp();
     // 获取用户信息
-    this.getUserInfoFun();
+   
   },
   getmobile: function(e) {
     this.setData({
@@ -36,13 +40,11 @@ Page({
   //输入手机号后检用户是否存在
   toSuperapp:function() {
     var that = this;
-
     var mobile = that.data.mobile;
     var tgid = that.data.tgid;
     var unionId = that.data.userInfo.unionId;
     var avatarUrl = that.data.userInfo.avatarUrl;
     var nickName = that.data.userInfo.nickName;
-
     t.get("member/baili/wxappToSuperapp", { 'mobile': mobile, 'tgid': tgid, 'unionId': unionId, 'avatarUrl': avatarUrl, 'nickName': nickName}, function (t) {
       var topbb = t.display == 'none' ? 'margin-top: 20vw;' : '';
       that.setData({
@@ -50,38 +52,37 @@ Page({
         queren: t.contact,
         yin: t.display,
         topaa: topbb,
-
       });
+      console.log(that.data.yin);
+      console.log(456);
     });
+    console.log(123);
   },
+
+
   getUserInfoFun: function () {
     var S = this;
     wx.getUserInfo({
       success: function (res) {
-        S.setData({
-          yinca:'none',
-          shuzz:-10,
-        })
+        console.log('用户已授权');
+  
+        S.toSuperapp();
+
       },
-      fail: S.showPrePage
+      fail: function () {
+        console.log('用户未授权');
+      },
     })
-  },
-  showPrePage: function () {
-    var S = this;
-    S.setData({
-      yinca: 'block',
-      shuzz: 100,
-    })
-  },
+    S.toSuperapp();
+    S.onLoad(S.data.options);
+  }, 
+  
+  
+  // 分享接口
   onShareAppMessage: function (res) {
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    console.log('/pages/diy/baili/autobindapp?tgid=' + this.data.tgid);
     return {
-      title: '花蒜',
+      title: '好友送您20元可提现现金，快接受小伙伴的邀请下载领取',
       path: '/pages/diy/baili/autobindapp?tgid=' + this.data.tgid
     }
-  }
+  },
 });

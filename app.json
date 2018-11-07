@@ -85,7 +85,9 @@
         "pages/diy/tushu/details/details",
         "pages/diy/tushu/ceshi/ceshi",
         "pages/diy/tushu/return/return",
-        "pages/diy/baili/autobindapp"
+        "pages/diy/baili/autobindapp",
+        "pages/diy/tushu/commodity/commodity"
+
         
     ],
     "window": {
