@@ -10,27 +10,25 @@ Page({
     icons: e.requirejs("icons"),
     member: {},
     queren: '',
-
-
-    
+    userInfo: {},
   },
   onLoad: function (options) {
     // this.getUserInfoFun();
-    var userInfo = e.getCache("userinfo");
+
+    var superapp_userinfo = e.getCache("superapp_userinfo");
     var tgid = options.tgid;
     this.setData({
-      userInfo: userInfo,
+      superapp_userinfo: superapp_userinfo,
       tgid: tgid,
       options: options,
     });
+
     this.toSuperapp();
 
   },
   onShow: function (options) {
     //自检用户是否存在
-    this.toSuperapp();
-    // 获取用户信息
-   
+    // this.toSuperapp();
   },
   getmobile: function(e) {
     this.setData({
@@ -40,9 +38,10 @@ Page({
   //输入手机号后检用户是否存在
   toSuperapp:function() {
     var that = this;
+    
     var mobile = that.data.mobile;
     var tgid = that.data.tgid;
-    var unionId = that.data.userInfo.unionId;
+    var unionId = that.data.superapp_userinfo.unionid;
     var avatarUrl = that.data.userInfo.avatarUrl;
     var nickName = that.data.userInfo.nickName;
     t.get("member/baili/wxappToSuperapp", { 'mobile': mobile, 'tgid': tgid, 'unionId': unionId, 'avatarUrl': avatarUrl, 'nickName': nickName}, function (t) {
@@ -53,27 +52,26 @@ Page({
         yin: t.display,
         topaa: topbb,
       });
-      console.log(that.data.yin);
-      console.log(456);
     });
-    console.log(123);
   },
-
-
   getUserInfoFun: function () {
     var S = this;
     wx.getUserInfo({
       success: function (res) {
         console.log('用户已授权');
-  
-        S.toSuperapp();
 
+        S.setData({
+          userInfo: res.userInfo,
+          insec:'none',
+        });
+
+        S.toSuperapp();
       },
       fail: function () {
         console.log('用户未授权');
       },
     })
-    S.toSuperapp();
+    // S.toSuperapp();
     S.onLoad(S.data.options);
   }, 
   

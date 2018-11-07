@@ -13,8 +13,7 @@
 </view>
 
 
-
-<view class='shouquan' style='display:{{yin}};'>
+<view class='shouquan' style='display:{{insec}};'>
     <view class='shouquank'>
       <view class='shouquantit'>用户未授权</view>
       <view class='shouquancen'>您需要先允许【用户授权】，才能进行后续操作哦~</view>

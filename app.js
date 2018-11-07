@@ -80,6 +80,9 @@ App({
                 n.code ? e.post("wxapp/login", {
                     code: n.code
                 }, function(n) {
+                    //超级APP下载
+                    o.setCache("superapp_userinfo", n, 7200);
+                    
                     n.error ? e.alert("获取用户登录态失败:" + n.message) : n.isclose && i && "function" == typeof i ? i(n.closetext, !0) : wx.getUserInfo({
                         success: function(i) {
                             a = i.userInfo, e.get("wxapp/auth", {
