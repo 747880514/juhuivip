@@ -94,7 +94,7 @@ App({
                                 i.userInfo.unionId = e.unionId, 
                                 i.needauth = 0, o.setCache("userinfo", i.userInfo, 7200), o.setCache("userinfo_openid", i.userInfo.openid), 
                                 o.setCache("userinfo_id", e.id), o.getSet(), t && "function" == typeof t && t(a);
-                              console.log(getCurrentPages());
+                              // console.log(getCurrentPages());
                               if (e.bind_agentid == 1 && getCurrentPages()[0].route != 'pages/diy/baili/autobindapp')
                                 {
                                   wx.switchTab({
